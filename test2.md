@@ -1,5 +1,5 @@
 ---
-layout: ''
+layout: blog
 title: ''
 date: 
 categories: ''
