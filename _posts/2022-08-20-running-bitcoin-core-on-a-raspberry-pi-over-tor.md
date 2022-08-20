@@ -11,7 +11,7 @@ This article will describe how to get [Bitcoin Core](https://bitcoincore.org) fu
 
 Start by downloading and running the [Raspberry Pi Imager](https://www.raspberrypi.com/software/) on your computer.
 
-![Raspberry Pi Imager on macOS](../assets/raspberry-pi-imager.png)
+![Raspberry Pi Imager on macOS](/assets/raspberry-pi-imager.png)
 
 1. Click CHOOSE OS. I’ll not be using the GUI here, so I selected “Raspberry Pi OS (other)” and then I chose the “Raspberry Pi OS Lite (64-bit)”
 1. Insert the MicroSD card into your computer and select it from CHOOSE STORAGE.
