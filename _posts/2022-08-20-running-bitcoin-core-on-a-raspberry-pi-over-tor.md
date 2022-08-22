@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Running Bitcoin Core on a Raspberry Pi over Tor"
+title:  "Running Bitcoin Core on a Raspberry Pi"
 date:   2022-08-20 21:48:21 +0200
 categories: bitcoin
 ---
 
-This article will describe how to get [Bitcoin Core](https://bitcoincore.org) full node up and running on a [Raspberry Pi 4 Model B](https://www.raspberrypi.com/products/raspberry-pi-4-model-b/) over Tor. To store the blockchain (which currently is close to 500 GB), I’m using a 1 TB SSD.
+This article will describe how to get [Bitcoin Core](https://bitcoincore.org) full node up and running on a [Raspberry Pi 4 Model B](https://www.raspberrypi.com/products/raspberry-pi-4-model-b/). To store the blockchain (which currently is close to 500 GB), I’m using a 1 TB SSD.
 
 ## Raspberry Pi OS
 
@@ -39,106 +39,6 @@ Start by updating the Raspberry Pi OS to the latest and greatest:
 sudo apt-get update -y && sudo apt upgrade -y
 ```
 
-## Installing Tor
-
-Tor, short for The Onion Router is software for enabling anonymous communication. It directs Internet traffic through a free, worldwide, volunteer overlay network, consisting of more than seven thousand relays, to conceal a user’s location and usage from anyone performing network surveillance or traffic analysis.
-
-Tor is a great service to promote privacy and censorship resistance.  These goals align directly with the Bitcoin network.
-
-By running Bitcoin over Tor, you get the following benefits:
-
-- It hides your IP address from the world.
-- You don’t need to worry about setting up firewall port forwarding.
-- Promotes privacy for others to connect into your node anonymously.
-
-So, the first thing we‘ll do is to install Tor
-
-```shell
-sudo apt install tor -y
-```
-
-Once this has been installed, you should be able to query the tor service to check its status:
-
-```shell
-sudo systemctl status tor
-```
-
-You’ll see something like this, verifying that it’s active:
-
-```shell
-● tor.service - Anonymizing overlay network for TCP (multi-instance-master)
-     Loaded: loaded (/lib/systemd/system/tor.service; enabled; vendor preset: enabled)
-     Active: active (exited) since Sat 2022-08-20 18:57:18 CEST; 15s ago
-    Process: 8653 ExecStart=/bin/true (code=exited, status=0/SUCCESS)
-   Main PID: 8653 (code=exited, status=0/SUCCESS)
-        CPU: 3ms
-```
-
-Also you should see that port 9050 is listening for incoming connections to proxy for the local loopback address:
-
-```shell
-netstat -an | grep 9050
-```
-
-You’ll see this:
-
-```shell
-tcp        0      0 127.0.0.1:9050          0.0.0.0:*               LISTEN
-```
-
-We will be setting up Bitcoin Core to run as a hidden service to allow incoming connections. So, we need to enable the Tor control port in the Tor configuration file.
-
-```shell
-sudo nano /etc/tor/torrc
-```
-
-Here we need to uncomment the `ControlPort 9051` and `CookieAuthentication 1`:
-
-```
-## The port on which Tor will listen for local connections from Tor
-## controller applications, as documented in control-spec.txt.
-
-ControlPort 9051
-
-## If you enable the controlport, be sure to enable one of these
-## authentication methods, to prevent attackers from accessing it.
-#HashedControlPassword 16:872860B76453A77D60CA2BB8C1A7042072093276A3D701AD684053EC4C
-
-CookieAuthentication 1
-```
-
-The last thing we need for Bitcoin Core and the satoshi user to be able to access the cookie file.
-
-The `control.authcookie` can be seen here, by running:
-
-```shell
-ls -al /run/tor/
-```
-
-You’ll get:
-
-```shell
-total 8
-drwxr-sr-x  2 debian-tor debian-tor 120 Aug 16 22:28 .
-drwxr-xr-x 25 root       root       740 Aug 16 22:09 ..
-srw-rw----  1 debian-tor debian-tor   0 Aug 16 22:28 control
--rw-r-----  1 debian-tor debian-tor  32 Aug 16 22:27 control.authcookie
-srw-rw-rw-  1 debian-tor debian-tor   0 Aug 16 22:28 socks
--rw-r--r--  1 debian-tor debian-tor   5 Aug 16 22:27 tor.pid
-```
-
-So we need to add the satoshi user to the `debian-tor` group, like so:
-
-```shell
-sudo usermod -a -G debian-tor satoshi
-```
-
-If you now do `id satoshi`, you should see that it belongs to the debian-tor group:
-
-```shell
-uid=1000(satoshi) gid=1000(satoshi) groups=1000(satoshi),4(adm),20(dialout),24(cdrom),27(sudo),29(audio),44(video),46(plugdev),60(games),100(users),104(input),106(render),108(netdev),999(spi),998(i2c),997(gpio),114(debian-tor)
-```
-
 ## Setting up the external hard drive
 
 The bitcoin block chain will be stored on the external hard drive, so let’s set that up that next.
@@ -160,8 +60,7 @@ sudo mkfs.ext4 /dev/sda
 Let’s mount it manually:
 
 ```shell
-sudo mkdir /media/ssd
-sudo chown satoshi /media/ssd/bitcoin
+sudo mkdir /media/ssd/bitcoin
 sudo mount /dev/sda /media/ssd
 ```
 
@@ -298,12 +197,6 @@ Save the file and exit. Now the bitcoin daemon will start whenever your system b
 
 Finally, restart the computer with `sudo reboot` and reconnect with SSH after a few seconds.
 
-First, let’s test that Tor is up and running:
-
-```shell
-sudo systemctl status tor@default.service
-```
-
 And that the hard drive has been mounted correctly:
 
 We can verify that it has been mounted correctly:
@@ -319,14 +212,6 @@ And Bitcoin Core should now also be running:
 tail -f /media/ssd/bitcoin/debug.log
 ```
 
-You should see that it’s using Tor, a line like this:
-
-```shell
-tor: Got service ID XXXXXXXXXX, advertising service XXXXXXXX.onion:8333
-```
-
-This means that the service was able to be configured and is up and running.
-
 ## Aliases for using bitcoin-cli
 
 Since we need to specify `-datadir=/media/ssd/bitcoin` every time we want to run commands with `bitcoin-cli`, it makes sense to make a couple of alises in `.bashrc`:
@@ -335,7 +220,7 @@ Since we need to specify `-datadir=/media/ssd/bitcoin` every time we want to run
 nano ~/.bashrc
 ```
 
-and then append these two lines:
+and then append this line:
 
 ```shell
 alias bitcoin-cli='bitcoin-cli -datadir=/media/ssd/bitcoin'
@@ -350,3 +235,21 @@ source ~/.bashrc
 ## Initial block download
 
 The blockchain will now sync all the way back to the first block in 2009, so this will take some time given that it’s close to 500 GB. Your node will download all blocks and all transactions and verify them.
+
+To check on the process, run
+
+```shell
+bitcoin-cli -getinfo
+
+Chain: main
+Blocks: 620898
+Headers: 750609
+Verification progress: ▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░░░░ 67.4104%
+Difficulty: 15486913440292.87
+
+Network: in 0, out 10, total 10
+Version: 230000
+Time offset (s): -7
+Proxies: 127.0.0.1:9050 (ipv4, ipv6, cjdns)
+Min tx relay fee rate (BTC/kvB): 0.00001000
+```
