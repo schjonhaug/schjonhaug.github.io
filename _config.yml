@@ -8,7 +8,7 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 #
-# If you need help with YAML syntax, here are some quick references for you: 
+# If you need help with YAML syntax, here are some quick references for you:
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 #
@@ -18,23 +18,21 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Andreas Schjønhaug's Swift blog
+title: Andreas Schjønhaug's dev blog
 email: andreas@schjonhaug.com
 description: >- # this means to ignore newlines until "baseurl:"
   Andreas Schjønhaug is a freelancer iOS developer in Oslo, Norway,
-  and in this blog, he writes about different interesting topics in
-  Swift and iOS development.
+  and in this blog, he writes about different interesting topics related to development.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: schjonhaug
-github_username:  schjonhaug
+github_username: schjonhaug
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
   - jekyll-sitemap
-
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
