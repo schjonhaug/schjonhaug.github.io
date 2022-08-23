@@ -11,7 +11,7 @@ You can now run nodes as dual hidden services on Tor and I2P (Invisible Internet
 
 Start by updating the Raspberry Pi OS to the latest and greatest if you haven‘t done this in a while:
 
-```shell
+```bash
 sudo apt-get update -y && sudo apt upgrade -y
 ```
 
@@ -35,19 +35,19 @@ See additional [documentation](https://github.com/bitcoin/bitcoin/blob/master/do
 
 So, the first thing we‘ll do is to install Tor
 
-```shell
+```bash
 sudo apt install tor -y
 ```
 
 Once this has been installed, you should be able to query the tor service to check its status:
 
-```shell
+```bash
 sudo systemctl status tor
 ```
 
 You’ll see something like this, verifying that it’s active:
 
-```shell
+```bash
 ● tor.service - Anonymizing overlay network for TCP (multi-instance-master)
      Loaded: loaded (/lib/systemd/system/tor.service; enabled; vendor preset: enabled)
      Active: active (exited) since Sat 2022-08-20 18:57:18 CEST; 15s ago
@@ -58,19 +58,19 @@ You’ll see something like this, verifying that it’s active:
 
 Also you should see that port 9050 is listening for incoming connections to proxy for the local loopback address:
 
-```shell
+```bash
 netstat -an | grep 9050
 ```
 
 You’ll see this:
 
-```shell
+```bash
 tcp        0      0 127.0.0.1:9050          0.0.0.0:*               LISTEN
 ```
 
 We will be setting up Bitcoin Core to run as a hidden service to allow incoming connections. So, we need to enable the Tor control port in the Tor configuration file.
 
-```shell
+```bash
 sudo nano /etc/tor/torrc
 ```
 
@@ -93,13 +93,13 @@ The last thing we need for Bitcoin Core and the satoshi user to be able to acces
 
 The `control.authcookie` can be seen here, by running:
 
-```shell
+```bash
 ls -al /run/tor/
 ```
 
 You’ll get:
 
-```shell
+```bash
 total 8
 drwxr-sr-x  2 debian-tor debian-tor 120 Aug 16 22:28 .
 drwxr-xr-x 25 root       root       740 Aug 16 22:09 ..
@@ -111,13 +111,13 @@ srw-rw-rw-  1 debian-tor debian-tor   0 Aug 16 22:28 socks
 
 So we need to add the satoshi user to the `debian-tor` group, like so:
 
-```shell
+```bash
 sudo usermod -a -G debian-tor satoshi
 ```
 
 If you now do `id satoshi`, you should see that it belongs to the debian-tor group:
 
-```shell
+```bash
 uid=1000(satoshi) gid=1000(satoshi) groups=1000(satoshi),4(adm),20(dialout),24(cdrom),27(sudo),29(audio),44(video),46(plugdev),60(games),100(users),104(input),106(render),108(netdev),999(spi),998(i2c),997(gpio),114(debian-tor)
 ```
 
@@ -125,7 +125,7 @@ uid=1000(satoshi) gid=1000(satoshi) groups=1000(satoshi),4(adm),20(dialout),24(c
 
 Let’s create a configuration file to let Bitcoin Core to use Tor:
 
-```shell
+```bash
 sudo touch /media/ssd/bitcoin/bitcoin.conf 
 sudo chown satoshi /media/ssd/bitcoin
 nano /media/ssd/bitcoin/bitcoin.conf
@@ -155,19 +155,19 @@ See additional [documentation](https://github.com/bitcoin/bitcoin/blob/master/do
 
 ### Installation and setup
 
-```shell
+```bash
 sudo apt install i2pd -y
 ```
 
 After it’s been installed, start it with:
 
-```shell
+```bash
 sudo systemctl start i2pd.service
 ```
 
 To start it automatically on boot:
 
-```shell
+```bash
 sudo systemctl enable i2pd.service
 ```
 
@@ -181,7 +181,7 @@ The current stable version in apt is [2.36.0](https://packages.debian.org/buster
 
 Let’s get back to editing the bitcoin.conf file:
 
-```shell
+```bash
 nano /media/ssd/bitcoin/bitcoin.conf
 ```
 
@@ -203,13 +203,13 @@ Finally, restart the computer with `sudo reboot` and reconnect with SSH after a 
 
 First, let’s test that Tor is up and running:
 
-```shell
+```bash
 sudo systemctl status tor@default.service
 ```
 
 And, similarly for I2P:
 
-```shell
+```bash
 sudo systemctl status i2pd
 ```
 
@@ -217,13 +217,13 @@ In both cases, you should see them being active.
 
 To see what kind of peers your node sees, you can do:
 
-```shell
+```bash
 bitcoin-cli -addrinfo
 ```
 
 You can also check which kind of nodes you’re currently connect to:
 
-```shell
+```bash
 bitcoin-cli -netinfo 4
 ```
 
@@ -231,6 +231,6 @@ You might see that some of them are connected with onion (Tor) and i2p. You’ll
 
 Finally, you can check the debug log for lines starting with `tor` and `i2p` to check that everything is OK:
 
-```shell
+```bash
 tail -f /media/ssd/bitcoin/debug.log
 ```

@@ -28,7 +28,7 @@ Start by downloading and running the [Raspberry Pi Imager](https://www.raspberry
 
 After starting the Raspberry Pi, open a terminal on your computer and connect to the Raspberry Pi via SSH:
 
-```shell
+```bash
 ssh satoshi@bitcoin.local
 ```
 
@@ -36,7 +36,7 @@ You’ll get a warning saying that “the authenticity of host bitcoin.local” 
 
 Start by updating the Raspberry Pi OS to the latest and greatest:
 
-```shell
+```bash
 sudo apt-get update -y && sudo apt upgrade -y
 ```
 
@@ -46,7 +46,7 @@ The bitcoin block chain will be stored on the external hard drive, so let’s se
 
 Given that the hard drive is physically connected to the Raspberry Pi, we can look for it with
 
-```shell
+```bash
 sudo fdisk -l
 ```
 
@@ -54,13 +54,13 @@ In my case, it’s `/dev/sda`.
 
 First, we need to create a new file system. Since we’re only going to access the data through the Raspberry Pi, we can use [ext4](https://en.wikipedia.org/wiki/Ext4). Do note that any existing data on the drive will be erased.
 
-```shell
+```bash
 sudo mkfs.ext4 /dev/sda
 ```
 
 Let’s mount it manually:
 
-```shell
+```bash
 sudo mkdir /media/ssd/bitcoin
 sudo mount /dev/sda /media/ssd
 ```
@@ -81,7 +81,7 @@ Finally, we’re ready to install Bitcoin Core. You have two options. Either you
 
 Go to <https://bitcoincore.org/en/download/> and choose the corresponding ARM Linux 64-bit download link. Then, download it with `wget`:
 
-```shell
+```bash
 wget https://bitcoincore.org/bin/bitcoin-core-23.0/bitcoin-23.0-aarch64-linux-gnu.tar.gz
 ```
 
@@ -89,7 +89,7 @@ wget https://bitcoincore.org/bin/bitcoin-core-23.0/bitcoin-23.0-aarch64-linux-gn
 
 Start by downloading the SHA256 binary hashes and hash signatures found on the [download page](https://bitcoincore.org/en/download/):
 
-```shell
+```bash
 wget https://bitcoincore.org/bin/bitcoin-core-23.0/SHA256SUMS
 
 wget https://bitcoincore.org/bin/bitcoin-core-23.0/SHA256SUMS.asc
@@ -97,7 +97,7 @@ wget https://bitcoincore.org/bin/bitcoin-core-23.0/SHA256SUMS.asc
 
 1. Verify that the checksum of the release file is listed in the checksums file using the following command:
 
-    ```shell
+    ```bash
     sha256sum --ignore-missing --check SHA256SUMS
     ```
 
@@ -107,7 +107,7 @@ wget https://bitcoincore.org/bin/bitcoin-core-23.0/SHA256SUMS.asc
 
     For example, given the [builders-key/keys.txt](https://github.com/bitcoin/bitcoin/tree/master/contrib/builder-keys/keys.txt) line `E777299FC265DD04793070EB944D35F9AC3DB76A Michael Ford (fanquake)` you could load that key using this command:
 
-    ```shell
+    ```bash
     gpg --keyserver hkps://keys.openpgp.org --recv-keys E777299FC265DD04793070EB944D35F9AC3DB76A
     ```
 
@@ -117,7 +117,7 @@ wget https://bitcoincore.org/bin/bitcoin-core-23.0/SHA256SUMS.asc
 
     Verify that the checksums file is PGP signed by the release signing key:
 
-    ```shell
+    ```bash
     gpg --verify SHA256SUMS.asc
     ```
 
@@ -131,7 +131,7 @@ wget https://bitcoincore.org/bin/bitcoin-core-23.0/SHA256SUMS.asc
 
 ### Install
 
-```shell
+```bash
 tar xvf bitcoin-23.0-aarch64-linux-gnu.tar.gz
 
 sudo install -m 0755 -o root -g root -t /usr/local/bin bitcoin-23.0/bin/*
@@ -141,7 +141,7 @@ sudo install -m 0755 -o root -g root -t /usr/local/bin bitcoin-23.0/bin/*
 
 Let’s create a configuration file to let Bitcoin Core to use Tor:
 
-```shell
+```bash
 sudo mkdir /media/ssd/bitcoin
 sudo nano /media/ssd/bitcoin/bitcoin.conf
 ```
@@ -164,7 +164,7 @@ This is what is being configured:
 
 If everything is working as expected, you should be able to run
 
-```shell
+```bash
 bitcoind -version
 
 Bitcoin Core version v23.0.0
@@ -172,7 +172,7 @@ Bitcoin Core version v23.0.0
 
 and
 
-```shell
+```bash
 bitcoin-cli -version
 
 Bitcoin Core RPC client version v23.0.0
@@ -182,7 +182,7 @@ Since we’re using the Raspberry Pi as a dedicated Bitcoin full node, we‘ll w
 
 To do so, edit your crontab by running the following command:
 
-```shell
+```bash
 crontab -e
 ```
 
@@ -202,35 +202,57 @@ And that the hard drive has been mounted correctly:
 
 We can verify that it has been mounted correctly:
 
-```shell
+```bash
 df -h | grep /media/ssd
 /dev/sda        916G   24M  870G   1% /media/ssd
 ```
 
 And Bitcoin Core should now also be running:
 
-```shell
+```bash
 tail -f /media/ssd/bitcoin/debug.log
 ```
 
 ## Aliases for using bitcoin-cli
 
-Since we need to specify `-datadir=/media/ssd/bitcoin` every time we want to run commands with `bitcoin-cli`, it makes sense to make a couple of alises in `.bashrc`:
+Since we need to specify `-datadir=/media/ssd/bitcoin` every time we want to run commands with `bitcoin-cli`, it makes sense to make a couple of alises in `.bash_aliases`:
 
-```shell
-nano ~/.bashrc
+```bash
+nano ~/.bash_aliases
 ```
 
 and then append this line:
 
-```shell
+```bash
 alias bitcoin-cli='bitcoin-cli -datadir=/media/ssd/bitcoin'
 ```
 
 Save the file, then run:
 
-```shell
+```bash
 source ~/.bashrc
+```
+
+## Bash completion
+
+It quickly gets tedious to write the various bitcoin-cli commands. To help with autocompletion, a bash completion scripts are available for both [bitcoind](https://github.com/bitcoin/bitcoin/blob/master/contrib/bitcoind.bash-completion) and [bitcoin-cli](https://github.com/bitcoin/bitcoin/blob/master/contrib/bitcoin-cli.bash-completion). Let’s download them:
+
+```bash
+wget https://raw.githubusercontent.com/bitcoin/bitcoin/master/contrib/bitcoind.bash-completion
+
+wget https://raw.githubusercontent.com/bitcoin/bitcoin/master/contrib/bitcoin-cli.bash-completion
+```
+
+To figure out where to put them, we can run:
+
+```bash
+pkg-config --variable=completionsdir bash-completion
+```
+
+returning, `/usr/share/bash-completion/completions`. So, let’s move them there:
+
+```bash
+sudo mv *.bash-completion /usr/share/bash-completion/completions
 ```
 
 ## Initial block download
@@ -239,7 +261,7 @@ The blockchain will now sync all the way back to the first block in 2009, so thi
 
 To check on the process, run
 
-```shell
+```bash
 bitcoin-cli -getinfo
 
 Chain: main
