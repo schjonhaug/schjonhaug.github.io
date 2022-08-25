@@ -252,7 +252,8 @@ pkg-config --variable=completionsdir bash-completion
 returning, `/usr/share/bash-completion/completions`. So, let’s move them there:
 
 ```bash
-sudo mv *.bash-completion /usr/share/bash-completion/completions
+sudo mv bitcoind.bash-completion /usr/share/bash-completion/completions/bitcoind
+sudo mv bitcoin-cli.bash-completion /usr/share/bash-completion/completions/bitcoin-cli
 ```
 
 ## Initial block download
