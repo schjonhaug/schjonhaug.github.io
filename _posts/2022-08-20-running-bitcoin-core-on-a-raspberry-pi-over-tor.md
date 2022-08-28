@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Running Bitcoin Core on a Raspberry Pi"
-date:   2022-08-20 21:48:21 +0200
+title: "Running Bitcoin Core on a Raspberry Pi"
+date: 2022-08-20 21:48:21 +0200
 categories: bitcoin
 ---
 ![Raspberry Pi 4 Model 4](/assets/raspberry-pi-4-model-b.jpg)
@@ -12,11 +12,16 @@ This article will describe how to get [Bitcoin Core](https://bitcoincore.org) fu
 
 Start by downloading and running the [Raspberry Pi Imager](https://www.raspberrypi.com/software/) on your computer.
 
-![Raspberry Pi Imager on macOS](/assets/raspberry-pi-imager.png)
+![Raspberry Pi Imager on macOS](/assets/raspberry-pi-imager-startup.png)
 
 1. Click CHOOSE OS. I’ll not be using the GUI here, so I selected “Raspberry Pi OS (other)” and then I chose the “Raspberry Pi OS Lite (64-bit)”
 1. Insert the MicroSD card into your computer and select it from CHOOSE STORAGE.
-1. Click on the gear icon that will appear in the bottom right hand side corner. There, you’ll want to do some changes:
+
+1. Click on the gear icon that will appear in the bottom right hand side corner.
+
+    ![Raspberry Pi Imager on macOS](/assets/raspberry-pi-imager-ready-to-write.png)
+
+    There, you’ll want to do some changes:
     - Set the hostname `bitcoin.local`.
     - Enable SSH with a username and a password (I chose satoshi as the username).
     - Set the locale with your time zone and keyboard layout.
@@ -136,29 +141,6 @@ tar xvf bitcoin-23.0-aarch64-linux-gnu.tar.gz
 
 sudo install -m 0755 -o root -g root -t /usr/local/bin bitcoin-23.0/bin/*
 ```
-
-### Configure
-
-Let’s create a configuration file to let Bitcoin Core to use Tor:
-
-```bash
-sudo mkdir /media/ssd/bitcoin
-sudo nano /media/ssd/bitcoin/bitcoin.conf
-```
-
-Enter the following text, exit and save the file:
-
-```
-proxy=127.0.0.1:9050
-listen=1
-debug=tor
-```
-
-This is what is being configured:
-
-- `proxy`: Sets the proxy server to point localhost on port 9050. This proxy server will be used to try to reach .onion addresses as well.
-- `listen`: We want to enable listening for incoming connections, as this is off by default behind a proxy.
-- `debug`: We set debug to tor get additional information in the debug log about our Tor configuration.
 
 ### Run
 

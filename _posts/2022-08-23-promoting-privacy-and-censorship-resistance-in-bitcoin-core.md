@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Promoting privacy and censorship resistance in Bitcoin Core"
-date:   2022-08-23 20:55:21 +0200
+title: "Promoting privacy and censorship resistance in Bitcoin Core"
+date: 2022-08-23 20:55:21 +0200
 categories: bitcoin
 ---
 

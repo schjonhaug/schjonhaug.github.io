@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Finding the user's language in iOS"
-date:   2020-07-14 10:04:21 +0200
+title: "Finding the user's language in iOS"
+date: 2020-07-14 10:04:21 +0200
 categories: localisation
 ---
 
@@ -11,7 +11,7 @@ When localising your app, you might need to get the user's preferred language, f
 
 `Locale` consists of region and language and is mostly used for formatting text such as currency and dates.
 
-The user's region information is found at the bottom of Settings → General → Language & Region). It is perfectly reasonable to choose another region than the language you'd like the have the phone in. An American living in Norway might like to have the phone language set to American English while using the metric system and a 24-hour clock. 
+The user's region information is found at the bottom of Settings → General → Language & Region). It is perfectly reasonable to choose another region than the language you'd like the have the phone in. An American living in Norway might like to have the phone language set to American English while using the metric system and a 24-hour clock.
 
 Now, for the language, `Locale` will find the best match between the languages that your app supports and the user preferred languages. The first language in the preferred list that exists in the app will be chosen.
 
