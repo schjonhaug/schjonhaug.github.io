@@ -1,9 +1,12 @@
 ---
 layout: post
 title: "Running Bitcoin Core on a Raspberry Pi"
+description: "How to set up a full Bitcoin node on a Raspberry Pi 4, using the command line."
+image: "/assets/bitcoin-core-on-a-raspberry-pi.png"
 date: 2022-08-20 21:48:21 +0200
 categories: bitcoin
 ---
+
 ![Raspberry Pi 4 Model 4](/assets/raspberry-pi-4-model-b.jpg)
 
 This article will describe how to get [Bitcoin Core](https://bitcoincore.org) full node up and running on a [Raspberry Pi 4 Model B](https://www.raspberrypi.com/products/raspberry-pi-4-model-b/). To store the blockchain (which currently is close to 500 GB), I’m using a 1 TB SSD.
