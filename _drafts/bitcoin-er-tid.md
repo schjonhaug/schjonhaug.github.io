@@ -14,94 +14,101 @@ Proklamerte at tiden verken var feil eller riktig.
 
 – Robert Frost, kjent med natten (1928)
 
-> Tiden er fortsatt det store mysteriet for oss. Det er ikke mer enn et konsept; vi vet ikke om det eksisterer i det hele tatt…
+> Tiden er fortsatt et stort mysterium for oss. Det er ikke mer enn et konsept; vi vet ikke om det eksisterer i det hele tatt…
 
 – Clifford D. Simak, Shakespeare’s Planet (1976)
 
-Tid er penger, som de sier. Av det følger at penger også er tid: en representasjon av den kollektive økonomiske energien som er lagret av menneskeheten. Koblingen mellom tid og penger er imidlertid mer intrikat enn det kan se ut til å begynne med. Hvis penger ikke krever tid å skape, fungerer det ikke som penger særlig godt, eller ikke lenge. Mer dyptgripende, som vi skal se, innebærer det å holde styr på ting i informasjonsområdet alltid å holde styr på tiden.
+Tid er penger, som det heter. Det følger dermed at penger også er tid: en representasjon av den kollektive økonomiske energien lagret av menneskeheten. Koblingen mellom tid og penger er imidlertid mer intrikat enn det kan se ut til å begynne med. Hvis penger ikke krever tid å skapes, fungerer det ikke som penger særlig godt, eller ikke lenge. Mer dyptgripende, som vi skal se, innebærer det å holde styr på ting i informasjonsriket alltid det å holde styr på tiden.
 
-Så snart penger blir digitale, må vi bli enige om en definisjon av tid, og her ligger hele problemet. Du tror kanskje å fortelle klokkeslettet er like enkelt som å se på hvilken som helst klokke som er i nærheten, og du vil ha rett når det kommer til dagligdagse gjøremål. Men når det gjelder å synkronisere tilstanden til et globalt, motstridende, distribuert nettverk, blir det å fortelle tiden et nesten uløselig problem. Hvordan vet du klokken hvis klokker ikke kan stoles på? Hvordan skaper du konseptet om en enestående tid hvis systemet ditt spenner over galaksen? Hvordan måler du tid i et tidløst rike? Og hva er tid egentlig?
+Så snart penger blir digitale, må vi bli enige om en _definisjon av tid_, og her ligger hele problemet. Du tror kanskje at det å fortelle klokkeslettet er like enkelt som å se på hvilken som helst klokke som er i nærheten, og du vil ha rett når det kommer til dagligdagse gjøremål. Men når det gjelder å synkronisere tilstanden til et globalt, motstridende, distribuert nettverk, blir det å fortelle tiden et nesten uløselig problem. Hvordan vet du hva klokken er hvis klokker ikke kan stoles på? Hvordan skaper du konseptet om en enestående tid hvis systemet ditt spenner over galaksen? Hvordan måler du tid i et tidløst område? Og hva er tid egentlig?
 
-For å svare på disse spørsmålene må vi se nærmere på selve begrepet tid og hvordan Bitcoin utgjør sin egen tid: blokktid - mer kjent som _blokkhøyde_. Vi vil utforske hvorfor problemet med tidtaking er nært knyttet til å føre journaler, hvorfor det ikke er absolutt tid i et desentralisert system, og hvordan Bitcoin bruker kausalitet og uforutsigbarhet for å bygge sin egen følelse av nå.
+For å svare på disse spørsmålene må vi se nærmere på selve begrepet tid og hvordan Bitcoin finner opp sin egen tid: blokktid - mer kjent som _blokkhøyde_. Vi skal utforske hvorfor problemet med tidtaking er nært knyttet til å føre journaler, hvorfor det ikke finnes absolutt tid i et desentralisert system, og hvordan Bitcoin bruker kausalitet og uforutsigbarhet for å bygge sin egen oppfatning av nåtid.
 
-Tidtakingsenheter har forvandlet sivilisasjoner mer enn én gang. Som Lewis Mumford påpekte i 1934: "Klokken, ikke dampmaskinen, er nøkkelmaskinen til den moderne industrielle tidsalder." I dag er det igjen en tidtakingsenhet som forvandler sivilisasjonen vår: en klokke, ikke datamaskiner, er den sanne nøkkelmaskinen i den moderne informasjonsalderen. Og denne klokken er Bitcoin.
+Tidtakingsenheter har forvandlet sivilisasjoner mer enn én gang. Som Lewis Mumford påpekte i 1934: “Klokken, ikke dampmaskinen, er selve nøkkelmaskinen til den moderne industrielle tidsalder.” I dag er det igjen en tidtakingsenhet som forvandler sivilisasjonen vår: en klokke, ikke datamaskiner, er den sanne nøkkelmaskinen i den moderne informasjonsalderen. Og denne klokken er Bitcoin.
 
 ## Holde orden på ting
 
 > La barnet lære å telle ting, og dermed få forestillingen om tall. Disse tingene blir, for tellingsformål, betraktet som like, og de kan være enkeltobjekter eller grupper.
 
-– David Eugene Smith, The Teaching of Elementary Mathematics (1900)
+– David Eugene Smith, _The Teaching of Elementary Mathematics_ (1900)
 
-Svært bredt sett er det to måter å holde styr på ting på: fysiske tokens og reskontro. Du kan enten bruke virkelige gjenstander direkte, f.eks. gi noen et skjell, en mynt eller en annen håndgripelig ting, eller du kan replikere verdens tilstand ved å skrive ned hva som skjedde på et stykke papir.
+Svært generelt sett er det to måter å holde styr på ting på: fysiske polletter og hovedbøker. Du kan enten bruke virkelige gjenstander direkte, f.eks. gi noen et skjell, en mynt eller en annen håndgripelig _ting_, eller du kan replikere verdens tilstand ved å skrive ned hva som skjedde på et stykke papir.
 
-Tenk deg at du er en gjeter og vil sørge for at hele flokken din kom hjem. Du kan sette et halsbånd på hver sau, og så snart en sau kommer hjem, tar du bare av halsbåndet og henger det opp i skuret ditt. Hvis du har en kleshenger for hvert halsbånd, vil du vite at hver sau kom trygt tilbake så snart alle kleshengerne er fylt. Du kan selvfølgelig også telle dem og føre en liste. Du må imidlertid sørge for å lage en ny liste hver gang du begynner å telle, og du må også passe på å ikke telle en eneste sau to ganger (eller ikke i det hele tatt).
+Tenk deg at du er en gjeter som vil sørge for at hele flokken din kommer hjem. Du kan sette et halsbånd på hver sau, og så snart en sau kommer hjem, tar du bare av halsbåndet og henger det opp i skuret ditt. Hvis du har en knagg for hvert halsbånd, vil du vite at hver sau kommer trygt tilbake så snart alle knagge er fylt. Du kan selvfølgelig også telle dem og føre en liste. Du må imidlertid sørge for å lage en ny liste hver gang du begynner å telle, og du må også passe på å ikke telle en eneste sau to ganger (eller ikke i det hele tatt).
 
-Penger er i hovedsak et verktøy for å holde styr på hvem som skylder hva til hvem. Stort sett faller alt vi har brukt som penger til nå i to kategorier: fysiske gjenstander og informasjonslister. Eller, for å bruke mer vanlig språkbruk: tokens og reskontro.
+Penger er i hovedsak et verktøy for å holde styr på hvem som skylder hva til hvem. Stort sett faller alt vi har brukt som penger til nå i to kategorier: _fysiske gjenstander_ og _informasjonslister_. Eller, for å bruke mer vanlig språkbruk: polletter og hovedbøker.
 
 ![Ledger og token](/assets/ledger-token.jpeg)
 
-Det er viktig å innse den iboende forskjellen mellom disse kategoriene, så la meg påpeke det eksplisitt: Den første metoden – et fysisk symbol – representerer direkte tingenes tilstand. Den andre - en hovedbok - gjenspeiler indirekte tingenes tilstand. Hver kommer med fordeler og ulemper. For eksempel er tokens fysiske og distribuerte; reskontro er informativ og sentralisert. Tokens er iboende tillitsløse; hovedbok er det ikke.
+Det er viktig å innse den iboende forskjellen mellom disse kategoriene, så la meg påpeke det eksplisitt: Den første metoden – et fysisk symbol – representerer _direkte_ tingenes tilstand. Den andre - en hovedbok - gjenspeiler _indirekte_ tingenes tilstand. Hver kommer med fordeler og ulemper. For eksempel er polletter fysiske og distribuerte; hovedbøker er informative og sentraliserte. Polletters er iboende tillitsløse; hovedbøker er det ikke.
 
-I det digitale riket – uansett hvor intenst markedsføringsguruer prøver å overbevise deg om det motsatte – kan vi bare bruke hovedbok. Det er et informasjonsrikt, ikke et fysisk. Selv om du kaller en viss type informasjon et «token», er det fortsatt en formbar informasjon, skrevet ned på en harddisk eller et annet medium som kan inneholde informasjon, som effektivt gjør den til en informasjonspost.
+I det digitale riket – uansett hvor intenst markedsføringsguruer prøver å overbevise deg om det motsatte – kan vi bare bruke hovedbøker. Det er et _informasjonsrike_, ikke et fysisk et. Selv om du kaller en viss type informasjon en «pollett, er det fortsatt formbar informasjon, skrevet ned på en harddisk eller et annet medium som kan inneholde informasjon, som effektivt gjør den til en informasjonsoppføring.
 
-Den hovedboklignende naturen til all digital informasjon er hovedårsaken til problemet med dobbeltforbruk. Informasjon representerer aldri verdens tilstand direkte. Videre innebærer flytting av informasjon kopiering. Informasjon finnes på ett sted, og for å "flytte" den, må du kopiere den til et annet sted og slette den ved opprinnelsen. Dette problemet eksisterer ikke i det fysiske riket. I det fysiske riket kan vi faktisk flytte ting fra A til B. Informasjonsområdet har ikke denne egenskapen. Hvis du vil "flytte" informasjon fra liste A til liste B, må du kopiere den fra A til B. Det er ingen annen måte.
+Den hovedboklignende naturen til all digital informasjon er hovedårsaken til problemet med dobbeltbruk. Informasjon representerer aldri verdens tilstand _direkte_. Videre innebærer flytting av informasjon kopiering. Informasjon finnes på ett sted, og for å “flytte” den, må du kopiere den til et annet sted og slette den ved opprinnelsen. Dette problemet eksisterer ikke i det fysiske riket. I det fysiske riket kan vi faktisk flytte ting fra A til B. Informasjonsriket har ikke denne egenskapen. Hvis du vil “flytte” informasjon fra liste A til liste B, må du kopiere den fra A til B. Det finnes ingen annen måte.
 
-En annen måte å tenke på er i form av unikhet. Fysiske tokens er unike sammensetninger av atomer hvis sammensetning ikke lett kan replikeres. Ren informasjon har ikke denne egenskapen. Hvis du kan lese informasjonen, kan du også kopiere den perfekt. Praktisk sett følger det at fysiske tokens er unike, og digitale tokens er det ikke. Jeg vil til og med hevde at "digital token" er en feilbetegnelse. Et symbol kan representere hemmelig informasjon, men det vil aldri representere unik, enkeltstående, ukopierbar informasjon.
+En annen måte å tenke på er i form av unikhet. Fysiske polletter er unike sammensetninger av atomer hvis sammensetning ikke lett kan replikeres. Ren informasjon har ikke denne egenskapen. Hvis du kan lese informasjonen, kan du også kopiere den perfekt. Praktisk talt følger det at fysiske polletter er unike, og digitale polletter er ikke det. Jeg vil til og med hevde at “digital pollett” er en feilbetegnelse. En pollett kan representere hemmelig informasjon, men det vil aldri representere unik, enkeltstående, ukopierbar informasjon.
 
-Denne forskjellen i egenskaper viser at det virkelig ikke er noen måte å "utlevere" informasjon på. Det er umulig å gi videre en digital token slik du ville gitt videre en fysisk, siden du aldri kan være sikker på om den opprinnelige eieren ødela informasjonen på sin side. Digitale tokens, som all informasjon, kan bare spres, som en idé.
+Denne forskjellen i egenskaper viser at det virkelig ikke er noen måte å “overlevere” informasjon på. Det er umulig å gi videre en digital pollett slik du ville gitt videre en fysisk, siden du aldri kan være sikker på om den opprinnelige eieren ødela informasjonen på sin side. Digitale polletter, som all informasjon, kan bare spres, som en idé.
 
 > … hvis du har et eple og jeg har et eple, og vi bytter epler — ender vi hver opp med bare ett eple. Men hvis du og jeg har en idé og vi bytter ideer — ender vi opp med to ideer hver.
 
 – Charles F. Brannan (1949)
 
-Fysiske tokens – det vi kaller fysiske bærermidler, eller «kontanter» – er fri fra dette dilemmaet. I den virkelige verden, hvis du gir meg en mynt, er mynten din borte. Det er ingen magisk duplikasjon av mynten, og den eneste måten å gi den til meg på er å overlevere den fysisk. Fysikkens lover tillater ikke at du dobbeltbruker det.
+Fysiske polletter – det vi kaller fysiske bærermidler, eller “kontanter” – går fri av dette dilemmaet. I den virkelige verden, hvis du gir meg en mynt, så er mynten din borte. Det er ingen magisk duplikasjon av mynten, og den eneste måten å gi den til meg på er å overlevere den fysisk. Fysikkens lover tillater ikke at du dobbeltbruker det.
 
-Mens dobbeltbruk eksisterer i det ikke-digitale riket - George Parker, en svindler som berømt "dobbelt-brukte" Brooklyn Bridge og andre landemerker kommer til tankene - krever det omfattende prisbedrag og godtroende kjøpere. Ikke slik i det digitale riket.
+Mens dobbeltbruk eksisterer i det ikke-digitale riket - George Parker, en bedrager som så berømt “dobbelt-brukte” Brooklyn Bridge og andre landemerker kommer til tankene - krever det omfattende lureri og godtroende kjøpere. Slik er det ikke i det digitale riket.
 
-I det digitale riket, fordi vi alltid har med informasjon å gjøre, er dobbeltforbruk et iboende problem. Som alle som noen gang har kopiert en fil eller brukt copy-and-paste vet, er informasjon noe du kan kopiere perfekt, og det er ikke bundet til mediet som er vert for det. Hvis du for eksempel har en digital fotograf, kan du kopiere den en million ganger, lagre noen kopier på en USB-pinne og sende den til tusenvis av forskjellige personer. Perfekte kopier er mulig fordi informasjon gir mulighet for feilfri feilretting, noe som eliminerer forringelse. Og for å toppe ting, er det praktisk talt ingen kostnader for duplisering og ingen måte å fortelle hva originalen var.
+I det digitale riket, fordi vi alltid har med _informasjon_ å gjøre, er dobbeltbruk et _iboende_ problem. Som alle som noen gang har kopiert en fil eller brukt klipp-og-lim vet, er informasjon noe du kan kopiere _perfekt_, og det er ikke bundet til mediet som er vert for det. Hvis du for eksempel har et digitalt fotografi, kan du kopiere den en million ganger, lagre noen kopier på en USB-pinne og sende den til tusenvis av forskjellige personer. Perfekte kopier er mulig fordi informasjon gir mulighet for feilfri feilretting, noe som eliminerer forringelse. Og for å toppe det hele, er det praktisk talt ingen kostnader for duplisering og ingen måte å avgjøre hvilket som var originalen.
 
-Igjen: når det gjelder informasjon, er kopiering alt som finnes. Det er rett og slett ingen måte å flytte digital informasjon fra A til B. Informasjon kopieres alltid fra A til B, og hvis kopieringsprosessen var vellykket, slettes den originale kopien av A. Dette er grunnen til at problemet med dobbeltforbruk er så vanskelig. Fravær av en sentral myndighet er det ingen måte å flytte noe fra A til B på en mindre tillitsvekkende måte. Du må alltid stole på at originalen blir slettet. En naturlig bieffekt er at når det gjelder digital informasjon, er det umulig å si hvor mange eksemplarer som finnes og hvor disse kopiene kan være.
+Igjen: når det gjelder informasjon, er kopiering alt som finnes. Det er rett og slett ingen måte å _flytte_ digital informasjon fra A til B. Informasjon _kopieres_ alltid fra A til B, og hvis kopieringsprosessen var vellykket, slettes den originale kopien av A. Dette er grunnen til at problemet med dobbeltbruk er så vanskelig. Fravær av en sentral myndighet er det ingen måte å flytte _noe som helst_ fra A til B på en tillitsløs måte. Du må alltid stole på at originalen blir slettet. En naturlig bieffekt er at når det gjelder digital informasjon, er det _umulig_ å si hvor mange eksemplarer som finnes og hvor disse kopiene kan befinne seg.
 
-På grunn av dette kan og vil aldri bruk av digitale "tokens" som penger fungere. Siden tokens henter sin pålitelighet fra å være vanskelig å reprodusere som et resultat av deres unike fysiske konstruksjon, forsvinner denne fordelen i det digitale riket. I det digitale riket kan ikke tokens stole på. Som et resultat av naturen til informasjonens iboende egenskaper, er det eneste levedyktige formatet for digitale penger ikke et symbol, men en hovedbok - som bringer oss til problemet med tid.
+På grunn av dette kan og vil aldri bruk av digitale “polletter” som penger fungere. Siden polletter henter sin pålitelighet fra å være vanskelige å reprodusere som et resultat av deres unike fysiske konstruksjon, forsvinner denne fordelen i det digitale riket. I det digitale riket kan ikke polletter stoles på. Som et resultat av naturen til informasjonens iboende egenskaper, er det eneste levedyktige formatet for digitale penger ikke en pollett, men en hovedbok - som bringer oss til problemet med tid.
 
-Tokens er tidløse, Ledgers er det ikke
+## Polletter er tidløse, hovedbøker er ikke
 
-For det som sees er midlertidig, men det usynlige er evig.
-Paulus av Tarsus, Korinterbrev 4:18b
-Når det gjelder fysiske tokens, spiller ikke tidspunktet for en transaksjon noen rolle. Enten har du myntene i lommen, eller så har du ikke; du kan enten bruke dem, eller så kan du ikke. Den enkle besittelseshandlingen er den eneste forutsetningen for utgifter. Naturlovene tar seg av resten. I den forstand er fysiske symboler tillitsløse og tidløse.
+> For det synlige varer en kort stund, men det usynlige er evig.
 
-Når det gjelder reskontro, faller fysisk besittelse til veie. Den som har kontroll over hovedboken må sørge for at ting er i orden. Det som ellers er gitt av fysiske lover, nemlig at du ikke kan bruke penger du ikke har, og du ikke kan bruke penger som du allerede har brukt tidligere, må håndheves av menneskeskapte regler. Det er disse reglene som styrer ryddig drift og vedlikehold av en hovedbok, ikke fysiske lover.
+– Paulus av Tarsus, _Korinterbrev_ 4:18b
 
-Å gå fra fysiske lover til menneskeskapte regler er sakens kjerne. Menneskeskapte regler kan bøyes og brytes, fysiske lover ikke så mye. For eksempel kan du ikke bare "sminke" en fysisk gullmynt. Du må grave den ut av bakken. Du kan imidlertid absolutt lage en gullmynt på papir. For å gjøre dette legger du bare til en oppføring i hovedboken og gir deg selv et par mynter. Eller, når det gjelder sentralbanker, legg til et par billioner med noen få tastetrykk på datamaskinen. (Fancy finansfolk kaller dette "rehypotekering", "fraksjonell reservebank" eller "kvantitativ lettelse" - men ikke la deg lure, det er det samme: å tjene penger.)
+Når det gjelder fysiske polletter, spiller ikke tidspunktet for en transaksjon noen rolle. Enten har du myntene i lommen, eller så har du ikke; du kan enten bruke dem, eller så kan du ikke det. Den enkle besittelseshandlingen er den eneste forutsetningen for å bruke pollettene. Naturlovene tar seg av resten. I den forstand er fysiske polletter tillitsløse og tidløse.
 
-For å holde reskontro og de som håndterer dem ærlige, kreves regelmessige, uavhengige revisjoner. Muligheten til å gjøre rede for hver enkelt oppføring i en hovedbok er ikke en luksus. Revisorer må kunne gå gjennom bøkene – bakover i tid – for å holde hovedboken ærlig og fungerende. Uten pålitelige tidsstempler er det umulig å verifisere den interne konsistensen til en hovedbok. En mekanisme for å etablere en entydig orden er avgjørende.
+Når det gjelder hovedbøker, faller fysisk besittelse til siden. Den som har kontroll over hovedboken må sørge for at ting er _i riktig rekkefølge_. Det som ellers er gitt av fysiske lover, nemlig at du ikke kan bruke penger du ikke har, og du ikke kan bruke penger som du allerede har blitt brukt tidligere, må håndheves av menneskeskapte regler. Det er disse reglene som styrer ryddig drift og vedlikehold av en hovedbok, ikke fysiske lover.
 
-Uten en absolutt følelse av tid, er det ingen måte å ha en definert rekkefølge for transaksjoner. Og uten en definert rekkefølge av transaksjoner, kan reglene for en hovedbok ikke følges. Hvordan ellers kan du være sikker på hvor mye penger du faktisk har? Hvordan kan du ellers sørge for at ting er i orden ?
+Å gå fra fysiske lover til menneskeskapte regler er sakens kjerne. Menneskeskapte regler kan bøyes og brytes, fysiske lover ikke fullt så mye. For eksempel kan du ikke bare “finne opp” en fysisk gullmynt. Du må grave den ut av bakken. Du kan imidlertid absolutt lage en gullmynt på papir. For å gjøre dette legger du bare til en oppføring i hovedboken og gir deg selv et par mynter. Eller, når det gjelder sentralbanker, legg til et par billioner med noen få tastetrykk på datamaskinen. (Fancy finansfolk kaller dette “rehypotekering”, “fraksjonell reservebank” eller “kvantitativ lettelse” - men ikke la deg lure, det er det samme: å finne opp penger.)
 
-Skillet mellom tokens og reskontro fremhever nødvendigheten av å holde styr på tiden. I det fysiske riket er mynter tidløse gjenstander som kan byttes uten tilsyn. I det digitale riket krever myntstempling tidsstempling.
+For å holde hovedbøker og de som håndterer dem ærlige, kreves regelmessige, uavhengige revisjoner. Muligheten til å gjøre rede for hver enkelt oppføring i en hovedbok er ikke en luksus. Revisorer må kunne gå gjennom bøkene – bakover i tid – for å holde hovedboken ærlig og fungerende. Uten pålitelige tidsstempler er det umulig å verifisere den interne konsistensen til en hovedbok. En mekanisme for å etablere en entydig rekkefølge er avgjørende.
 
-Sentralisert myntstempling
+Uten en absolutt oppfatning av tid, er det ingen måte å ha en definert rekkefølge for transaksjoner. Og uten en definert rekkefølge av transaksjoner, kan reglene for en hovedbok ikke følges. Hvordan ellers kan du være sikker på hvor mye penger du faktisk har? Hvordan kan du ellers sørge for at ting er i riktig rekkefølge?
 
-Tid: en flott gravør, eller viskelær.
-Yahia Lababidi (f. 1973)
+Skillet mellom polletter og hovedbøker fremhever nødvendigheten av å holde styr på tiden. I det fysiske riket er mynter tidløse gjenstander som kan byttes uten tilsyn. I det digitale riket krever myntstempling tidsstempling.
 
-Den vanlige måten å løse problemet med dobbeltforbruk - problemet med å sørge for at en digital overføring bare skjer én gang - er å ha en sentral liste over transaksjoner. Når du har en sentral liste over transaksjoner, har du en enkelt hovedbok som kan fungere som den eneste kilden til sannhet. Å løse problemet med dobbeltforbruk er like enkelt som å gå gjennom listen og sørge for at alt stemmer. Dette er hvordan PayPal, Venmo, Alipay og alle bankene i denne verden - inkludert sentralbanker - løser problemet med dobbeltforbruk: via sentral myndighet.
+## Sentralisert myntstempling
 
-> Problemet er selvfølgelig at betalingsmottakeren ikke kan bekrefte at en av eierne ikke dobbeltbrukte mynten. En vanlig løsning er å introdusere en pålitelig sentral myndighet, eller mynt, som sjekker hver transaksjon for dobbeltforbruk. […] Problemet med denne løsningen er at skjebnen til hele pengesystemet avhenger av selskapet som driver mynten, og hver transaksjon må gå gjennom dem, akkurat som en bank.
+> Tid: en flott gravør, eller viskelær.
 
-Satoshi Nakamoto (2009)
+– Yahia Lababidi (f. 1973)
 
-Det er verdt å påpeke at Satoshi ikke klarte å gjøre informasjon ikke-kopierbar. Hver del av bitcoin - kildekoden, hovedboken, din private nøkkel - kan kopieres. Alt kan dupliseres og tukle med. Satoshi klarte imidlertid å bygge et system som gjør regelbrytende kopier fullstendig og ubrukelig. Bitcoin-nettverket utfører en intrikat dans for å bestemme hvilke kopier som er nyttige og hvilke som ikke er det, og det er denne dansen som bringer knapphet inn i det digitale riket. Og som med enhver dans, kreves det en tidsmessig målestokk for å diktere rytmen.
+Den vanlige måten å løse problemet med dobbeltbruk - problemet med å sørge for at en digital overføring bare skjer én gang - er å ha en sentral liste over transaksjoner. Når du har en sentral liste over transaksjoner, har du en enkel hovedbok som kan fungere som den eneste kilden til sannhet. Å løse problemet med dobbeltbruk er like enkelt som å gå gjennom listen og sørge for at alt stemmer. Dette er hvordan PayPal, Venmo, Alipay og alle bankene i denne verden - inkludert sentralbanker - løser problemet med dobbeltbruk: via sentral myndighet.
 
-Selv en sentralisert hovedbok kan bare løse problemet med dobbeltforbruk hvis den har en konsekvent måte å holde oversikt over tid på. Du må alltid vite hvem som ga hvor mye til hvem og, viktigst av alt: når. På informasjonsområdet er det ingen myntstempling uten tidsstempling.
+> Problemet er selvfølgelig at betalingsmottakeren ikke kan bekrefte at en av eierne ikke dobbeltbrukte mynten. En vanlig løsning er å introdusere en pålitelig sentral myndighet, eller myntverk, som sjekker hver transaksjon for dobbeltbruk. […] Problemet med denne løsningen er at skjebnen til hele pengesystemet avhenger av selskapet som driver myntverket, og hver transaksjon må gå gjennom dem, akkurat som en bank.
 
-Det må understrekes at umuligheten av å assosiere hendelser med tidspunkter i distribuerte systemer var det uløste problemet som hindret en desentralisert hovedbok fra å være mulig før Satoshi Nakamoto fant opp en løsning.
+– Satoshi Nakamoto (2009)
 
-Gregory Trubet skoy (2018)
-Desentralisert tid
-Tiden bringer alle ting til å passere.
-Aischylos (525 f.Kr. – 456 f.Kr.)
-Tid og orden har et veldig intimt forhold. Som Leslie Lamport påpekte i sin artikkel fra 1978 Time, Clocks, and the Ordering of Events in a Distrib uted System: «Begrepet tid er grunnleggende -for vår måte å tenke på. Det er avledet fra det mer grunnleggende konseptet om rekkefølgen hendelser inntreffer." Fraværende et sentralt punkt for koordinering, brytes tilsynelatende intuitive forestillinger om «før», «etter» og «samtidig» sammen. Med Lamports ord: "begrepet 'å skje før' definerer en invariant delvis rekkefølge av hendelsene i et distribuert multiprosesssystem."
+Det er verdt å påpeke at Satoshi ikke klarte å gjøre informasjon ikke-kopierbar. Hver del av bitcoin - kildekoden, hovedboken, din private nøkkel - kan kopieres. Alt kan dupliseres og tukle med. Satoshi klarte imidlertid å bygge et system som gjør regelbrytende kopier fullstendig ubrukelige. Bitcoin-nettverket utfører en intrikat dans for å bestemme hvilke kopier som er nyttige og hvilke som ikke er det, og det er denne dansen som bringer knapphet inn i det digitale riket. Og som med enhver dans, kreves det en tidsmessig målestokk for å diktere rytmen.
+
+Selv en sentralisert hovedbok kan bare løse problemet med dobbeltbruk hvis den har en konsekvent måte å holde oversikt over tid på. Du må alltid vite hvem som ga hvor mye til hvem og, viktigst av alt: _når_. I informasjonsriket er det ingen myntstempling uten tidsstempling.
+
+> Det må understrekes at _umuligheten av å assosiere hendelser med tidspunkter_ i distribuerte systemer var det uløste problemet som hindret en desentralisert hovedbok fra å være mulig før Satoshi Nakamoto fant opp en løsning.
+
+Gregory Trubetskoy (2018)
+
+## Desentralisert tid
+
+> Tiden får alle ting til å gå over.
+
+– [Aischylos](https://no.wikipedia.org/wiki/Aiskhylos) (525 f.Kr. – 456 f.Kr.)
+
+Tid og rekkefølge har et veldig intimt forhold. Som Leslie Lamport påpekte i sin artikkel fra 1978 _Time, Clocks, and the Ordering of Events in a Distrib uted System_: “Begrepet tid er grunnleggende for vår måte å tenke på. Det er avledet fra det mer grunnleggende konseptet om rekkefølgen hendelser inntreffer.” Fraværende et sentralt punkt for koordinering, brytes tilsynelatende intuitive forestillinger om «før», «etter” og «samtidig» sammen. Med Lamports ord: «begrepet ‘å skje før’ definerer en invariant delvis rekkefølge av hendelsene i et distribuert multiprosesssystem.»
 
 Ulikt formulert: Hvem skal ha ansvaret for tiden hvis det ikke er lov å sette noen til å styre? Hvordan kan du ha en pålitelig klokke hvis det ikke er noen sentral referanseramme?
 Du tror kanskje at det er enkelt å løse dette problemet fordi alle bare kan bruke sin egen klokke. Dette fungerer bare hvis hver -enkelt klokke er nøyaktig, og enda viktigere, alle spiller bra. I et motstridende system ville det være en katastrofe å stole på individuelle klokker. Og på grunn av relativitet fungerer det ikke konsekvent på tvers av rommet.
@@ -158,7 +165,7 @@ De fleste klokker har en fast frekvens. Tross alt vil vi vite klokkeslettet nøy
 
 Det faktum at Bitcoin er en klokke skjuler seg i alle fall. Faktisk påpeker Satoshi at Bitcoin-nettverket som helhet fungerer som en klokke, eller, med hans ord: en distribuert tidsstempelserver.
 
-> I denne artikkelen foreslår vi en løsning på problemet med dobbeltforbruk ved å bruke en peer-to-peer-distribuert tidsstempelserver for å generere beregningsbevis for den kronologiske rekkefølgen av transaksjoner.
+> I denne artikkelen foreslår vi en løsning på problemet med dobbeltbruk ved å bruke en peer-to-peer-distribuert tidsstempelserver for å generere beregningsbevis for den kronologiske rekkefølgen av transaksjoner.
 
 – Satoshi Nakamoto (2009)
 
@@ -243,7 +250,7 @@ Alle puslespillbrikkene var der allerede. Det Satoshi klarte å gjøre er å set
 
 – Ovid, Metamorfoser, IV. 287 (8 e.Kr.)
 
-La oss oppsummere: For å bruke penger i det digitale riket, må vi stole på reskontro. For å gjøre reskontroer pålitelige, kreves det entydig rekkefølge. For å etablere rekkefølge er tidsstempler nødvendig. Derfor, hvis vi ønsker å ha tillit mindre penger i det digitale riket, må vi fjerne enhver enhet som lager og administrerer tidsstempler og enhver enkelt enhet som har ansvaret for tiden selv.
+La oss oppsummere: For å bruke penger i det digitale riket, må vi stole på hovedbøker. For å gjøre hovedbøkerer pålitelige, kreves det entydig rekkefølge. For å etablere rekkefølge er tidsstempler nødvendig. Derfor, hvis vi ønsker å ha tillit mindre penger i det digitale riket, må vi fjerne enhver enhet som lager og administrerer tidsstempler og enhver enkelt enhet som har ansvaret for tiden selv.
 
 Det krevde et geni som Satoshi Nakamoto for å realisere løsningen: "For å implementere en distribuert tidsstempelserver på peer-to-peer-basis, må vi bruke et proof-of-work-system som ligner på Adam Backs Hashcash."
 
@@ -314,7 +321,7 @@ Dette er kjent som en kjededeling og er en naturlig prosess for Nakamoto-konsens
 
 Nakamoto-konsensus sier ganske enkelt at den korrekte historien er å finne i den tyngste kjeden, dvs. kjeden med mest mengde bevis-på-arbeid innebygd i den. Derfor, hvis vi har to -historier A og B, vil noen gruvearbeidere prøve å bygge på historie A, andre vil prøve å bygge på historie B. Så snart en av dem finner den neste gyldige blokken, er den andre gruppen programmert til å akseptere at de var på feil side av historien og går over til den tyngste kjeden - kjeden som representerer det som faktisk skjedde, per definisjon. I Bitcoin er historien virkelig skrevet av seierherrene.
 
-> Betalingsmottakeren trenger bevis på at på tidspunktet for hver transaksjon var flertallet av nodene enige om at det var den første mottatt. […] Når det er flere dobbeltbrukte versjoner av samme transaksjon, vil én og bare én bli gyldig. Mottakeren av en betaling må vente en time eller så før han tror at den er gyldig. Nettverket vil løse eventuelle dobbeltforbruksløp innen den tid.
+> Betalingsmottakeren trenger bevis på at på tidspunktet for hver transaksjon var flertallet av nodene enige om at det var den første mottatt. […] Når det er flere dobbeltbrukte versjoner av samme transaksjon, vil én og bare én bli gyldig. Mottakeren av en betaling må vente en time eller så før han tror at den er gyldig. Nettverket vil løse eventuelle dobbeltbruksløp innen den tid.
 
 – Satoshi Nakamoto (2009)
 
@@ -341,7 +348,7 @@ Klokken er ikke nøyaktig; det går noen ganger i revers. Nøyaktig tid innebær
 
 – Jorge Cham og Daniel Whiteson: We Have No Idea: A Guide to the Unknown Universe, s. 117 – 118 (2017)
 
-Å holde styr på ting i informasjonsområdet innebærer å holde styr på en hendelsesforløp, som igjen krever å holde styr på tiden. Å holde styr på tiden krever at man blir enige om et "nå" - et øyeblikk i tid som for evig forbinder den fastslåtte fortiden med den usikre fremtiden. I Bitcoin er dette "nå" spissen av den tyngste bevis-på-arbeid-kjeden.
+Å holde styr på ting i informasjonsriket innebærer å holde styr på en hendelsesforløp, som igjen krever å holde styr på tiden. Å holde styr på tiden krever at man blir enige om et "nå" - et øyeblikk i tid som for evig forbinder den fastslåtte fortiden med den usikre fremtiden. I Bitcoin er dette "nå" spissen av den tyngste bevis-på-arbeid-kjeden.
 
 To byggeklosser er essensielle for tidens struktur: årsakssammenhenger og uforutsigbare hendelser. Det kreves årsakssammenhenger for å definere en fortid, og uforutsigbare hendelser kreves for å bygge en fremtid. Hvis hendelsesforløpet ville være forutsigbart, ville det være mulig å hoppe videre. Hvis de individuelle trinnene i sekvensen ikke er koblet sammen, ville det være trivielt å endre fortiden. På grunn av den interne tidsfølelsen er det vanvittig vanskelig å jukse Bitcoin. Man måtte omskrive fortiden eller forutsi fremtiden. Bitcoins tidskjede forhindrer begge deler.
 
