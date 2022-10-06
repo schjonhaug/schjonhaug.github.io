@@ -6,7 +6,7 @@ image: "/assets/wireframes.png"
 categories: swiftui ios
 ---
 
-![Wireframes by Martina Wolna](/assets/wireframes.jpg)
+![Wireframes by Martina Wolna](/assets/wireframes.png)
 
 I’ve been playing around with [SwiftUI](https://developer.apple.com/documentation/swiftui) and [Combine](https://developer.apple.com/documentation/combine) lately, and had that chance to write my first production ready app a while back. The app had an onboarding process consisting of several views pushed to a [NavigationView](https://developer.apple.com/documentation/swiftui/navigationview). After finishing the onboarding, we wanted to show switch to a home view, which would be the basis of operation from the on out.
 
