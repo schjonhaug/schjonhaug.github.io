@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Running Bitcoin Core on a Raspberry Pi"
+title: Running Bitcoin Core on a Raspberry Pi
 description: "How to set up a full Bitcoin node on a Raspberry Pi 4, using the command line."
 image: "/assets/bitcoin-core-on-a-raspberry-pi.png"
 date: 2022-08-20 21:48:21 +0200
@@ -165,19 +165,34 @@ Bitcoin Core RPC client version v23.0.0
 
 Since we’re using the Raspberry Pi as a dedicated Bitcoin full node, we‘ll want the daemon to start whenever the machine boots.
 
-To do so, edit your crontab by running the following command:
+To do so, let’s create a new [system service](https://github.com/bitcoin/bitcoin/blob/master/doc/init.md) file:
 
 ```bash
-crontab -e
+sudo nano /etc/systemd/system/bitcoind.service
 ```
 
-And append the following:
+Here‚ we’ll paste in the content from [bitcoind.service](https://raw.githubusercontent.com/bitcoin/bitcoin/v23.0/contrib/init/bitcoind.service), doing some changes:
 
-```
-@reboot /usr/local/bin/bitcoind -daemon -datadir=/media/ssd/bitcoin
+- Set the conf to `/media/ssd/bitcoin/bitcoin.conf \`
+- Set the datadir to `/media/ssd/bitcoin`
+- Set the values of `User` and `Group` to `satoshi`.
+
+Save the file and exit.
+
+We now need to create a PID file:
+
+```shell
+sudo mkdir /run/bitcoind
+sudo chown satoshi:satoshi /run/bitcoind/
+echo $$ > /run/bitcoind/bitcoind.pid
 ```
 
-Save the file and exit. Now the bitcoin daemon will start whenever your system boots.
+Enable the systemd setup with the following commands:
+
+```shell
+sudo systemctl enable bitcoind
+sudo systemctl start bitcoind
+```
 
 ## Reboot and check that everything works
 

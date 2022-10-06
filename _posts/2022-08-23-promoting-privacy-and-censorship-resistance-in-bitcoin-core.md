@@ -125,7 +125,7 @@ uid=1000(satoshi) gid=1000(satoshi) groups=1000(satoshi),4(adm),20(dialout),24(c
 
 ### Configure Bitcoin Core
 
-Let’s create a configuration file to let Bitcoin Core to use Tor:
+Let’s create a configuration file to let Bitcoin Core use Tor:
 
 ```bash
 sudo touch /media/ssd/bitcoin/bitcoin.conf 
