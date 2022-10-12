@@ -112,93 +112,91 @@ Tid og rekkefølge har et veldig intimt forhold. Som Leslie Lamport påpekte i s
 
 Formulert på en annen måte: Hvem skal ha ansvaret for tiden hvis det ikke er lov å sette noen til å styre? Hvordan kan du ha en pålitelig klokke hvis det ikke er noen sentral referanseramme?
 
-Du tror kanskje at det er enkelt å løse dette problemet fordi alle bare kan bruke sin egen klokke. Dette fungerer bare hvis hver -enkelt klokke er nøyaktig, og enda viktigere, alle spiller bra. I et motstridende system ville det være en katastrofe å stole på individuelle klokker. Og på grunn av relativitet fungerer det ikke konsekvent på tvers av rommet.
+Du tror kanskje at det er enkelt å løse dette problemet fordi alle bare kan bruke sin egen klokke. Dette fungerer bare hvis hver enkelt klokke er nøyaktig, og enda viktigere, alle følger reglene. I et motstridende system ville det være en katastrofe å stole på individuelle klokker. Og på grunn av relativitet fungerer det ikke konsekvent på tvers av rommet.
+
 Som et tankeeksperiment, forestill deg hvordan du kunne jukse systemet hvis alle hadde ansvaret for å holde tiden for seg selv. Du kan late som om transaksjonen du sender nå faktisk er fra i går – den ble bare forsinket av en eller annen grunn – og dermed ville du fortsatt ha alle pengene du har brukt i dag. På grunn av den asynkrone kommunikasjonen som er iboende i ethvert desentralisert system, er dette scenariet mer enn et teoretisk tankeeksperiment. Meldinger blir faktisk forsinket, tidsstempler er unøyaktige, og takket være relativistiske effekter og den naturlige fartsgrensen til universet vårt, er det alt annet enn enkelt å skille rekkefølgen på ting som mangler en sentral autoritet eller observatør.
 
 > Hvem er der? Bank bank.
 
 En asynkron spøk
 
-For bedre å illustrere problemets umulighet, la oss se på et konkret eksempel. Tenk deg at du og din forretningspartner begge har tilgang til firmaets bankkonto. Du driver forretninger over hele verden, så bankkontoen din er i Sveits, du er i New York, og forretningspartneren din er i Sydney. For deg er det 3. januar^, og du nyter en vakker søndagskveld på hotellet ditt. For henne er det allerede mandag morgen, så hun bestemmer seg for å kjøpe frokost med debetkortet til din delte bankkonto. Prisen er $27. Den tilgjengelige saldoen er $615. Lokal tid er 08:21.
+For bedre å illustrere problemets umulighet, la oss se på et konkret eksempel. Tenk deg at du og din forretningspartner begge har tilgang til firmaets bankkonto. Dere driver forretninger over hele verden, så bankkontoen deres er i Sveits, du er i New York, og forretningspartneren din er i Sydney. For deg er det 3. januar, og du nyter en vakker søndagskveld på hotellet ditt. For henne er det allerede mandag morgen, så hun bestemmer seg for å kjøpe frokost med debetkortet til deres delte bankkonto. Prisen er 27 $. Den tilgjengelige saldoen er 615 $. Lokal tid er 08:21.
 
-Samtidig er du i ferd med å betale for oppholdet med et annet debetkort knyttet til samme bankkonto. Prisen er $599. Den tilgjengelige saldoen er $615. Lokal tid er 17:21.
+Samtidig er du i ferd med å betale for oppholdet med et annet debetkort knyttet til samme bankkonto. Prisen er 599 $. Den tilgjengelige saldoen er 615 $. Lokal tid er 17:21.
 
 ![Alice Bob Bank](/assets/alice-bob-bank.jpeg)
 
-Så det kommer til å være at - i nøyaktig samme øyeblikk - dere begge sveiper kortet. Hva skjer? (Kjære fysikere, unnskyld min bruk av «det samme øyeblikk» – vi vil ignorere relativistiske effekter og det faktum at det ikke er noen absolutt tid i universet vårt foreløpig. Vi vil også ignorere at konseptet med synkrone hendelser egentlig ikke stemmer overens. eksisterer. Bitcoin er komplisert nok som det er!)
+Så faller det seg slik at - i nøyaktig samme øyeblikk - sveiper dere begge kortet. Hva skjer? (Kjære fysikere, unnskyld min bruk av «det samme øyeblikk» – vi ignorerer relativistiske effekter og det faktum at det ikke er noen absolutt tid i universet vårt for nå. Vi ignorerer også  at konseptet med synkrone hendelser egentlig ikke eksisterer. Bitcoin er komplisert nok som det er!)
 
-Hovedboken i banken din vil sannsynligvis motta en transaksjon før den andre, så en av dere vil være heldig, den andre ikke så mye. Hvis transaksjonene tilfeldigvis kommer i samme hake - la oss si i samme millisekund - må banken bestemme hvem som får bruke pengene.
+Hovedboken i banken din vil sannsynligvis motta en transaksjon før den andre, så en av dere vil være heldig, den andre ikke fullt så mye. Hvis transaksjonene tilfeldigvis kommer i samme _tikk_ - la oss si i samme millisekund - må banken bestemme hvem som får bruke pengene.
 
-Nå, hva ville skje hvis det ikke var noen bank? Hvem bestemmer hvem som var den første til å sveipe? Hva om det ikke bare var dere to, men hundrevis eller til og med tusenvis av mennesker som koordinerte ? Hva om du ikke stolte på de menneskene? Hva om noen av disse menneskene prøver å jukse, for eksempel ved å stille klokken tilbake slik at det ser ut som de brukte pengene et par minutter tidligere?
+Nå, hva ville skje hvis det ikke var noen bank? Hvem bestemmer hvem som var den første til å sveipe? Hva om det ikke bare var dere to, men hundrevis eller til og med tusenvis av mennesker som skulle koordinere dette? Hva om du ikke stolte på disse menneskene? Hva om noen av disse menneskene prøver å jukse, for eksempel ved å stille klokken tilbake slik at det ser ut som de brukte pengene et par minutter tidligere?
 
 > Et tidsrelatert verktøy [er] nødvendig for å etablere en kanonisk orden og for å håndheve en unik historie i fravær av noen sentral koordinator.
 
-– Giacomo Zucco, Oppdag Bitcoin (2019)
+– Giacomo Zucco, [_Discovering Bitcoin_](https://bitcoinmagazine.com/articles/discovering-bitcoin-a-brief-overview-from-cavemen-to-the-lightning-network) (2019)
 
-Dette problemet er nettopp grunnen til at alle tidligere forsøk på digitale kontanter krevde et sentralisert register. Du måtte alltid stole på noen for å identifisere tingenes rekkefølge. Et sentralisert parti var påkrevd for å holde tiden.
+Dette problemet er _nettopp_ grunnen til at alle tidligere forsøk på digitale kontanter krevde et sentralisert register. Du måtte alltid stole på noen for å identifisere tingenes rekkefølge. Et sentralisert parti var påkrevd for å holde tiden.
+
 Bitcoin løser dette problemet ved å finne opp selve tiden på nytt. Den sier nei til sekunder og ja til blokker.
 
 ## Holde tiden, en blokk om gangen
 
 > Tidens ære er å berolige stridende konger,
-å avsløre falsk hette og bringe sannhet frem i lyset,
+å avsløre falskhet og bringe sannhet frem i lyset,
 å stemple tidens segl i gamle ting, å vekke morgenen og vaktposten om natten, å urett den urettferdige til han gjør rett;
 
-William Shakespeare, The Rape of Lucrece (1594)
+William Shakespeare, _The Rape of Lucrece_ (1594)
 
-Alle klokker er avhengige av periodiske prosesser, noe vi kan kalle en "tikk". Den velkjente tikk-takken til en bestefarsklokke er i hovedsak det samme som den molekylæratomiske summingen til våre moderne kvarts- og cesiumklokker. Noe svinger - eller svinger - og vi teller ganske enkelt disse svingningene til det blir et minutt eller et sekund.
+Alle klokker er avhengige av periodiske prosesser, noe vi kan kalle et «tikk». Den velkjente _tikk-takken- til en bestefarsklokke er i hovedsak det samme som den molekylæratomiske summingen til våre moderne kvarts- og cesiumklokker. Noe svinger - eller oscillerer - og vi teller ganske enkelt disse svingningene til det blir et minutt eller et sekund.
 
 For store pendelklokker er disse svingene lange og lette å se. For mindre og mer spesialiserte klokker kreves spesialutstyr. Frekvensen til en klokke - hvor ofte den tikker - avhenger av bruksområdet.
 
-De fleste klokker har en fast frekvens. Tross alt vil vi vite klokkeslettet nøyaktig. Det finnes imidlertid klokker som har en variabel frekvens. En metronom har for eksempel en variabel frekvens som du kan stille inn før du får den til å tikke. Mens en metronom holder tempoet konstant når den er satt, varierer Bitcoins tid for hver hake fordi dens interne mekanisme er sannsynlig. Hensikten er imidlertid den samme: holde musikken i live, så dansen kan fortsette.
+De fleste klokker har en fast frekvens. Tross alt vil vi vite klokkeslettet _nøyaktig_. Det finnes imidlertid klokker som har en variabel frekvens. En metronom har for eksempel en variabel frekvens som du kan stille inn før du får den til å tikke. Mens en metronom holder tempoet konstant når den er satt, varierer Bitcoins tid for hvert tikk fordi dens interne mekanisme er probabilistisk. Hensikten er imidlertid den samme: holde musikken i live, så dansen kan fortsette.
 
 |           Klokke          |             Tikkefrekvens              |
 |:-------------------------:|:--------------------------------------:|
-| Bestefarsklokke           | ~0.5 Hz                                |
-| Metronom                  | ~0.67 Hz til ~4.67 Hz                  |
+| Bestefarsklokke           | ~0,5 Hz                                |
+| Metronom                  | ~0,67 Hz til ~4,67 Hz                  |
 | Kvartsur                  | 32 768 Hz                              |
-| Cesium-133 amotisk klokke | 9 192 631 770 Hz                       |
-| Bitcoin                   | 1 blokk (0.00000192901 Hz* til ∞ Hz**) |
+| Cesium-133 atomisk klokke | 9 192 631 770 Hz                       |
+| Bitcoin                   | 1 blokk (0,00000192901 Hz* til ∞ Hz**) |
 
 \* første blokk (6 dager)
 
 \*\* tidsstempler mellom blokker kan vise et negativt delta
 
-Det faktum at Bitcoin er en klokke skjuler seg i alle fall. Faktisk påpeker Satoshi at Bitcoin-nettverket som helhet fungerer som en klokke, eller, med hans ord: en distribuert tidsstempelserver.
+Det faktum at Bitcoin er en klokke skjuler seg rett foran nesen på en. Faktisk påpeker Satoshi at Bitcoin-nettverket som helhet fungerer som en klokke, eller, med hans ord: en distribuert tidsstempelserver.
 
 > I denne artikkelen foreslår vi en løsning på problemet med dobbeltbruk ved å bruke en peer-to-peer-distribuert tidsstempelserver for å generere beregningsbevis for den kronologiske rekkefølgen av transaksjoner.
 
 – Satoshi Nakamoto (2009)
 
-At tidsstempling var rotproblemet som skulle løses, er også tydelig ved å undersøke referansen på slutten av Bitcoin Whitepaper. Av de totalt åtte referansene handler tre om tidsstempling:
+At tidsstempling var hovedproblemet som skulle løses, er også tydelig ved å undersøke referansen på slutten av Bitcoin whitepaper. Av de totalt åtte referansene handler tre om tidsstempling:
 
-* Hvordan tidsstemple et digitalt dokument av S. Haber, WS Stornetta (1991)
-* Forbedring av effektiviteten og påliteligheten til digital tidsstempling av D. Bayer, S. Haber, WS Stornetta (1992)
-* Design av en sikker tidsstemplingstjeneste med minimale tillitskrav av H. Massias, XS Avila og J.-J. Quisquater (mai 1999)
+* _Hvordan tidsstemple et digitalt dokument_ av S. Haber, W. S. Stornetta (1991)
+* _Forbedring av effektiviteten og påliteligheten til digital tidsstempling_ av D. Bayer, S. Haber, W. S. Stornetta (1992)
+* _Design av en sikker tidsstemplingstjeneste med minimale tillitskrav_ av H. Massias, X. S. Avila og J.-J. Quisquater (mai 1999)
 
-Som Haber og Stornetta skisserte i 1991, handler digital tidsstempling om beregningsmessig praktiske prosedyrer som gjør det umulig for en bruker – eller en motstander, for den saks skyld – å enten tilbakedatere eller videredatere et digitalt dokument. I motsetning til fysiske dokumenter, er digitale dokumenter enkle å tukle med, og endringen etterlater ikke nødvendigvis noen avslørende tegn på selve det fysiske mediet. I det digitale riket kan forfalskninger og manipulasjoner være perfekte.
+Som Haber og Stornetta skisserte i 1991, handler digital tidsstempling om beregningsmessige praktiske prosedyrer som gjør det umulig for en bruker – eller en motstander, for den saks skyld – å enten tilbake- eller fremoverdatere et digitalt dokument. I motsetning til fysiske dokumenter, er digitale dokumenter enkle å tukle med, og endringen etterlater ikke nødvendigvis noen avslørende tegn på selve det fysiske mediet. I det digitale riket kan forfalskninger og manipulasjoner være perfekte.
 
-Informasjonens formbare natur gjør tidsstempling av digitale dokumenter til en forseggjort og sofistikert prosess. Naive løsninger fungerer ikke. Ta for eksempel et tekstdokument. Du kan ikke bare legge til datoen på slutten av dokumentet siden alle – inkludert deg selv – ganske enkelt kan endre datoen i fremtiden. Du kan også finne på hvilken som helst date i utgangspunktet.
+Informasjonens formbare natur gjør tidsstempling av digitale dokumenter til en forseggjort og sofistikert prosess. Naive løsninger fungerer ikke. Ta for eksempel et tekstdokument. Du kan ikke bare legge til datoen på slutten av dokumentet siden alle – inkludert deg selv – ganske enkelt kan endre datoen i fremtiden. Du kan også finne på hvilken som helst dato i utgangspunktet.
 
 ## Tid er en kausal kjede
 
 > I et ekstremt syn kan verden sees som bare forbindelser, ingenting annet.
 
-Tim Berners-Lee, Weaving the Web (1999)
+– Tim Berners-Lee, _Weaving the Web_ (1999)
 
-Å finne på datoer er et generelt problem, selv i det ikke-digitale området. Det som i kidnappingsverdenen er kjent som "Autentisering av avisen" er en generell løsning på problemet med vilkårlige tidsstempler.
+Å finne på datoer er et generelt problem, selv i det ikke-digitale riket. Det som i kidnappingsverdenen er kjent som «autentisering med avis» er en generell løsning på problemet med vilkårlige tidsstempler.
 
 ![Tidsbevis](/assets/proof-of-time.jpeg)
 
-Tidsbevis
+Dette fungerer fordi en avis er vanskelig å forfalske og lett å verifisere. Den er vanskelig å forfalske fordi dagens forside viser til gårsdagens hendelser, hendelser som ikke kunne vært forutsett av kidnapperen hvis bildet ville vært flere uker gammelt. Indirekte av disse hendelsene er bildet et bevis på at gisselet fortsatt var i live den dagen avisen kom ut.
 
-Dette fungerer fordi en avis er vanskelig å forfalske og lett å verifisere. Det er vanskelig å forfalske fordi dagens forside viser til gårsdagens hendelser, hendelser som ikke kunne vært forutsagt av kidnapperen hvis bildet ville vært uker gammelt. Ved fullmakt av disse hendelsene er bildet et bevis på at gisselet fortsatt var i live den dagen avisen kom ut.
-
-Denne metoden fremhever et av nøkkelbegrepene når det kommer til tid: kausalitet. Tidens pil beskriver årsakssammenhengen mellom hendelser. Ingen årsakssammenheng, ingen tid. Kausalitet er også grunnen til at kryptografiske hasjfunksjoner er så avgjørende når det kommer til tidsstempling av dokumenter i cyberspace: de introduserer en årsakssammenheng. Siden det er praktisk talt umulig å lage en gyldig kryptografisk hash uten å ha dokumentet i utgangspunktet, introduseres en årsakssammenheng mellom dokumentet og hasjen: de aktuelle dataene eksisterte først, hasjen ble generert senere. Med andre ord: uten den beregningsmessige irreversibiliteten til enveisfunksjoner, ville det ikke vært noen kausalitet i cyberspace.
+Denne metoden fremhever et av nøkkelbegrepene når det kommer til tid: _kausalitet_. Tidens pil beskriver årsakssammenhengen mellom hendelser. Ingen årsakssammenheng, ingen tid. Kausalitet er også grunnen til at kryptografiske hashfunksjoner er så avgjørende når det kommer til tidsstempling av dokumenter i cyberspace: de introduserer en årsakssammenheng. Siden det praktisk talt er umulig å lage en gyldig kryptografisk hash uten å ha dokumentet i utgangspunktet, introduseres en årsakssammenheng mellom dokumentet og hashen: de aktuelle dataene eksisterte først, hashen ble generert senere. Med andre ord: uten den beregningsmessige irreversibiliteten til enveisfunksjoner, ville det ikke vært noen kausalitet i cyberspace.
 
 ![A før B](/assets/sha256.jpeg)
-
-A før B
 
 Med denne årsaksbyggesteinen på plass, kan man komme opp med ordninger som skaper en kjede av hendelser, som kausalt knytter A til B til C og så videre. Slik sett flytter sikker digital tidsstempling oss fra et tidløst sted i eteren til den digitale historiens rike.
 
@@ -212,9 +210,9 @@ Det sier seg selv at årsakssammenheng er av største betydning når det gjelder
 
 – Satoshi Nakamoto (2009)
 
-Det er fascinerende at alle puslespillbrikkene som får Bitcoin til å fungere allerede eksisterte. Allerede i 1991 introduserte Haber og Stornetta to ordninger som gjør det «vanskelig eller umulig å produsere falske tidsstempler». Den første er avhengig av en pålitelig tredjepart; den andre, mer forseggjorte "distribuert tillit"-ordningen, gjør det ikke. Forfatterne identifiserte til og med de iboende problemene med å stole på en kausal kjede av hendelser og hva som ville være nødvendig for å omskrive historien. Med deres ord, "den eneste mulige forfalskningen er å forberede en falsk kjede med tidsstempler, lang nok til å slite ut den mest mistenkelige utfordreren som man forventer." En lignende angrepsvektor finnes i Bitcoin i dag, i form av et 51% angrep (mer om det i et senere kapittel).
+Det er fascinerende at alle puslespillbrikkene som får Bitcoin til å fungere allerede eksisterte. Så tidlig som i 1991 introduserte Haber og Stornetta to ordninger som gjør det «vanskelig eller umulig å produsere falske tidsstempler». Den første er avhengig av en pålitelig tredjepart; den andre, mer forseggjorte «distribuert tillit»-ordningen, gjør det ikke. Forfatterne identifiserte til og med de iboende problemene med å stole på en kausal kjede av hendelser og hva som ville være nødvendig for å omskrive historien. Med deres egne ord, «den eneste mulige forfalskningen er å forberede en falsk kjede med tidsstempler, lang nok til å slite ut den mest mistenkelige utfordreren som man forventer.» En lignende angrepsvektor finnes i Bitcoin i dag, i form av et 51% angrep (mer om det i et senere kapittel).
 
-Ett år senere bygde Bayer, Haber og Stornetta på sitt tidligere arbeid og foreslo å bruke trær i stedet for enkle lenkede lister for å knytte hendelser sammen. Det vi kjenner som Merkle Trees i dag er rett og slett effektive datastrukturer for å lage en hash fra flere hasher deterministisk. For tidsstempling betyr dette at du effektivt kan samle flere hendelser i en "hake". I det samme papiret foreslår forfatterne at den distribuerte tillitsmodellen som ble introdusert i 1991 kan forbedres ved å gjennomføre en tilbakevendende "verdensmesterskapsturnering" for å avgjøre en enkelt "vinner" som publiserer den resulterende hasjen bredt et sted offentlig, som en avis. Høres kjent ut?
+Ett år senere bygde Bayer, Haber og Stornetta på sitt tidligere arbeid og foreslo å bruke trær i stedet for enkle lenkede lister for å knytte hendelser sammen. Det vi i dag kjenner som Merkle Trees er rett og slett effektive datastrukturer for å lage en hash fra flere hasher deterministisk. For tidsstempling betyr dette at du effektivt kan samle flere hendelser i et «tikk». I det samme papiret foreslår forfatterne at den distribuerte tillitsmodellen som ble introdusert i 1991 kan forbedres ved å gjennomføre en gjentakende «verdensmesterskapsturnering» for å avgjøre en enkelt «vinner» som publiserer den resulterende hashen bredt et sted offentlig, som i en avis. Høres kjent ut?
 
 Som vi skal se, viser det seg at aviser også er en utmerket måte å tenke på tidens andre ingrediens: uforutsigbarhet.
 
@@ -222,9 +220,9 @@ Som vi skal se, viser det seg at aviser også er en utmerket måte å tenke på 
 
 > Tid er ikke en realitet [hupostasis], men et konsept [noêma] eller et mål [metron]…
 
-– Antiphon the Sophist, On Truth (3. århundre e.Kr.)
+– Sofisten Antiphon, _On Truth_ (3. århundre e.Kr.)
 
-Selv om årsakssammenheng er vesentlig, er det ikke tilstrekkelig. Vi trenger også uforutsigbarhet for at tiden skal flyte. I det fysiske riket observerer vi naturlige prosesser for å beskrive strømmen av tid. Vi observerer en generell økning i entropi og kaller det tidens pil. Selv om naturlovene ser ut til å være uvitende med hensyn til retningen til denne pilen i de fleste tilfeller, kan visse ting praktisk talt ikke omgjøres. Du kan ikke dekryptere et egg, som de sier.
+Selv om årsakssammenheng er vesentlig, er det ikke tilstrekkelig. Vi trenger også _uforutsigbarhet- for at tiden skal flyte. I det fysiske riket observerer vi naturlige prosesser for å beskrive strømmen av tid. Vi observerer en generell økning i entropi og kaller det tidens pil. Selv om naturlovene ser ut til å være uvitende med hensyn til retningen til denne pilen i de fleste tilfeller, kan visse ting praktisk talt ikke omgjøres. Du kan ikke gå fra røre til egg, for å si det sånn.
 
 På samme måte kreves det entropiøkende funksjoner for å etablere en tidspil i det digitale riket. Akkurat som det er praktisk talt umulig å dekryptere et egg, er det praktisk talt umulig å dekryptere en SHA256-hash eller kryptografisk signatur.
 
