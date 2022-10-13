@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Bitcoin er tid"
+image: "/assets/bitcoin-is-time.jpeg"
 date: 2022-10-13 19:58:00 +0200
 categories: bitcoin
 ---
