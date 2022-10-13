@@ -14,11 +14,11 @@ av [Gigi](https://dergigi.com/2021/01/14/bitcoin-is-time/)
 > En lysende klokke mot himmelen
 Proklamerte at tiden verken var feil eller riktig.
 
-– Robert Frost, kjent med natten (1928)
+– Robert Frost, _Kjent med natten_ (1928)
 
 > Tiden er fortsatt et stort mysterium for oss. Det er ikke mer enn et konsept; vi vet ikke om det eksisterer i det hele tatt…
 
-– Clifford D. Simak, Shakespeare’s Planet (1976)
+– Clifford D. Simak, _Shakespeare’s Planet_ (1976)
 
 Tid er penger, som det heter. Det følger dermed at penger også er tid: en representasjon av den kollektive økonomiske energien lagret av menneskeheten. Koblingen mellom tid og penger er imidlertid mer intrikat enn det kan se ut til å begynne med. Hvis penger ikke krever tid å skapes, fungerer det ikke som penger særlig godt, eller ikke lenge. Mer dyptgripende, som vi skal se, innebærer det å holde styr på ting i informasjonsverdenen alltid det å holde styr på tiden.
 
@@ -44,9 +44,9 @@ Penger er i hovedsak et verktøy for å holde styr på hvem som skylder hva til 
 
 Det er viktig å innse den iboende forskjellen mellom disse kategoriene, så la meg påpeke det eksplisitt: Den første metoden – et fysisk symbol – representerer _direkte_ tingenes tilstand. Den andre - en hovedbok - gjenspeiler _indirekte_ tingenes tilstand. Hver kommer med fordeler og ulemper. For eksempel er polletter fysiske og distribuerte; hovedbøker er informative og sentraliserte. Polletters er iboende tillitsløse; hovedbøker er det ikke.
 
-I den digitale verdenen – uansett hvor intenst markedsføringsguruer prøver å overbevise deg om det motsatte – kan vi bare bruke hovedbøker. Det er en _informasjonsverden_, ikke et fysisk et. Selv om du kaller en viss type informasjon en «pollett, er det fortsatt formbar informasjon, skrevet ned på en harddisk eller et annet medium som kan inneholde informasjon, som effektivt gjør den til en informasjonsoppføring.
+I den digitale verdenen – uansett hvor intenst markedsføringsguruer prøver å overbevise deg om det motsatte – kan vi bare bruke hovedbøker. Det er en _informasjonsverden_, ikke et fysisk en. Selv om du kaller en viss type informasjon en «pollett, er det fortsatt formbar informasjon, skrevet ned på en harddisk eller et annet medium som kan inneholde informasjon, som effektivt gjør den til en informasjonsoppføring.
 
-Den hovedboklignende naturen til all digital informasjon er hovedårsaken til problemet med dobbeltbruk. Informasjon representerer aldri verdens tilstand _direkte_. Videre innebærer flytting av informasjon kopiering. Informasjon finnes på ett sted, og for å «flytte» den, må du kopiere den til et annet sted og slette den ved opprinnelsen. Dette problemet eksisterer ikke i den fysiske verdenen. I den fysiske verden kan vi faktisk flytte ting fra A til B. Informasjonsverdenen har ikke denne egenskapen. Hvis du vil «flytte» informasjon fra liste A til liste B, må du kopiere den fra A til B. Det finnes ingen annen måte.
+Den hovedboklignende naturen til all digital informasjon er hovedårsaken til problemet med dobbeltbruk. Informasjon representerer aldri verdens tilstand _direkte_. Videre innebærer flytting av informasjon kopiering. Informasjon finnes på ett sted, og for å «flytte» den, må du kopiere den til et annet sted og slette den ved opprinnelsen. Dette problemet eksisterer ikke i den fysiske verdenen. I den fysiske verdenen kan vi faktisk flytte ting fra A til B. Informasjonsverdenen har ikke denne egenskapen. Hvis du vil «flytte» informasjon fra liste A til liste B, må du kopiere den fra A til B. Det finnes ingen annen måte.
 
 En annen måte å tenke på er i form av unikhet. Fysiske polletter er unike sammensetninger av atomer hvis sammensetning ikke lett kan replikeres. Ren informasjon har ikke denne egenskapen. Hvis du kan lese informasjonen, kan du også kopiere den perfekt. Praktisk talt følger det at fysiske polletter er unike, og digitale polletter er ikke det. Jeg vil til og med hevde at «digital pollett» er en feilbetegnelse. En pollett kan representere hemmelig informasjon, men det vil aldri representere unik, enkeltstående, ukopierbar informasjon.
 
@@ -240,7 +240,7 @@ Hva som intuitivt forstås av hver kidnapper ble eksplisitt påpekt av Bayer, Ha
 
 ![Bevis for publisering](/assets/proof-of-publication.jpeg)
 
-Det er kombinasjonen av kausalitet og uforutsigbarhet som gjør det mulig å skape et kunstig «nå» i det ellers tidløse digitale verdenen. Som Bayer, Haber og Stornetta påpeker i deres artikkel fra 1991: «Rekkefølgen av klienter som ber om tidsstempler og hashen de sender inn kan ikke være kjent på forhånd. Så hvis vi inkluderer biter fra den forrige sekvensen av klientforespørsler i det signerte sertifikatet, så vet vi at tidsstemplet skjedde etter disse forespørslene. […] Men kravet om å inkludere biter fra tidligere dokumenter i sertifikatet kan også brukes til å løse problemet med å begrense tiden i den andre retningen, fordi tidsstemplingsfirmaet ikke kan utstede senere sertifikater med mindre det har den aktuelle forespørselen i hende."
+Det er kombinasjonen av kausalitet og uforutsigbarhet som gjør det mulig å skape et kunstig «nå» i den ellers tidløse digitale verdenen. Som Bayer, Haber og Stornetta påpeker i deres artikkel fra 1991: «Rekkefølgen av klienter som ber om tidsstempler og hashen de sender inn kan ikke være kjent på forhånd. Så hvis vi inkluderer biter fra den forrige sekvensen av klientforespørsler i det signerte sertifikatet, så vet vi at tidsstemplet skjedde etter disse forespørslene. […] Men kravet om å inkludere biter fra tidligere dokumenter i sertifikatet kan også brukes til å løse problemet med å begrense tiden i den andre retningen, fordi tidsstemplingsfirmaet ikke kan utstede senere sertifikater med mindre det har den aktuelle forespørselen i hende."
 
 Alle puslespillbrikkene var der allerede. Det Satoshi klarte å gjøre er å sette dem sammen på en måte som fjerner «tidsstemplingsselskapet» fra ligningen.
 
@@ -273,7 +273,7 @@ Sagt rett ut, det er ganske enkelt ingen måte å stole på at data representere
 
 Bevis-på-arbeid gir en direkte forbindelse mellom den digitale verden og den fysiske verden. Mer dyptgående er det den eneste forbindelsen som kan etableres på en tillitsløs måte. Alt annet vil alltid være avhengig av eksterne innganger.
 
-Vanskeligheten for å utvinne en ny Bitcoin-blokk er justert for å sikre at den tynne linjen mellom Bitcoins tid og vår tid forblir intakt. Som et urverk justeres vanskeligheten seg hvert 2016. tikk. Målet med denne omjusteringen er å holde _gjennomsnittlig_ tid mellom tikk på ti minutter. Det er disse ti minuttene som opprettholder en stabil forbindelse mellom den fysiske- og informasjonsverdenen. Følgelig kreves en følelse av menneskelig tid for å justere tikkene på Bitcoin-klokken. En ren blokkbasert omjustering ville ikke fungere siden den ville være fullstendig frakoblet vår menneskelige verden, og hele hensikten med omjusteringen er å stoppe oss geniale mennesker fra å finne blokker for fort (eller for sakte).
+Vanskeligheten for å utvinne en ny Bitcoin-blokk er justert for å sikre at den tynne linjen mellom Bitcoins tid og vår tid forblir intakt. Som et urverk justeres vanskeligheten seg hvert 2016. tikk. Målet med denne omjusteringen er å holde _gjennomsnittlig_ tid mellom tikk på ti minutter. Det er disse ti minuttene som opprettholder en stabil forbindelse mellom den fysiske verdenen og informasjonsverdenen. Følgelig kreves en følelse av menneskelig tid for å justere tikkene på Bitcoin-klokken. En ren blokkbasert omjustering ville ikke fungere siden den ville være fullstendig frakoblet vår menneskelige verden, og hele hensikten med omjusteringen er å stoppe oss geniale mennesker fra å finne blokker for fort (eller for sakte).
 
 Som Einstein har vist oss, er ikke tid en statisk ting. Det er ikke noe slikt som en universell tid vi kan stole på. Tid er relativ, og samtidighet er ikke-eksisterende. Dette faktum alene gjør alle tidsstempler – spesielt over store avstander – iboende upålitelige, selv uten motstridende aktører. (Dette er grunnen til at tidsstempler for GPS-satellitter må justeres konstant, forresten.)
 
@@ -367,4 +367,4 @@ Tidtaking krever _årsakssammenheng_, _uforutsigbarhet_ og _koordinering_. I Bit
 
 Bitcoin er tid på mer enn én måte. Dens enheter er lagret tid fordi de er penger, og nettverket er tid fordi det er en desentralisert klokke. De nådeløse slagene til denne klokken er det som gir opphav til alle de magiske egenskapene til Bitcoin. Uten den ville Bitcoins intrikate dans falle fra hverandre. Men med det har alle på jorden tilgang til noe virkelig fantastisk: Magiske internettpenger.
 
-Lisens: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.no)
+«[Bitcoin is time](https://dergigi.com/2021/01/14/bitcoin-is-time/)» av Gigi. Lisens: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.no)
