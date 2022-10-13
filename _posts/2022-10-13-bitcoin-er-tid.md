@@ -7,7 +7,7 @@ categories: bitcoin
 
 ![Bitcoin er tid](/assets/bitcoin-is-time.jpeg)
 
-av [Gigi](https://dergigi.com)
+av [Gigi](https://dergigi.com/2021/01/14/bitcoin-is-time/)
 
 > En lysende klokke mot himmelen
 Proklamerte at tiden verken var feil eller riktig.
@@ -364,3 +364,5 @@ Det som er en ny idé – det Satoshi fant ut – er hvordan man uavhengig kan b
 Tidtaking krever _årsakssammenheng_, _uforutsigbarhet_ og _koordinering_. I Bitcoin er _kausalitet_ gitt av enveisfunksjoner: de kryptografiske hash-funksjonene og digitale signaturer som er kjernen i protokollen. _Uforutsigbarhet_ er gitt av både bevis-på-arbeid-oppgaven så vel som interaksjonen med andre peers: du kan ikke vite på forhånd hva andre gjør, og du kan ikke vite på forhånd hva løsningen på bevis-på-arbeid-oppgaven vil være. _Koordinering_ er muliggjort av vanskelighetsjusteringen, den magiske sausen som knytter Bitcoins tid til vår. Uten denne broen mellom den fysiske verdenen og informasjonsverdenen, ville det være umulig å bli enige om et tidspunkt ved å stole på ingenting annet enn data.
 
 Bitcoin er tid på mer enn én måte. Dens enheter er lagret tid fordi de er penger, og nettverket er tid fordi det er en desentralisert klokke. De nådeløse slagene til denne klokken er det som gir opphav til alle de magiske egenskapene til Bitcoin. Uten den ville Bitcoins intrikate dans falle fra hverandre. Men med det har alle på jorden tilgang til noe virkelig fantastisk: Magiske internettpenger.
+
+Lisens: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.no)
