@@ -11,7 +11,7 @@ categories: bitcoin
 
 av [Gigi](https://dergigi.com/2021/01/14/bitcoin-is-time/)
 
-> En lysende klokke mot himmelen
+> En lysende klokke mot himmelen  
 Proklamerte at tiden verken var feil eller riktig.
 
 – Robert Frost, _Kjent med natten_ (1928)
@@ -246,7 +246,7 @@ Alle puslespillbrikkene var der allerede. Det Satoshi klarte å gjøre er å set
 
 ## Tidsbevis
 
-> Causa latet: vis est notis sima.
+> Causa latet: vis est notis sima.  
 Årsaken er skjult, men resultatet er kjent.
 
 – Ovid, _Metamorfoser_, IV. 287 (8 e.Kr.)
@@ -261,9 +261,11 @@ Bevis-på-arbeid fungerer i en peer-to-peer-setting fordi det er _tillitsløst_,
 
 ## Bridging Times
 
-> Jeg vet det fungerer for meg.
-Når vi krysser broen — den brennende broen —
-Med flammer bak oss, vi fronter linjen. Det er du og meg, baby, mot verden.
+> Jeg vet det fungerer for meg.  
+Når vi krysser broen — den brennende broen —  
+Med flammer bak oss,  
+vi fronter linjen.  
+Det er du og meg, baby, mot verden.
 
 – Kate Bush, Burning Bridge (1985)
 
@@ -310,7 +312,7 @@ Hver gang gjør et myntkast, er sjansen for at den lander på mynt eller krone 5
 
 Det følger at hvert enkelt tikk på denne klokken er uforutsigbart. I forhold til våre menneskelige klokker ser denne klokken ut til å være spontan og upresis. Dette er irrelevant, som Gregory Trubetskoy påpeker: «Det spiller ingen rolle at denne klokken er upresis. Det som betyr noe er at det er den samme klokken for alle, og at tilstanden til kjeden kan knyttes utvetydig til tikkene på denne klokken.» Bitcoins klokke kan være probabilistisk, men den er ikke illusorisk.
 
-> Tid er en illusjon,
+> Tid er en illusjon,  
 lunsjtid dobbelt så.
 
 – Douglas Adams (1979)
@@ -335,13 +337,13 @@ Gordon Clark, _Et kristent syn på menn og ting_, s. 58. (1951)
 
 Følgelig kan Bitcoin-klokken spole tilbake fra tid til annen, for noen peers, for et tikk eller to. Hvis kjedetuppen din – det nåværende øyeblikket – tilfeldigvis taper mot en konkurrerende kjedetupp, vil klokken først spole tilbake og deretter hoppe fremover, og overstyre de siste tikkene du trodde var historie allerede. Hvis klokken din er probabilistisk, må din forståelse av fortiden også være det.
 
-> Tikk takk takk tikk takk tikk — hva er klokken?
-Tikk takk tikk takk… det ender på [c619](https://www.blockstream.info/block/000000000000000000095eaf76a73a7986ea2e6a3b0d190fb10ab986b683c619).
-Er du sikker på at dette er greit? Er vi sannsynligvis sent ute?
-Absolutt spiller ingen rolle: før ni kommer det [åtte](https://www.blockstream.info/block/0000000000000000000318291249db2c9b658d087e4f06bcd2ed24481e81533c).
-Klokken er ikke nøyaktig; det går noen ganger i revers.
-Nøyaktig tid innebærer sentrum; det er roten til denne forbannelsen!
-Likevel fortsetter denne klokken å tikke, takk-tikk og takk-tikk, det er ingen gevinst i å lure; bare tikk-takk og neste blokk.
+> Tikk takk takk tikk takk tikk — hva er klokken?  
+Tikk takk tikk takk… det ender på [c619](https://www.blockstream.info/block/000000000000000000095eaf76a73a7986ea2e6a3b0d190fb10ab986b683c619).  
+Er du sikker på at dette er greit? Er vi sannsynligvis sent ute?  
+Absolutt spiller ingen rolle: før ni kommer det [åtte](https://www.blockstream.info/block/0000000000000000000318291249db2c9b658d087e4f06bcd2ed24481e81533c).  
+Klokken er ikke nøyaktig; det går noen ganger i revers.  
+Nøyaktig tid innebærer sentrum; det er roten til denne forbannelsen!  
+Likevel fortsetter denne klokken å tikke, takk-tikk og takk-tikk, det er ingen gevinst i å lure; bare tikk-takk og neste blokk.  
 
 – Et morsomt lite rim på Bitcoin og tid (2020)
 
