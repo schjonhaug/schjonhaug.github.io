@@ -150,7 +150,7 @@ Bitcoin løser dette problemet ved å finne opp selve tiden på nytt. Den sier n
 
 William Shakespeare, _The Rape of Lucrece_ (1594)
 
-Alle klokker er avhengige av periodiske prosesser, noe vi kan kalle et «tikk». Den velkjente _tikk-takken- til en bestefarsklokke er i hovedsak det samme som den molekylæratomiske summingen til våre moderne kvarts- og cesiumklokker. Noe svinger - eller oscillerer - og vi teller ganske enkelt disse svingningene til det blir et minutt eller et sekund.
+Alle klokker er avhengige av periodiske prosesser, noe vi kan kalle et «tikk». Den velkjente _tikk-takken_ til en bestefarsklokke er i hovedsak det samme som den molekylæratomiske summingen til våre moderne kvarts- og cesiumklokker. Noe svinger - eller oscillerer - og vi teller ganske enkelt disse svingningene til det blir et minutt eller et sekund.
 
 For store pendelklokker er disse svingene lange og lette å se. For mindre og mer spesialiserte klokker kreves spesialutstyr. Frekvensen til en klokke - hvor ofte den tikker - avhenger av bruksområdet.
 
@@ -224,7 +224,7 @@ Som vi skal se, viser det seg at aviser også er en utmerket måte å tenke på 
 
 – Sofisten Antiphon, _On Truth_ (3. århundre e.Kr.)
 
-Selv om årsakssammenheng er vesentlig, er det ikke tilstrekkelig. Vi trenger også _uforutsigbarhet- for at tiden skal flyte. I den fysiske verdenen observerer vi naturlige prosesser for å beskrive strømmen av tid. Vi observerer en generell økning i entropi og kaller det tidens pil. Selv om naturlovene ser ut til å være uvitende med hensyn til retningen til denne pilen i de fleste tilfeller, kan visse ting praktisk talt ikke omgjøres. Du kan ikke gå fra eggerøre til egg, for å si det sånn.
+Selv om årsakssammenheng er vesentlig, er det ikke tilstrekkelig. Vi trenger også _uforutsigbarhet_ for at tiden skal flyte. I den fysiske verdenen observerer vi naturlige prosesser for å beskrive strømmen av tid. Vi observerer en generell økning i entropi og kaller det tidens pil. Selv om naturlovene ser ut til å være uvitende med hensyn til retningen til denne pilen i de fleste tilfeller, kan visse ting praktisk talt ikke omgjøres. Du kan ikke gå fra eggerøre til egg, for å si det sånn.
 
 På samme måte kreves det entropiøkende funksjoner for å etablere en tidspil i den digitale verdenen. Akkurat som det er praktisk talt umulig å gå fra eggerøre til egg, er det praktisk talt umulig å dekryptere en SHA256-hash eller kryptografisk signatur.
 
