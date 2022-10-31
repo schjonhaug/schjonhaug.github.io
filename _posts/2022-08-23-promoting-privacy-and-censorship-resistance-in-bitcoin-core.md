@@ -7,6 +7,8 @@ date: 2022-08-23 20:55:21 +0200
 categories: bitcoin
 ---
 
+⚠️ This post contains outdated information, and I instead recommend following the excellent tutorials over at [Raspibolt](https://raspibolt.org). ⚠️
+
 You can now run nodes as a dual hidden services on Tor and I2P (Invisible Internet Project). If Tor is having issues, your I2P service can continue to communicate.
 
 ## SSH and updating the OS

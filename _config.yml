@@ -31,6 +31,8 @@ locale: en_GB
 
 # Build settings
 theme: minima
+minima:
+  skin: solarized
 plugins:
   - jekyll-feed
   - jekyll-sitemap

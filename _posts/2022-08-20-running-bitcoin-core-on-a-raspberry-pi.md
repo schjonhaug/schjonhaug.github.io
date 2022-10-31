@@ -7,6 +7,8 @@ date: 2022-08-20 21:48:21 +0200
 categories: bitcoin
 ---
 
+⚠️ This post contains outdated information, and I instead recommend following the excellent tutorials over at [Raspibolt](https://raspibolt.org). ⚠️
+
 ![Raspberry Pi 4 Model 4](/assets/raspberry-pi-4-model-b.jpg)
 
 This article will describe how to get [Bitcoin Core](https://bitcoincore.org) full node up and running on a [Raspberry Pi 4 Model B](https://www.raspberrypi.com/products/raspberry-pi-4-model-b/). To store the blockchain (which currently is close to 500 GB), I’m using a 1 TB SSD.
@@ -215,7 +217,7 @@ tail -f /media/ssd/bitcoin/debug.log
 
 ## Aliases for using bitcoin-cli
 
-Since we need to specify `-datadir=/media/ssd/bitcoin` every time we want to run commands with `bitcoin-cli`, it makes sense to make a couple of alises in `.bash_aliases`:
+Since we need to specify `-datadir=/media/ssd/bitcoin` every time we want to run commands with `bitcoin-cli`, it makes sense to make a couple of aliases in `.bash_aliases`:
 
 ```bash
 nano ~/.bash_aliases
