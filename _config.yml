@@ -21,7 +21,7 @@
 title: Andreas Schjønhaug's dev blog
 email: andreas@schjonhaug.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Andreas Schjønhaug is a freelancer iOS developer in Oslo, Norway,
+  Andreas Schjønhaug is a freelancer developer in Oslo, Norway,
   and in this blog, he writes about different interesting topics related to development.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://schjonhaug.dev" # the base hostname & protocol for your site, e.g. http://example.com
