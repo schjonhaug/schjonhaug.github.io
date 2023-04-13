@@ -2,12 +2,12 @@
 layout: post
 title: "Bitcoin er tid"
 description: "Tid er penger, som det heter. Det følger dermed at penger også er tid: en representasjon av den kollektive økonomiske energien lagret av menneskeheten. Koblingen mellom tid og penger er imidlertid mer intrikat enn det kan se ut til å begynne med. Hvis penger ikke krever tid å skapes, fungerer det ikke som penger særlig godt, eller ikke lenge. Mer dyptgripende, som vi skal se, innebærer det å holde styr på ting i informasjonsverdenen alltid det å holde styr på tiden."
-image: "/assets/bitcoin-is-time.jpeg"
+image: "/assets/bitcoin-is-time.jpg"
 date: 2022-10-13 19:58:00 +0200
 categories: bitcoin
 ---
 
-![Bitcoin er tid](/assets/bitcoin-is-time.jpeg)
+![Bitcoin er tid](/assets/bitcoin-is-time.jpg)
 
 av [Gigi](https://dergigi.com/2021/01/14/bitcoin-is-time/)
 
@@ -40,7 +40,7 @@ Tenk deg at du er en gjeter som vil sørge for at hele flokken din kommer hjem. 
 
 Penger er i hovedsak et verktøy for å holde styr på hvem som skylder hva til hvem. Stort sett faller alt vi har brukt som penger til nå i to kategorier: _fysiske gjenstander_ og _informasjonslister_. Eller, for å bruke mer vanlig språkbruk: polletter og hovedbøker.
 
-![Ledger og token](/assets/ledger-token.jpeg)
+![Ledger og token](/assets/ledger-token.jpg)
 
 Det er viktig å innse den iboende forskjellen mellom disse kategoriene, så la meg påpeke det eksplisitt: Den første metoden – et fysisk symbol – representerer _direkte_ tingenes tilstand. Den andre - en hovedbok - gjenspeiler _indirekte_ tingenes tilstand. Hver kommer med fordeler og ulemper. For eksempel er polletter fysiske og distribuerte; hovedbøker er informative og sentraliserte. Polletters er iboende tillitsløse; hovedbøker er det ikke.
 
@@ -126,7 +126,7 @@ For bedre å illustrere problemets umulighet, la oss se på et konkret eksempel.
 
 Samtidig er du i ferd med å betale for oppholdet med et annet debetkort knyttet til samme bankkonto. Prisen er 599 $. Den tilgjengelige saldoen er 615 $. Lokal tid er 17:21.
 
-![Alice Bob Bank](/assets/alice-bob-bank.jpeg)
+![Alice Bob Bank](/assets/alice-bob-bank.jpg)
 
 Så faller det seg slik at - i nøyaktig samme øyeblikk - sveiper dere begge kortet. Hva skjer? (Kjære fysikere, unnskyld min bruk av «det samme øyeblikk» – vi ignorerer relativistiske effekter og det faktum at det ikke er noen absolutt tid i universet vårt for nå. Vi ignorerer også  at konseptet med synkrone hendelser egentlig ikke eksisterer. Bitcoin er komplisert nok som det er!)
 
@@ -192,13 +192,13 @@ Informasjonens formbare natur gjør tidsstempling av digitale dokumenter til en 
 
 Å finne på datoer er et generelt problem, selv i den ikke-digitale verdenen. Det som i kidnappingsverdenen er kjent som «autentisering med avis» er en generell løsning på problemet med vilkårlige tidsstempler.
 
-![Tidsbevis](/assets/proof-of-time.jpeg)
+![Tidsbevis](/assets/proof-of-time.jpg)
 
 Dette fungerer fordi en avis er vanskelig å forfalske og lett å verifisere. Den er vanskelig å forfalske fordi dagens forside viser til gårsdagens hendelser, hendelser som ikke kunne vært forutsett av kidnapperen hvis bildet ville vært flere uker gammelt. Indirekte av disse hendelsene er bildet et bevis på at gisselet fortsatt var i live den dagen avisen kom ut.
 
 Denne metoden fremhever et av nøkkelbegrepene når det kommer til tid: _kausalitet_. Tidens pil beskriver årsakssammenhengen mellom hendelser. Ingen årsakssammenheng, ingen tid. Kausalitet er også grunnen til at kryptografiske hashfunksjoner er så avgjørende når det kommer til tidsstempling av dokumenter i cyberspace: de introduserer en årsakssammenheng. Siden det praktisk talt er umulig å lage en gyldig kryptografisk hash uten å ha dokumentet i utgangspunktet, introduseres en årsakssammenheng mellom dokumentet og hashen: de aktuelle dataene eksisterte først, hashen ble generert senere. Med andre ord: uten den beregningsmessige irreversibiliteten til enveisfunksjoner, ville det ikke vært noen kausalitet i cyberspace.
 
-![A før B](/assets/sha256.jpeg)
+![A før B](/assets/sha256.jpg)
 
 Med denne årsaksbyggesteinen på plass, kan man komme opp med ordninger som skaper en kjede av hendelser, som kausalt knytter A til B til C og så videre. Slik sett flytter sikker digital tidsstempling oss fra et tidløst sted i eteren til den digitale historiens verden.
 
@@ -238,7 +238,7 @@ Ved å utnytte årsakssammenhengen til hashkjeder og uforutsigbarheten til bevis
 
 Hva som intuitivt forstås av hver kidnapper ble eksplisitt påpekt av Bayer, Haber og Stornetta i 1992: «For å fastslå at et dokument ble opprettet etter et gitt øyeblikk i tid, er det nødvendig å rapportere hendelser som ikke kunne vært forutsett før de skjedde."
 
-![Bevis for publisering](/assets/proof-of-publication.jpeg)
+![Bevis for publisering](/assets/proof-of-publication.jpg)
 
 Det er kombinasjonen av kausalitet og uforutsigbarhet som gjør det mulig å skape et kunstig «nå» i den ellers tidløse digitale verdenen. Som Bayer, Haber og Stornetta påpeker i deres artikkel fra 1991: «Rekkefølgen av klienter som ber om tidsstempler og hashen de sender inn kan ikke være kjent på forhånd. Så hvis vi inkluderer biter fra den forrige sekvensen av klientforespørsler i det signerte sertifikatet, så vet vi at tidsstemplet skjedde etter disse forespørslene. […] Men kravet om å inkludere biter fra tidligere dokumenter i sertifikatet kan også brukes til å løse problemet med å begrense tiden i den andre retningen, fordi tidsstemplingsfirmaet ikke kan utstede senere sertifikater med mindre det har den aktuelle forespørselen i hende."
 
