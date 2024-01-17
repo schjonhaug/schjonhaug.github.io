@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Andreas Schjønhaug's dev blog
+title: Andreas Schjønhaug’s dev blog
 email: andreas@schjonhaug.com
 description: >- # this means to ignore newlines until "baseurl:"
   Andreas Schjønhaug is a freelancer developer in Oslo, Norway,
