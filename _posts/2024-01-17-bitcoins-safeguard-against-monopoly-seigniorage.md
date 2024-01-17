@@ -2,9 +2,13 @@
 layout: post
 title: "Bitcoin’s Safeguard Against Monopoly Seigniorage"
 description: "A fundamental aspect of Bitcoin lies in its ability to thwart monopoly seigniorage—a scenario where a single entity profits from the issuance of new currency. Traditional monetary systems, governed by central authorities, can face challenges such as inflation and economic instability due to unchecked money printing. Bitcoin, in contrast, is purposefully structured to prevent any singular entity from monopolizing the creation of new coins, contributing to a more stable and transparent monetary framework."
+image: "/assets/honeybadger-and-banker.png"
 date: 2024-01-17 20:29:00 +0200
 categories: bitcoin
 ---
+
+![Honey badger and banker](/assets/honeybadger-and-banker.png)
+
 One of the key features of Bitcoin is its ability to prevent monopoly [seigniorage](https://en.wikipedia.org/wiki/Seigniorage), a situation where a single entity profits from introducing new currency. Traditional monetary systems, governed centrally, frequently encounter difficulties such as monetary inflation and economic instability stemming from unregulated money printing. Bitcoin, in its deliberate architecture, thwarts any attempt by a singular entity to monopolize the initiation of new coins, thereby contributing to the establishment of a more stable and transparent monetary framework.
 
 This defense against monopoly seigniorage operates through the mechanism known as difficulty-adjusted proof of work.
