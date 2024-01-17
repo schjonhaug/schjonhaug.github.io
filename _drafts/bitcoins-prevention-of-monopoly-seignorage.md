@@ -1,0 +1,48 @@
+# Bitcoin’s prevention of monopoly seignorage
+
+Bitcoin is a digital currency that has gained significant attention in recent years due to its decentralized and trustless design. Unlike traditional currencies that are controlled by governments and financial institutions, Bitcoin is designed to be a peer-to-peer network that allows users to transact directly with one another without the need for intermediaries.
+
+One of the key features of Bitcoin is its ability to prevent monopoly seigniorage, which refers to the ability of a single entity to profit from the issuance of new currency. In traditional monetary systems, governments and central banks have the power to print new money, which can lead to inflation and economic instability if the money supply is not properly managed. Bitcoin, on the other hand, is designed to prevent any single entity from having control over the issuance of new coins, which helps to promote a more stable and transparent monetary system.
+
+The way that Bitcoin prevents monopoly seigniorage is through a process called mining. In the Bitcoin network, miners use specialized hardware and software to validate transactions and add them to the blockchain, which is a decentralized and distributed ledger that records all Bitcoin transactions. As a reward for their work, miners are given a certain amount of newly minted bitcoins, which is the only way that new coins are created in the Bitcoin network.
+
+However, the process of mining is not easy. It involves a process called "Proof-of-Work" (PoW), which requires miners to compete to solve a cryptographic puzzle. This puzzle involves finding a specific output value that satisfies certain criteria, based on the hash function of the previous block header, and includes a random nonce value. The miner who solves this puzzle first and broadcasts the solution to the network is then rewarded with a certain amount of newly minted bitcoins.
+
+The difficulty of solving the PoW puzzle is automatically adjusted by the network to maintain a steady rate of new coin issuance. This means that no single entity can monopolize the mining process and create new coins at will, as the system is designed to require a significant amount of computational power to be successful. As more miners join the network and more computing power becomes available, the difficulty of mining new coins increases, which helps to prevent any one entity from gaining an unfair advantage in the issuance of new coins.
+
+This is where Moore's Law comes into play. Moore's Law is a prediction made by Gordon Moore, co-founder of Intel Corporation, in 1965 that the number of transistors on a microchip will double approximately every two years, leading to exponential growth in computing power. This prediction has largely held true and has helped to drive innovation in the tech industry by providing a framework for predicting and planning for future technological advancements.
+
+In the case of Bitcoin, the increasing computing power made possible by Moore's Law has led to an increase in the difficulty of mining new coins. This means that as technology continues to advance and more computing power becomes available, it becomes increasingly difficult for any one entity to monopolize the mining process and control the issuance of new coins. This helps to promote a more decentralized and transparent monetary system, as all participants in the network have equal access to the blockchain and the ability to verify transactions.
+
+Overall, Bitcoin's design is intended to prevent any individual or group from monopolizing the process of creating new coins, ensuring that the system remains decentralized, transparent, and fair. By using a competitive mining process and leveraging the increasing computing power made possible by Moore's Law, Bitcoin is able to create a more stable and trustworthy monetary system that is not subject to the same risks and vulnerabilities as traditional currencies.
+
+---draft
+
+If I transfer money from my bank account to yours, it is the bank that checks that I have coverage and rejects the transaction if this is not the case. But how do you achieve the same thing if we remove the bank? What then prevents me from sending the same money to someone else? The very innovation of Bitcoin, what no one had managed to solve in a decentralized way before Satoshi Nakamoto in 2009 was as follows: How do you prevent double use in a distributed system, i.e. that no one uses the same coins over and over again in a system without verification with a trusted third party?
+
+First, all participants in the network must have a copy of all transactions that have taken place since the dawn of time (2009 in Bitcoin's case) so that they can check for themselves that everything is correct. So everyone has a copy of the same "ledger" if you will. The problem occurs when updating; for who should be allowed to do so when no one can be trusted?
+
+This is where the miners come into the picture.
+
+When you carry out a bitcoin transaction, a copy of this is placed in a kind of waiting room on thousands of machines worldwide. They check that the coins have not already been spent and that you have the correct "password" to complete the transaction. If everything is in order, they propagate the transaction further in the network. Finally, all the machines have a copy of your transaction.
+
+Some of the machines that receive your transaction and put it in their waiting room are called miners. Their task is to propose a collection of valid transactions to the rest of the network, and these are grouped into so-called blocks. If the block is accepted by the network, it is added to a chain of blocks that started it with the famous "The Times 03/Jan/2009…" block in 2009, and the ledger is updated with new balances. This is what the blockchain is – a chain of blocks whose most important property is that the order cannot be tampered with without being detected. The order is absolutely critical, because then no one can later claim that they transferred the bitcoins to person A instead of B. Then it is obvious that the coins have already been transferred to person B.
+
+So what will it take for the miners to be allowed to produce new blocks, where they also get to mine new coins as a reward?
+
+It is absolutely true that the money is mined by computers (miners), but they must not solve difficult calculations. All they do is actually guess at random numbers! If the number they guess meets certain requirements, they can then produce a valid block of transactions and broadcast it to the rest of the Bitcoin network. In many ways, it can be compared to a lottery where the more number guessing machines you have, the greater the chance of you drawing the winning ticket. At the time of writing, the reward is 6.25 bitcoins plus the transaction fees of the transactions in the block. The reward is halved approx. every 4 years until all 21 million coins have been distributed, around the year 2140.
+
+The point of this energy-consuming lottery is twofold:
+
+- The ledger must have a physical connection to the real world. You cannot guess the correct number without doing work in the real world, and work requires both time and energy. Without breaking the laws of thermodynamics, it is therefore not possible to cheat your way to the correct answer. You can thus know that each block produced has not been tampered with or that it has been produced without performing real work. This can perhaps be compared to gold - where the only way to extract it is also to spend time and energy. There is no other way, although alchemists have been trying for thousands of years.
+
+- The 21 million coins are programmed to be distributed over more than 100 years, but how do you achieve that when Moore's Law says that machines are getting faster and faster all the time? What prevents the network from mining all the coins after only 1 year, or 10 years? This is where the difficulty adjustment comes into play, one of Nakamoto's other absolutely essential innovations. The network is programmed to produce a new block every 10 minutes. If there are many more miners, there are more people guessing and it will go faster than 10 minutes. Then the network will adjust itself so that it becomes more difficult to guess, so that over time it takes an average of 10 minutes between each block. Conversely, if many miners leave the network (which was the case when China banned mining for the nth time in 2021), the difficulty is lowered so that the remaining miners can continue to produce new blocks every 10 minutes.
+
+So the reason why a lot of power is used has nothing to do with the level of encryption. Bitcoin works just as well with 1 computer as with 10,000. But the higher the power consumption, the more difficult it becomes to attack the network by making changes to the ledger - because an attack requires you to produce at least as many guesses as the entire network combined. The power consumption works almost like a shield around the network and that is where the protection lies, in preventing changes.
+
+If I'm going to try to summarize what I wrote, then Bitcoin's proof-of-work (energy consumption) in combination with difficulty adjustment is useful, because:
+
+1. It is a decentralized solution to the double spending problem
+2. It prevents monopoly seigniorage in the issuance of new coins
+
+The last point may not have come across so clearly, but if you set up a mining rig today, new mining players tomorrow with newer equipment will cause the difficulty to be adjusted upwards. This means that your share of newly issued coins is reduced, and seignorage is distributed to a greater extent.

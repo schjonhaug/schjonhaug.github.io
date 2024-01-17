@@ -116,7 +116,7 @@ For å si det på en annen måte, hvis blokker ikke var inngangen til SHA256-fun
 
 Bemerkelsesverdig, vår bevis-på-arbeid-klokke gir oss bare tikker. Det er ingen måte å fortelle rekkefølge fra tikkene, det er dette hash-kjeden er til for.
 
-## Hva med den distribuerte konsensus?
+## Hva med den distribuerte konsensusen?
 
 Konsensus betyr enighet. Det alle deltakerne ikke har annet valg enn å bli enige om er at _klokken har tikket_. Også at alle kjenner tikken og dataene knyttet til den. Og dette løser faktisk det bysantinske generalproblemet, som Satoshi forklarte i en e-post referert til tidligere.
 
