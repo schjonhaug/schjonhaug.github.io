@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Blokkjedens bevis-på-arbeid er en desentralisert klokke"
+title: "Bitcoin-blokkjedens bevis-på-arbeid er en desentralisert klokke"
 description: "Dette er en forklaring på nøkkelfunksjonen bevis-på-arbeid i Bitcoin-blokkjeden. Den fokuserer på den ene funksjonen av bevis-på-arbeid som er viktig og viser at andre funksjoner som ofte snakkes om, for eksempel sikkerhet, er sekundære bivirkninger. De er nyttige, men ikke avgjørende."
 date: 2024-01-17 13:33:37 +0200
 categories: bitcoin
@@ -66,7 +66,7 @@ Hash-raten er igjen en funksjon av antall deltakere og hastigheten på utstyret 
 
 ## SHA-inndatene er irrelevant
 
-I Bitcoin-blokkjeden er inndataene et blokkhode. Men hvis vi bare matet den tilfeldige verdier, ville sannsynligheten for å finne en samsvarende hash _fortsatt være den samme_. Uansett om inndataene er et gyldig blokkhode eller bytes fra `/dev/random``, vil det i gjennomsnitt ta 10 minutter å finne en løsning.
+I Bitcoin-blokkjeden er inndataene et blokkhode. Men hvis vi bare matet den tilfeldige verdier, ville sannsynligheten for å finne en samsvarende hash _fortsatt være den samme_. Uansett om inndataene er et gyldig blokkhode eller bytes fra `/dev/random`, vil det i gjennomsnitt ta 10 minutter å finne en løsning.
 
 Selvfølgelig, hvis du finner en samsvarende hash, men inndataene dine ikke var en gyldig blokk, kan en slik løsning ikke legges til blokkjeden, men den er fortsatt bevis-på-arbeid (om enn ubrukelig).
 
@@ -78,7 +78,7 @@ Bemerkelsesverdig nok kommuniserer de fjerne deltakerne uten å faktisk kommunis
 
 Denne «universelle egenskapen», selv om den til å begynne med tilsynelatende er magisk, er faktisk lett å forklare. Jeg brukte begrepet «universell» fordi det beskriver det godt i ett ord, men egentlig betyr det «kjent av hver deltaker».
 
-Inngangen til SHA-256 kan betraktes som et heltall mellom 0 og $2^{256}$ (fordi utgangen er 32 byte, dvs. også mellom 0 og $2^{256}$, alt større garanterer en kollisjon, dvs. blir overflødig). Selv om det er ekstremt stort ([eksponentielt større](https://learncryptography.com/cryptanalysis/why-is-2-256-secure) enn antall atomer i [det observerbare universet](https://no.wikipedia.org/wiki/Det_observerbare_universet)), er det et sett med tall som er kjent av hver deltaker, og deltakerne kan bare velge fra dette settet.
+Inngangen til SHA-256 kan betraktes som et heltall mellom 0 og 2<sup>256</sup> (fordi utgangen er 32 byte, dvs. også mellom 0 og 2<sup>256</sup>, alt større garanterer en kollisjon, dvs. blir overflødig). Selv om det er ekstremt stort ([eksponentielt større](https://learncryptography.com/cryptanalysis/why-is-2-256-secure) enn antall atomer i [det observerbare universet](https://no.wikipedia.org/wiki/Det_observerbare_universet)), er det et sett med tall som er kjent av hver deltaker, og deltakerne kan bare velge fra dette settet.
 
 Hvis inngangssettet er universelt kjent, funksjonen (SHA-256) er universelt kjent, så vel som at vanskelighetsgraden er universelt kjent, så er sannsynligheten for å finne en løsning også «universell».
 
@@ -96,7 +96,7 @@ Det er bemerkelsesverdig at siden SHA er fremdriftsfritt, kan hvert forsøk betr
 
 Den magiske hemmelige deltakelsesegenskapen fungerer også omvendt. Den globale hash-raten som er oppført på mange nettsteder er ikke kjent fordi alle gruvearbeidere registrerte seg på et «miner-registreringskontor» hvor de rapporterer hash-hastigheten sin med jevne mellomrom. Det finnes ikke noe slikt.
 
-Hash-frekvensen er kjent fordi for å finne en løsning med en spesifikk vanskelighetsgrad på 10 minutter, i gjennomsnitt så mange forsøk (~$10^{21}$ når dette skrives) måtte være gjort av noen et sted.
+Hash-frekvensen er kjent fordi for å finne en løsning med en spesifikk vanskelighetsgrad på 10 minutter, i gjennomsnitt så mange forsøk (~ 10<sup>21</sup> når dette skrives) måtte være gjort av noen et sted.
 
 Vi vet ikke hvem disse deltakerne er, de har aldri annonsert at de jobber, de som ikke fant en løsning (som er praktisk talt alle sammen) fortalte aldri noen at de jobbet, deres plassering kunne ha vært hvor som helst i universet, og likevel vet vi med absolutt sikkerhet at de eksisterer. Rett og slett fordi problemet fortsetter å bli løst.
 
