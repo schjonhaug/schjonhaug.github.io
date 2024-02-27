@@ -14,10 +14,10 @@ Source of the Jekyll blog at <schjonhaug.dev>.
 bundle install
 ```
 
-### Run locally
+### Run locally with drafts
 
 ```shell
-bundle exec jekyll serve
+bundle exec jekyll serve --draft
 ```
 
 ### Check for updates
