@@ -948,7 +948,7 @@ kaliber, og dermed forsterke styrken til det fellesskapet. Og
 merkevarebevissthet er selvforsterkende, ettersom fremtidige
 konkurrenter til Bitcoin alltid nevnes i sammenheng med Bitcoin selv.
 
-### En veiskille
+### Et veiskille
 
 En trend som ble populær i 2017 var ikke bare å imitere Bitcoins
 programvare, men å kopiere hele historien til tidligere transaksjoner
@@ -1008,7 +1008,7 @@ Bitcoin-protokollen har forsvunnet i løpet av årene, men gitt dens
 teknologiske natur, vil protokollrisiko alltid forbli for Bitcoin, om så
 bare som en ekstremrisiko.
 
-## Handelsplattformer
+### Handelsplattformer
 
 Ved å være desentralisert i design, har Bitcoin vist en
 bemerkelsesverdig grad av motstandsdyktighet i møte med en rekke forsøk fra
