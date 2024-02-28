@@ -2,7 +2,7 @@
 layout: post
 title: "Argumentet for Bitcoin"
 description: ""
-image: "/assets/bullish-case-for-bitcoin.webp"
+image: "/assets/the-bullish-case-for-bitcoin.jpg"
 date: 2024-02-28 13:00:00 +0100
 categories: bitcoin
 ---
