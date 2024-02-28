@@ -47,7 +47,6 @@ produksjonen av nye bitcoins avsluttes fullstendig innen år 2140.
 
 ![Bitcoin inflasjon kontra tid](/assets/inflation-vs-time.webp)
 
-
 Bitcoins er ikke støttet av noen fysisk vare, og de er heller ikke
 garantert av noen regjering eller selskap, noe som reiser det åpenbare
 spørsmålet for en ny bitcoin-investor: hvorfor har de noen verdi i det
@@ -115,8 +114,6 @@ ethvert samfunn, siden det i stor grad letter handel og arbeidsdeling,
 og baner vei for sivilisasjonens fremvekst.
 
 ![Silkeruten](/assets/silk-route.webp)
-
- 
 
 I løpet av årtusenene, etter hvert som menneskelige samfunn vokste og
 handelsruter utviklet seg, kom verdilagrene som hadde dukket opp i
@@ -199,9 +196,8 @@ attributtene som er oppført ovenfor, og etterfølges av en forklaring av
 hver karakter:
 
 ![Sammenligning av egenskapene til Bitcoin, gull og fiat-valuta](/assets/table.webp)
- 
 
-### Holdbarhet:
+### Holdbarhet
 
 Gull er den ubestridte kongen av holdbarhet. Det store flertallet av
 gull som noen gang har blitt utvunnet eller preget, inkludert faraoenes
@@ -230,7 +226,7 @@ for fremtredende tilfeller av nasjonalstater som forsøker å regulere
 Bitcoin og år med angrep fra hackere, har nettverket fortsatt å fungere,
 og viser en bemerkelsesverdig grad av "[anti-skjørhet](https://en.wikipedia.org/wiki/Antifragility)".
 
-### Bærbarhet:
+### Bærbarhet
 
 Bitcoins er det mest portable verdilageret som noen gang er brukt av
 mennesker. Private nøkler som representerer hundrevis av millioner av
@@ -253,7 +249,7 @@ tittelen til gullet som overføres, ikke den fysiske bullion i seg selv.
 Å overføre fysisk gull over store avstander er kostbart, risikabelt og
 tidkrevende.
 
-### Utbyttbarhet:
+### Utbyttbarhet
 
 Gull gir standarden for utbyttbarhet. Når det smeltes ned, er en [unse](https://no.wikipedia.org/wiki/Unse)
 gull i hovedsak umulig å skille fra noen annen unse, og gull har alltid
@@ -279,7 +275,7 @@ bitcoins. Uten forbedringer av personvernet og anonymiteten til Bitcoins
 nettverksprotokoll, kan ikke bitcoins betraktes som like utbyttbare som
 gull.
 
-### Verifiserbarhet:
+### Verifiserbarhet
 
 For de fleste hensikter og formål er både fiat-valutaer og gull ganske
 enkle å verifisere for autentisitet. Til tross for at de har funksjoner
@@ -293,7 +289,7 @@ Bitcoins, derimot, kan verifiseres med matematisk sikkerhet. Ved å bruke
 kryptografiske signaturer kan eieren av en bitcoin offentlig bevise at
 hun eier bitcoinene hun sier hun gjør.
 
-### Delbarhet:
+### Delbarhet
 
 Bitcoins kan deles ned til en hundre milliontedel av en bitcoin og
 overføres til så uendelig små beløp (nettverksavgifter kan imidlertid
@@ -303,7 +299,7 @@ delelig nok i praksis. Selv om gull er fysisk delelig, blir det
 vanskelig å bruke når det deles inn i små nok mengder til at det kan
 være nyttig for daglig handel med lavere verdi.
 
-### Knapphet:
+### Knapphet
 
 Attributten som tydeligst skiller Bitcoin fra fiat-valutaer og gull er
 dens forhåndsbestemte knapphet. Det er designet slik at det på det meste kan lages 21 millioner
@@ -330,7 +326,7 @@ Inflasjonstendensene til regjeringer over hele verden etterlater eieren
 av en fiat-valuta med sannsynligheten for at sparepengene deres vil avta
 i verdi over tid.
 
-### Etablert historie:
+### Etablert historie
 
 Ingen monetær varer har en historie så lang som gull, som har
 vært verdsatt så lenge menneskelig sivilisasjon har eksistert. Mynter
@@ -357,13 +353,12 @@ den samfunnsmessige tilliten til et nytt monetær vare asymptotisk av natur,
 som illustrert i grafen nedenfor:
 
 ![Tillit over tid](/assets/trust-time.webp)
- 
 
 Hvis Bitcoin eksisterer i 20 år, vil det være nesten universell tillit
 til at det vil være tilgjengelig for alltid, omtrent som folk tror at
 Internett er en permanent funksjon i den moderne verden.
 
-### Sensurmotstand:
+### Sensurmotstand
 
 En av de viktigste kildene til tidlig etterspørsel etter bitcoins var
 bruken av dem i ulovlig narkotikahandel. Mange antok senere feilaktig at
@@ -423,13 +418,13 @@ verdimål.
 Ved å bruke moderne terminologi, utvikler penger alltid seg i følgende fire
 stadier:
 
-1.  **Samleobjekt:** I den aller første fasen av utviklingen vil penger
+1. **Samleobjekt:** I den aller første fasen av utviklingen vil penger
     bli krevd utelukkende basert på dens særegne egenskaper, og blir
     vanligvis et innfall av dens eier. Skjell, perler og gull var alle
     samleobjekter før de senere gikk over til de mer kjente rollene som
     penger.
 
-2.  **Verdilagring** : Når det er etterspurt av nok mennesker for sine
+2. **Verdilagring** : Når det er etterspurt av nok mennesker for sine
     særegenheter, vil penger bli anerkjent som et middel til å beholde
     og lagre verdi over tid. Etter hvert som en vare blir mer anerkjent
     som et passende verdilager, vil kjøpekraften øke etter hvert som
@@ -437,7 +432,7 @@ stadier:
     verdilager vil til slutt nå et platå når den er utbredt og tilstrømningen
     av nye mennesker som ønsker den som en verdilager minker.
 
-3.  **Byttemiddel** : Når penger er fullt etablert som et verdilager,
+3. **Byttemiddel** : Når penger er fullt etablert som et verdilager,
     vil kjøpekraften stabilisere seg. Etter å ha stabilisert seg i
     kjøpekraft, vil alternativkostnaden ved å bruke penger til å
     fullføre handler reduseres til et nivå hvor det er egnet for bruk
@@ -450,7 +445,7 @@ stadier:
     tidspunktet for denne artikkelens skriving) for to pizzaer
     illustrerer denne forvirringen.
 
-4.  **Regneenhet:** Når penger er mye brukt som byttemiddel, vil varer
+4. **Regneenhet:** Når penger er mye brukt som byttemiddel, vil varer
     bli priset i forhold til det. Det vil si at bytteforholdet mot
     penger vil være tilgjengelig for de fleste varer. Det er en vanlig
     misforståelse at bitcoin-priser er tilgjengelige for mange varer i
@@ -510,8 +505,6 @@ slutten av 1800-tallet da regjeringer over hele verden i stor grad
 forlot det som penger til fordel for gull.
 
 ![Monetær premie for forskjellige monetære varer](/assets/monetary-premium.webp)
-
- 
 
 Selv i fravær av ytre faktorer som statlig intervensjon eller
 konkurranse fra andre monetær varer, vil ikke den monetære premien for nye penger
@@ -587,9 +580,7 @@ monetisering. Bitcoins pris ser ut til å følge et fraktalt mønster
 av økende omfang, der hver iterasjon av fraktalen matcher den klassiske
 formen til en [Gartner-hype-syklus](https://en.wikipedia.org/wiki/Gartner_hype_cycle).
 
-
 ![Garner Hype-Syklus](/assets/gartner-hype-cycle.webp)
- 
 
 I sin artikkel om [den spekulative Bitcoin adopsjon/pristeori](https://medium.com/@mcasey0827/speculative-bitcoin-adoption-price-theory-2eed48ecf7da)
 , hevder Michael Casey at de ekspanderende Gartner-hype-syklusene
@@ -598,7 +589,6 @@ mange transformative teknologier etter hvert som de blir vanlig brukt i
 samfunnet.
 
 ![S-kurve](/assets/scurve.webp)
- 
 
 Hver Gartner-hype-syklus begynner med et utbrudd av entusiasme for den
 nye teknologien, og prisen bys opp av markedsdeltakerne som er
@@ -644,7 +634,6 @@ Gartner-hype-syklus fra slutten av 1970-tallet til begynnelsen av
 dynamikk i prosessen med monetisering.
 
 ![Gull historisk](/assets/gold-historical.webp)
- 
 
 ## Gartner-kohorter
 
@@ -710,8 +699,6 @@ av det Michael Casey beskrev som "det tidlige flertallet" av private og
 institusjonelle investorer.
 
 ![Penetrasjon av målmarkedet](/assets/penetration-of-target-market.webp)
-
- 
 
 Ettersom likviditetskildene har blitt dypere og modnet, har store
 institusjonelle investorer nå muligheten til å delta gjennom regulerte
@@ -839,8 +826,6 @@ minkende verdien av landets penger.
 
 ![Hyperinflasjon](/assets/hyperinflation.webp)
 
-
-
 Til slutt, når troen er fullstendig tapt under en hyperinflasjon, vil en
 suveren penger ikke lenger bli akseptert av noen, og samfunnet vil enten
 gå over til byttehandel eller den monetære enheten vil bli fullstendig
@@ -867,8 +852,6 @@ Bitcoin. Med dette grunnlaget kan vi nå adressere noen av de mest
 vanlige misoppfatningene om Bitcoin.
 
 ![Bitcoin](/assets/bitcoin.webp)
-
- 
 
 ### Bitcoin er en boble
 
@@ -946,9 +929,7 @@ er at den ikke kan opprettholde sin verdi når det enkelt kan lages
 konkurrenter som er i stand til å inkorporere de siste innovasjonene og
 programvarefunksjonene.
 
-
 ![Altcoins](/assets/altcoins.webp)
-
 
 Feilen i dette argumentet er Bitcoin-konkurrenter som har
 blitt opprettet gjennom årene mangler "nettverkseffekten" til den første
