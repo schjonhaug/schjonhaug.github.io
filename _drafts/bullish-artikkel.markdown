@@ -55,10 +55,10 @@ hele tatt? I motsetning til aksjer, obligasjoner, eiendom eller til og
 med råvarer som olje og hvete, kan bitcoins ikke verdsettes ved å bruke
 standard diskontert kontantstrømanalyse eller etterspørsel etter bruk i
 produksjon av varer. Bitcoins faller inn i en helt annen
-kategori av varer, kjent som pengegoder, hvis verdi er satt
+kategori av varer, kjent som monetær varer, hvis verdi er satt
 spillteoretisk. Det vil si at hver markedsdeltaker verdsetter varen
 basert på deres vurdering av om og hvor mye andre aktører vil verdsette
-det. For å forstå den spilleteoretiske naturen til pengegoder, må vi
+det. For å forstå den spilleteoretiske naturen til monetær varer, må vi
 utforske pengenes opprinnelse.
 
 ## Opprinnelsen til penger
@@ -174,7 +174,7 @@ disse egenskapene å utkonkurrere andre. Et ideell verdilager vil være:
   viktigere ettersom handelen blomstret og mengdene som ble utvekslet
   ble mindre og mer presise.
 
-- **Knapt**: Som Nick Szabo kalte det, må en pengevare ha "uforfalskbar
+- **Knapt**: Som Nick Szabo kalte det, må en monetær vare ha "uforfalskbar
   kostbarhet". Varen må med andre ord ikke finnes i rikelig mengder eller være lett å
   enten få tak i eller produsere i kvantitet. Knapphet er kanskje den viktigste egenskapen til et verdilager, da det griper inn i det
   medfødte menneskelige ønsket om å samle det som er sjeldent. Det er
@@ -194,95 +194,106 @@ disse egenskapene å utkonkurrere andre. Et ideell verdilager vil være:
   de som lever under regimer som prøver å håndheve kapitalkontroll eller
   forby ulike former for fredelig handel.
 
-Tabellen nedenfor rangerer Bitcoin, gull og fiat-penger (som dollar) mot
+Tabellen nedenfor rangerer Bitcoin, gull og [fiat-penger](https://no.wikipedia.org/wiki/Fiat-penger) (som dollar) mot
 attributtene som er oppført ovenfor, og etterfølges av en forklaring av
 hver karakter:
 
 ![Sammenligning av egenskapene til Bitcoin, gull og fiat-valuta](/assets/table.webp)
  
 
-**Varighet:**
+### Holdbarhet:
 
 Gull er den ubestridte kongen av holdbarhet. Det store flertallet av
 gull som noen gang har blitt utvunnet eller preget, inkludert faraoenes
-gull, forblir bevart i dag og vil sannsynligvis være tilgjengelig om
+gull, finnes fremdeles i dag og vil sannsynligvis eksistere om
 tusen år. Gullmynter som ble brukt som penger i antikken har fortsatt
-betydelig verdi i dag. Fiat-valuta og bitcoins er grunnleggende digitale
-poster som kan ha fysisk form (som papirregninger). Det er altså ikke
+betydelig verdi i dag.
+
+Fiat-valuta og bitcoins er fundamentalt sett digital
+informasjon som kan ha fysisk form (som papirsedler). Det er altså ikke
 deres fysiske manifestasjon hvis holdbarhet bør vurderes (siden en
 fillete dollarseddel kan byttes ut med en ny), men holdbarheten til
 institusjonen som utsteder dem. Når det gjelder fiat-valutaer, har mange
 regjeringer kommet og gått gjennom århundrene, og deres valutaer
-forsvant med dem. Weimarrepublikkens Papiermark, Rentenmark og
-Reichsmark har ikke lenger verdi fordi institusjonen som utstedte dem
+forsvant med dem. [Weimarrepublikkens](https://snl.no/Weimarrepublikken) [Papiermark](https://no.wikipedia.org/wiki/Papirmark), [Rentenmark](https://no.wikipedia.org/wiki/Rentenmark) og
+[Reichsmark](https://no.wikipedia.org/wiki/Reichsmark) har ikke lenger verdi fordi institusjonen som utstedte dem
 ikke lenger eksisterer. Hvis historien er en guide, ville det være dumt
 å vurdere fiat-valutaer som varige på lang sikt - amerikanske dollar og
-britiske pund er relative anomalier i denne forbindelse. Bitcoins, som
+britiske pund er relative anomalier i denne forbindelse.
+
+Bitcoins, som
 ikke har noen utstedende myndighet, kan anses som holdbare så lenge
 nettverket som sikrer dem forblir på plass. Gitt at Bitcoin fortsatt er
 i sin spede begynnelse, er det for tidlig å trekke sterke konklusjoner
 om holdbarheten. Det er imidlertid oppmuntrende tegn på at, til tross
 for fremtredende tilfeller av nasjonalstater som forsøker å regulere
 Bitcoin og år med angrep fra hackere, har nettverket fortsatt å fungere,
-og viser en bemerkelsesverdig grad av "
-[<u>anti-skjørhet</u>](https://en.wikipedia.org/wiki/Antifragility) ".
+og viser en bemerkelsesverdig grad av "[anti-skjørhet](https://en.wikipedia.org/wiki/Antifragility)".
 
-**Portabilitet:**
+### Bærbarhet:
 
-Bitcoins er det mest bærbare verdilageret som noen gang er brukt av
+Bitcoins er det mest portable verdilageret som noen gang er brukt av
 mennesker. Private nøkler som representerer hundrevis av millioner av
-dollar kan lagres på en liten USB-stasjon og enkelt fraktes hvor som
+dollar kan lagres på en liten USB-enhet og enkelt fraktes hvor som
 helst. Videre kan like verdifulle summer overføres mellom mennesker på
-motsatte ender av jorden nesten umiddelbart. Fiat-valutaer, som i
-utgangspunktet er digitale, er også svært bærbare. Offentlige
+motsatte ender av jorden nesten umiddelbart.
+
+Fiat-valutaer, som i
+utgangspunktet er digitale, er også svært portable. Offentlige
 reguleringer og kapitalkontroll gjør imidlertid at store
 verdioverføringer vanligvis tar dager eller kanskje ikke er mulige i det
 hele tatt. Kontanter kan brukes for å unngå kapitalkontroll, men da blir
-risikoen for lagring og transportkostnader betydelig. Gull, som er
-fysisk i form og utrolig tett, er det desidert minst bærbare. Det er
-ikke rart at størstedelen av bullion aldri blir transportert. Når
+risikoen for lagring og transportkostnader betydelig.
+
+Gull, som er
+fysisk i form og har en utrolig tetthet, er det desidert minst bærbare. Det er
+ikke rart at størstedelen av [bullion](https://snl.no/bullion) aldri blir transportert. Når
 bullion overføres mellom en kjøper og en selger, er det vanligvis bare
 tittelen til gullet som overføres, ikke den fysiske bullion i seg selv.
 Å overføre fysisk gull over store avstander er kostbart, risikabelt og
 tidkrevende.
 
-**Svingbarhet:**
+### Utbyttbarhet:
 
-Gull gir standarden for fungibilitet. Når det smeltes ned, er en unse
+Gull gir standarden for utbyttbarhet. Når det smeltes ned, er en [unse](https://no.wikipedia.org/wiki/Unse)
 gull i hovedsak umulig å skille fra noen annen unse, og gull har alltid
-handlet på denne måten på markedet. Fiat-valutaer, derimot, er bare så
-fungible som utstedende institusjoner tillater dem. Selv om det kan være
+handlet på denne måten på markedet.
+
+Fiat-valutaer, derimot, er bare så
+utbyttbare som utstedende institusjoner tillater dem. Selv om det kan være
 tilfelle at en fiat-seddel vanligvis behandles som alle andre av selgere
 som godtar dem, er det tilfeller der sedler med store valører har blitt
 behandlet annerledes enn små. For eksempel, Indias regjering, i et
-forsøk på å utrydde Indias ubeskattede grå marked, demoneterte deres 500
-og 1000 rupeesedler fullstendig. Demonetiseringen førte til at 500 og
-1000 rupeesedler ble handlet med rabatt i forhold til pålydende, noe som
-gjorde dem ikke lenger virkelig fungible med søskensedler med lavere
-valør. Bitcoins er fungible på nettverksnivå, noe som betyr at hver
-bitcoin, når den overføres, behandles på samme måte på
+forsøk på å utrydde Indias ubeskattede gråmarked, ugyldiggjorde deres 500
+og 1000 [rupi-sedler](https://no.wikipedia.org/wiki/Indisk_rupi) fullstendig. Ugyldiggjøringen førte til at 500 og
+1000 rupi-sedler ble handlet med rabatt i forhold til pålydende, noe som
+gjorde dem ikke lenger virkelig utbyttbare med andre sedler med lavere
+valør.
+
+Bitcoins er utbyttbare på nettverksnivå, noe som betyr at hver
+bitcoin, når den overføres, behandles på samme måte av
 Bitcoin-nettverket. Men fordi bitcoins er sporbare på blokkjeden, kan en
 bestemt bitcoin bli tilsmusset av bruken i ulovlig handel, og kjøpmenn
 eller børser kan bli tvunget til å ikke akseptere slike skjemmede
 bitcoins. Uten forbedringer av personvernet og anonymiteten til Bitcoins
-nettverksprotokoll, kan ikke bitcoins betraktes som like fungible som
+nettverksprotokoll, kan ikke bitcoins betraktes som like utbyttbare som
 gull.
 
-**Verifiserbarhet:**
+### Verifiserbarhet:
 
 For de fleste hensikter og formål er både fiat-valutaer og gull ganske
 enkle å verifisere for autentisitet. Til tross for at de har funksjoner
 på sedlene for å forhindre forfalskning, står nasjonalstater og deres
 innbyggere fortsatt overfor potensialet for å bli lurt av falske sedler.
 Gull er heller ikke immun mot å bli forfalsket. Sofistikerte kriminelle
-har brukt [<u>gullbelagt
-wolfram</u>](http://www.cbc.ca/beta/news/canada/ottawa/fake-gold-wafer-rbc-canadian-mint-1.4368801)
+har brukt [gullbelagt
+wolfram](http://www.cbc.ca/beta/news/canada/ottawa/fake-gold-wafer-rbc-canadian-mint-1.4368801)
 som en måte å lure gullinvestorer til å betale for falskt gull.
 Bitcoins, derimot, kan verifiseres med matematisk sikkerhet. Ved å bruke
 kryptografiske signaturer kan eieren av en bitcoin offentlig bevise at
 hun eier bitcoinene hun sier hun gjør.
 
-**Delbarhet:**
+### Delbarhet:
 
 Bitcoins kan deles ned til en hundre milliontedel av en bitcoin og
 overføres til så uendelig små beløp (nettverksavgifter kan imidlertid
@@ -292,35 +303,41 @@ delelig nok i praksis. Selv om gull er fysisk delelig, blir det
 vanskelig å bruke når det deles inn i små nok mengder til at det kan
 være nyttig for daglig handel med lavere verdi.
 
-**Knapphet:**
+### Knapphet:
 
 Attributten som tydeligst skiller Bitcoin fra fiat-valutaer og gull er
-dens forhåndsbestemte knapphet. Ved design kan på det meste 21 millioner
-bitcoins noensinne lages. Dette gir eieren av bitcoins en kjent
+dens forhåndsbestemte knapphet. Det er designet slik at det på det meste kan lages 21 millioner
+bitcoins noensinne. Dette gir eieren av bitcoins en kjent
 prosentandel av den totale mulige forsyningen. For eksempel vil en eier
-av 10 bitcoins vite at på det meste 2,1 millioner mennesker på jorden
-(mindre enn 0,03 % av verdens befolkning) noen gang kan ha så mange
-bitcoins som de hadde. Gull, selv om det forblir ganske lite gjennom
-historien, er ikke immunt mot økninger i tilbudet. Hvis det noen gang
+av 10 bitcoins vite at på det meste kan være 2,1 millioner mennesker på jorden
+(mindre enn 0,03 % av verdens befolkning) med like mange
+bitcoins som de har.
+
+Gull, selv om det forblir ganske knapt gjennom
+historien, er ikke immunt mot økninger på tilbudssiden. Hvis det noen gang
 var tilfelle at en ny metode for gruvedrift eller å skaffe gull ble
 økonomisk, kunne tilgangen på gull stige dramatisk (eksempler inkluderer
-[<u>havbunns-</u>](https://news.nationalgeographic.com/2016/07/deep-sea-mining-five-facts/)
+[havbunns-](https://news.nationalgeographic.com/2016/07/deep-sea-mining-five-facts/)
 eller
-[<u>asteroidegruvedrift</u>](http://web.mit.edu/12.000/www/m2016/finalwebsite/solutions/asteroids.html)
-). Endelig har fiat-valutaer, selv om de bare er en relativt nyere
-oppfinnelse av historien, vist seg å være utsatt for konstante økninger
-i tilbudet. Nasjonalstater har vist en vedvarende tilbøyelighet til å
-blåse opp pengemengden for å løse kortsiktige politiske problemer.
+[asteroidegruvedrift](http://web.mit.edu/12.000/www/m2016/finalwebsite/solutions/asteroids.html)
+).
+
+Til slutt har fiat-valutaer, selv om de bare er en relativt ny
+oppfinnelse historisk sett, vist seg å være utsatt for konstante økninger
+på tilbudssiden. Nasjonalstater har vist en vedvarende tilbøyelighet til å
+øke pengemengden for å løse kortsiktige politiske problemer.
 Inflasjonstendensene til regjeringer over hele verden etterlater eieren
 av en fiat-valuta med sannsynligheten for at sparepengene deres vil avta
 i verdi over tid.
 
-**Etablert historie:**
+### Etablert historie:
 
-Ingen pengegoder har en historie så lang og historie som gull, som har
+Ingen monetær varer har en historie så lang som gull, som har
 vært verdsatt så lenge menneskelig sivilisasjon har eksistert. Mynter
-preget i antikkens fjerne dager [<u>opprettholder fortsatt betydelig
-verdi i dag</u>](https://en.wikipedia.org/wiki/Hoxne_Hoard) . Det samme
+preget i antikkens fjerne dager [opprettholder fortsatt betydelig
+verdi i dag](https://en.wikipedia.org/wiki/Hoxne_Hoard).
+
+Det samme
 kan ikke sies om fiat-valutaer, som er en relativt ny anomali i
 historien. Fra starten har fiat-valutaer hatt en nesten universell
 tendens til eventuell verdiløshet. Bruken av inflasjon som et snikende
@@ -329,35 +346,36 @@ få stater i historien har vært i stand til å motstå. Hvis det 20.
 århundre, der fiat-penger kom til å dominere den globale pengeordenen,
 etablerte noen økonomisk sannhet, er det at fiat-penger ikke kan stoles
 på for å opprettholde verdien på lang eller til og med mellomlang sikt.
+
 Bitcoin, til tross for sin korte eksistens, har gjennomgått nok forsøk i
 markedet til at det er stor sannsynlighet for at det ikke vil forsvinne
 som en verdsatt eiendel med det første. Videre antyder
-[<u>Lindy-effekten</u>](https://en.wikipedia.org/wiki/Lindy_effect) at
+[Lindy-effekten](https://en.wikipedia.org/wiki/Lindy_effect) at
 jo lenger Bitcoin eksisterer, desto større er samfunnets tillit til at
 den vil fortsette å eksistere lenge inn i fremtiden. Med andre ord er
-den samfunnsmessige tilliten til et nytt pengegode asymptotisk av natur,
+den samfunnsmessige tilliten til et nytt monetær vare asymptotisk av natur,
 som illustrert i grafen nedenfor:
 
-<img src="media/image5.png" style="width:6.3in;height:4.18819in"
-alt="Et bilde som inneholder tekst, skjermbilde, diagram, Font Automatisk generert beskrivelse" />
+![Tillit over tid](/assets/trust-time.webp)
+ 
 
 Hvis Bitcoin eksisterer i 20 år, vil det være nesten universell tillit
 til at det vil være tilgjengelig for alltid, omtrent som folk tror at
 Internett er en permanent funksjon i den moderne verden.
 
-**Sensurmotstand:**
+### Sensurmotstand:
 
 En av de viktigste kildene til tidlig etterspørsel etter bitcoins var
 bruken av dem i ulovlig narkotikahandel. Mange antok senere feilaktig at
 den primære etterspørselen etter bitcoins skyldtes deres tilsynelatende
 anonymitet. Bitcoin er imidlertid langt fra en anonym valuta; hver
 transaksjon som overføres på Bitcoin-nettverket blir for alltid
-registrert på en offentlig blokkjede. Den historiske registreringen av
-transaksjoner tillater senere rettsmedisinsk analyse for å identifisere
-kilden til en pengestrøm. Det var [<u>en slik
-analyse</u>](http://blog.wizsec.jp/2017/07/breaking-open-mtgox-1.html)
+registrert på en offentlig [blokkjede](https://no.wikipedia.org/wiki/Blokkjede). Den historiske registreringen av
+transaksjoner tillater senere kriminalteknsik analyse for å identifisere
+kilden til en pengestrøm. Det var [en slik
+analyse](http://blog.wizsec.jp/2017/07/breaking-open-mtgox-1.html)
 som førte til pågripelsen av en gjerningsmann for det beryktede
-MtGox-ranet. Selv om det er sant at en tilstrekkelig forsiktig og
+[Mt. Gox](https://en.wikipedia.org/wiki/Mt._Gox)-ranet. Selv om det er sant at en tilstrekkelig forsiktig og
 flittig person kan skjule identiteten sin når han bruker Bitcoin, er det
 ikke derfor Bitcoin var så populært for handel med narkotika.
 Nøkkelattributten som gjør Bitcoin verdifull for forbudte aktiviteter,
@@ -367,26 +385,26 @@ om transaksjonen skal tillates. Som et distribuert peer-to-peer-nettverk
 er Bitcoin, i sin natur, designet for å være sensurbestandig. Dette står
 i sterk kontrast til fiat-banksystemet, der stater regulerer banker og
 de andre portvaktene for pengeoverføring for å rapportere og forhindre
-ulovlig bruk av pengegoder. Et klassisk eksempel på regulert
+ulovlig bruk av monetær varer. Et klassisk eksempel på regulert
 pengeoverføring er kapitalkontroll. En velstående millionær, for
 eksempel, kan finne det svært vanskelig å overføre formuen til et nytt
 bosted hvis de ønsker å flykte fra et undertrykkende regime. Selv om
 gull ikke utstedes av stater, gjør dets fysiske natur det vanskelig å
-overføre på avstand, noe som gjør det langt mer utsatt for statlig
-regulering enn Bitcoin. Indias [<u>Gold Control
-Act</u>](https://en.wikipedia.org/wiki/The_Gold_(Control)_Act,_1968) er
+overføre over avstander, noe som gjør det langt mer utsatt for statlig
+regulering enn Bitcoin. Indias [Gold Control
+Act](https://en.wikipedia.org/wiki/The_Gold_(Control)_Act,_1968) er
 et eksempel på slik regulering.
 
 Bitcoin utmerker seg på tvers av de fleste egenskapene som er oppført
-ovenfor, og lar den utkonkurrere moderne og eldgamle pengegoder på
+ovenfor, og lar den utkonkurrere moderne og eldgamle monetær varer på
 marginen og gir et sterkt insentiv for økende bruk. Spesielt har den
 kraftige kombinasjonen av sensurmotstand og absolutt knapphet vært en
 kraftig motivator for velstående investorer til å allokere en del av
 formuen til den begynnende aktivaklassen.
 
-**Utviklingen av penger**
+## Utviklingen av penger
 
-Det er en besettelse i moderne pengeøkonomi med pengers byttemiddel. På
+Det er en besettelse i moderne pengeøkonomi med penger rolle som byttemiddel. På
 1900-tallet har stater monopolisert utstedelsen av penger og
 kontinuerlig undergravd bruken av dem som verdilager, og skapt en falsk
 tro på at penger først og fremst er definert som et byttemiddel. Mange
@@ -394,15 +412,15 @@ har kritisert Bitcoin som en uegnet penge fordi prisen har vært for
 flyktig til å være egnet som byttemiddel. Dette setter imidlertid vogna
 foran hesten. Penger har alltid utviklet seg i etapper, med
 verdilagerrollen foran byttemiddelrollen. En av fedrene til
-marginalistisk økonomi, William Stanley Jevons, [<u>forklarte
-at</u>](http://www.econlib.org/library/YPDBooks/Jevons/jvnMME3.html) :
+marginalistiske tilnærmingsmåte til økonomisk analyse, [William Stanley Jevons](https://no.wikipedia.org/wiki/Stanley_Jevons), [forklarte
+at](http://www.econlib.org/library/YPDBooks/Jevons/jvnMME3.html) :
 
-Historisk sett... ser det ut til at gull har tjent, for det første, som
+> Historisk sett… ser det ut til at gull har tjent, for det første, som
 en vare som er verdifull for dekorative formål; for det andre, som
-lagret formue; for det tredje, som et byttemiddel; og til slutt som et
+lagring av formue; for det tredje, som et byttemiddel; og til slutt som et
 verdimål.
 
-Ved å bruke moderne terminologi, utvikler penger alltid i følgende fire
+Ved å bruke moderne terminologi, utvikler penger alltid seg i følgende fire
 stadier:
 
 1.  **Samleobjekt:** I den aller første fasen av utviklingen vil penger
@@ -411,12 +429,12 @@ stadier:
     samleobjekter før de senere gikk over til de mer kjente rollene som
     penger.
 
-2.  **Lagre av verdi** : Når det er etterspurt av nok mennesker for sine
+2.  **Verdilagring** : Når det er etterspurt av nok mennesker for sine
     særegenheter, vil penger bli anerkjent som et middel til å beholde
     og lagre verdi over tid. Etter hvert som en vare blir mer anerkjent
     som et passende verdilager, vil kjøpekraften øke etter hvert som
     flere etterspør den for dette formålet. Kjøpekraften til en
-    verdilager vil til slutt platå når den er utbredt og tilstrømningen
+    verdilager vil til slutt nå et platå når den er utbredt og tilstrømningen
     av nye mennesker som ønsker den som en verdilager minker.
 
 3.  **Byttemiddel** : Når penger er fullt etablert som et verdilager,
@@ -426,13 +444,13 @@ stadier:
     som byttemiddel. I de tidligste dagene med Bitcoin var det mange som
     ikke satte pris på de enorme alternativkostnadene ved å bruke
     bitcoins som et byttemiddel, snarere enn som et begynnende
-    verdilager. Den [<u>berømte
-    historien</u>](https://bitcointalk.org/index.php?topic=137.0) om en
-    mann som handlet 10 000 bitcoins (verdt omtrent \$94 millioner på
+    verdilager. Den [berømte
+    historien](https://bitcointalk.org/index.php?topic=137.0) om en
+    mann som handlet 10 000 bitcoins (verdt omtrent 94 millioner dollar på
     tidspunktet for denne artikkelens skriving) for to pizzaer
     illustrerer denne forvirringen.
 
-4.  **Kontoenhet:** Når penger er mye brukt som byttemiddel, vil varer
+4.  **Regneenhet:** Når penger er mye brukt som byttemiddel, vil varer
     bli priset i forhold til det. Det vil si at bytteforholdet mot
     penger vil være tilgjengelig for de fleste varer. Det er en vanlig
     misforståelse at bitcoin-priser er tilgjengelige for mange varer i
@@ -443,94 +461,93 @@ stadier:
     bitcoin skulle falle i dollar, ville antallet bitcoins som selgeren
     ba om, øke tilsvarende. Bare når kjøpmenn er villige til å akseptere
     bitcoins for betaling uten hensyn til bitcoin-kursen mot
-    fiat-valutaer, kan vi virkelig tenke på Bitcoin som en kontoenhet.
+    fiat-valutaer, kan vi virkelig tenke på Bitcoin som en regneenhet.
 
 Monetære varer som ennå ikke er en regneenhet, kan betraktes som «delvis
-inntektsgivende». I dag fyller gull en slik rolle, det er et verdilager,
-men har blitt fratatt byttemiddel- og kontoenhetsrollene ved statlig
+monetiserte. I dag fyller gull en slik rolle, det er et verdilager,
+men har blitt fratatt byttemiddel- og regneenhetsrollene ved statlig
 inngripen. Det er også mulig at ett gode fyller byttemiddelrollen til
 penger mens et annet gode fyller de andre rollene. Dette gjelder
 vanligvis i land med dysfunksjonelle stater, som Argentina eller
 Zimbabwe. I sin bok Digital Gold skriver Nathaniel Popper:
 
-I Amerika tjener dollaren sømløst pengenes tre funksjoner: å tilby et
+> I Amerika tjener dollaren sømløst pengenes tre funksjoner: å tilby et
 byttemiddel, en enhet for å måle varekostnadene og en eiendel hvor verdi
 kan lagres. I Argentina, på den annen side, mens pesoen ble brukt som et
 byttemiddel - for daglige kjøp - var det ingen som brukte den som en
 verdilager. Å beholde sparepenger i pesoen tilsvarte å kaste penger. Så
-folk vekslet alle pesos de ønsket å spare for dollar, noe som holdt
+folk vekslet alle pesos de ønsket å spare til dollar, noe som holdt
 verdien bedre enn pesoen. Fordi pesoen var så flyktig, husket folk
-vanligvis prisene i dollar **,** noe som ga en mer pålitelig måleenhet
+vanligvis prisene i dollar – noe som ga en mer pålitelig måleenhet
 over tid.
 
-Bitcoin går for øyeblikket fra den første fasen av inntektsgenerering
+Bitcoin går for øyeblikket fra den første fasen av monetisering
 til den andre fasen. Det vil sannsynligvis ta flere år før Bitcoin går
 over fra å være en begynnende verdilager til å være et ekte
 byttemiddel, og veien det tar for å komme dit er fortsatt full av risiko
 og usikkerhet. Det er slående å merke seg at den samme overgangen tok
-mange århundrer for gull. Ingen i live har sett inntektsgenerering i
-sanntid av en vare (slik som skjer med Bitcoin), så det er verdifull
-liten erfaring angående veien denne inntektsgenereringen vil ta.
+mange århundrer for gull. Ingen i live har sett monetisering i
+sanntid av en vare (slik som skjer med Bitcoin), så det finnes svært
+liten erfaring angående veien denne monetiseringen vil ta.
 
-**Baneavhengighet**
+## Stiavhengighet
 
-I prosessen med å tjene penger, vil en pengevare øke i kjøpekraft. Mange
-har kommentert at økningen i kjøpekraften til Bitcoin skaper utseendet
-til en "boble". Selv om dette begrepet ofte brukes nedsettende for å
+I prosessen med å bli monetisert, vil en monetær vare øke i kjøpekraft. Mange
+har kommentert at økningen i kjøpekraften til Bitcoin ser ut som en "boble". Selv om dette begrepet ofte brukes nedsettende for å
 antyde at Bitcoin er grovt overvurdert, er det utilsiktet passende. Et
-kjennetegn som er felles for alle pengegoder er at deres kjøpekraft er
+kjennetegn som er felles for alle monetær varer er at deres kjøpekraft er
 høyere enn det som kan forsvares av bruksverdien alene. Faktisk hadde
 mange historiske penger ingen bruksverdi i det hele tatt. Forskjellen
-mellom kjøpekraften til en pengevare og bytteverdien den kan bety for
+mellom kjøpekraften til en monetær vare og bytteverdien den kan bety for
 sin iboende nytte kan betraktes som en "monetær premie". Når et
-pengegodt går gjennom stadiene av inntektsgenerering (oppført i
+pengegodt går gjennom stadiene av monetisering (forklart i
 avsnittet ovenfor), vil den monetære premien øke. Premien beveger seg
-imidlertid ikke i en rett, forutsigbar linje. En god X som var i ferd
-med å tjene penger kan bli utkonkurrert av en annen god Y som er mer
+imidlertid ikke i en rett, forutsigbar linje. En vare X som var i ferd
+med å monetisert kan bli utkonkurrert av en annen varemone Y som er mer
 egnet som penger, og den monetære premien til X kan falle eller
 forsvinne helt. Den monetære premien til sølv forsvant nesten helt på
 slutten av 1800-tallet da regjeringer over hele verden i stor grad
 forlot det som penger til fordel for gull.
 
-<img src="media/image6.png" style="width:6.3in;height:5.58333in"
-alt="Et bilde som inneholder tekst, skjermbilde, Font, nummer Automatisk generert beskrivelse" />
+![Monetær premie for forskjellige monetære varer](/assets/monetary-premium.webp)
 
-Selv i fravær av eksogene faktorer som statlig intervensjon eller
-konkurranse fra andre pengegoder, vil ikke pengepremien for nye penger
-følge en forutsigbar bane. Økonom Larry White [<u>observerte
-at</u>](http://oll.libertyfund.org/pages/misestmc) :
+ 
 
-problemet med \[boblehistorien\] er selvfølgelig at \[den\] stemmer
+Selv i fravær av ytre faktorer som statlig intervensjon eller
+konkurranse fra andre monetær varer, vil ikke den monetære premien for nye penger
+følge en forutsigbar bane. Økonom Larry White [observerte
+at](http://oll.libertyfund.org/pages/misestmc) :
+
+> problemet med boblehistorien er selvfølgelig at den stemmer
 overens med *enhver* prisbane, og gir derfor ingen forklaring på en
 bestemt prisbane
 
-Prosessen med inntektsgenerering er spilleteoretisk; hver
+Prosessen med monetisering er spilleteoretisk; hver
 markedsdeltaker forsøker å forutse den samlede etterspørselen fra andre
-deltakere og dermed den fremtidige pengepremien. Fordi pengepremien ikke
+deltakere og dermed den fremtidige monetære premien. Fordi den monetære premien ikke
 er forankret i noen iboende nytteverdi, har markedsdeltakere en tendens
-til å misligholde tidligere priser når de bestemmer om en pengevare er
+til å misligholde tidligere priser når de bestemmer om en monetær vare er
 billig eller dyr og om de skal kjøpe eller selge den. Forbindelsen
 mellom nåværende etterspørsel og tidligere priser er kjent som
-"baneavhengighet" og er kanskje den største kilden til forvirring når
-det gjelder å forstå prisbevegelsene til pengevarer.
+"stiavhengighet" og er kanskje den største kilden til forvirring når
+det gjelder å forstå prisbevegelsene til monetær vare.
 
-Når kjøpekraften til en pengevare øker med økende bruk, endres markedets
+Når kjøpekraften til en monetær vare øker med økende bruk, endres markedets
 forventninger til hva som er "billig" og "dyrt" tilsvarende. På samme
-måte, når prisen på en pengevare krasjer, kan forventningene bytte til
+måte, når prisen på en monetær vare krasjer, kan forventningene bytte til
 en generell tro på at tidligere priser var "irrasjonelle" eller for
-høye. Pengenes veiavhengighet er illustrert av
-[<u>ordene</u>](http://thereformedbroker.com/2017/09/11/you-can-practically-smell-it-in-the-air/)
+høye. Pengenes stiavhengighet er
+[illustrert av ordene](http://thereformedbroker.com/2017/09/11/you-can-practically-smell-it-in-the-air/)
 til den kjente Wall Street-fondsforvalteren Josh Brown:
 
-Jeg kjøpte \[bitcoins\] for \$2300 og hadde en umiddelbar dobbel på
-hendene. Så begynte jeg å si "Jeg kan ikke kjøpe mer av det," ettersom
+> Jeg kjøpte bitcoins for 2300 dollar og verdien doblet seg umiddelbart. Så begynte jeg å si "Jeg kan ikke kjøpe mer av det," ettersom
 det steg, selv om det er en forankret mening basert på ingenting annet
 enn prisen der jeg opprinnelig fikk den. Så, da det falt i løpet av den
 siste uken på grunn av et kinesisk angrep på børsene, begynte jeg å si
-til meg selv: "Å bra, jeg håper den blir drept så jeg kan kjøpe mer."
+til meg selv: "Å bra, jeg håper den dør så jeg kan kjøpe mer."
 
 Sannheten er at forestillingene om "billig" og "dyr" i hovedsak er
-meningsløse når det gjelder pengegoder. Prisen på en pengevare er ikke
+meningsløse når det gjelder monetær varer. Prisen på en monetær vare er ikke
 en refleksjon av dens kontantstrøm eller hvor nyttig den er, men er
 snarere et mål på hvor utbredt den har blitt brukt for de ulike rollene
 penger.
@@ -538,9 +555,9 @@ penger.
 Ytterligere kompliserer den baneavhengige naturen til penger er det
 faktum at markedsdeltakere ikke bare opptrer som lidenskapelige
 observatører, som prøver å kjøpe eller selge i påvente av fremtidige
-bevegelser av pengepremien, men også fungerer som aktive
-evangelisatorer. Siden det ikke er noen objektivt korrekt pengepremie,
-er proselytisering av de overlegne egenskapene til en pengevare mer
+bevegelser av den monetære premien, men også fungerer som aktive
+evangelisatorer. Siden det ikke er noen objektivt korrekt monetære premie,
+er proselytisering av de overlegne egenskapene til en monetær vare mer
 effektivt enn for vanlige varer, hvis verdi til syvende og sist er
 forankret til kontantstrøm eller bruksetterspørsel. Den religiøse gløden
 til deltakere i Bitcoin-markedet kan observeres i ulike nettfora der
@@ -558,18 +575,18 @@ begynner å evangelisere.
 
 Selv om sammenligningen med religion kan gi Bitcoin en aura av
 irrasjonell tro, er det helt rasjonelt for den enkelte eier å
-evangelisere for et overordnet pengegode og for samfunnet som helhet å
+evangelisere for et overordnet monetær vare og for samfunnet som helhet å
 standardisere på det. Penger fungerer som grunnlaget for all handel og
 sparing, så vedtak av en overlegen form for penger har enorme
 multiplikative fordeler for verdiskaping for alle medlemmer av et
 samfunn.
 
-**Formen på inntektsgenerering**
+**Formen på monetisering**
 
-Selv om det ikke er noen *a priori-* regler for veien et pengegode vil
+Selv om det ikke er noen *a priori-* regler for veien et monetær vare vil
 ta ettersom det blir inntektsført, har det dukket opp et merkelig
 mønster i løpet av den relativt korte historien til Bitcoins
-inntektsgenerering. Bitcoins pris ser ut til å følge et fraktalt mønster
+monetisering. Bitcoins pris ser ut til å følge et fraktalt mønster
 av økende omfang, der hver iterasjon av fraktalen matcher den klassiske
 formen til en Gartner-hype-syklus.
 
@@ -627,7 +644,7 @@ syklusen.
 Det er talende at gull fulgte det klassiske mønsteret til en
 Gartner-hype-syklus fra slutten av 1970-tallet til begynnelsen av
 2000-tallet. Man kan spekulere i at hype-syklusen er en iboende sosial
-dynamikk i prosessen med inntektsgenerering.
+dynamikk i prosessen med monetisering.
 
 <img src="media/image9.jpeg" style="width:6.3in;height:3.61875in"
 alt="Et bilde som inneholder line, tekst, Plottdiagram, Font Automatisk generert beskrivelse" />
@@ -776,22 +793,22 @@ og pengeutstedende makter fra å bli forstyrret.
 
 **Overgangen til et byttemiddel**
 
-En pengevare kan ikke gå over til å være et generelt akseptert
+En monetær vare kan ikke gå over til å være et generelt akseptert
 byttemiddel (den standard økonomiske definisjonen av "penger") før det
 er verdsatt bredt, av den tautologiske grunn at en vare som ikke er
 verdsatt ikke vil bli akseptert i bytte. I prosessen med å bli mye
-verdsatt, og dermed et verdilager, vil en pengevare øke i kjøpekraft, og
+verdsatt, og dermed et verdilager, vil en monetær vare øke i kjøpekraft, og
 skape en alternativkostnad for å gi den fra seg for bruk i bytte. Først
 når alternativkostnaden ved å gi fra seg et verdilager synker til et
 passende lavt nivå, kan det gå over til å bli et allment akseptert
 byttemiddel.
 
-Mer presist vil en pengevare bare være egnet som byttemiddel når summen
+Mer presist vil en monetær vare bare være egnet som byttemiddel når summen
 av alternativkostnaden og transaksjonskostnaden ved å bruke den i bytte
 faller under kostnaden for å fullføre en handel uten den.
 
 I et byttebasert samfunn kan overgangen av et verdilager til et
-byttemiddel skje selv når pengegodet øker i kjøpekraft fordi
+byttemiddel skje selv når monetær varet øker i kjøpekraft fordi
 transaksjonskostnadene ved byttehandel er ekstremt høye. I en utviklet
 økonomi, hvor transaksjonskostnadene er lave, er det mulig for et
 begynnende og raskt voksende verdilager, som Bitcoin, å bli brukt som et
@@ -803,14 +820,14 @@ stoffene ved bruk av fiat-valuta.
 Det er imidlertid store institusjonelle barrierer for at et begynnende
 verdilager kan bli et *generelt* akseptert byttemiddel i et utviklet
 samfunn. Stater bruker skatt som et kraftig middel for å beskytte sine
-suverene penger fra å bli fortrengt av konkurrerende pengegoder. Ikke
+suverene penger fra å bli fortrengt av konkurrerende monetær varer. Ikke
 bare nyter suverene penger fordelen av en konstant kilde til
 etterspørsel, ved at skatter kun kan overføres i dem, men konkurrerende
-pengegoder beskattes når de byttes til en verdsatt verdi. Denne
+monetær varer beskattes når de byttes til en verdsatt verdi. Denne
 sistnevnte typen beskatning skaper betydelig friksjon ved bruk av
 verdilager som byttemiddel.
 
-Handikapping av markedsbaserte pengegoder er imidlertid ikke en
+Handikapping av markedsbaserte monetær varer er imidlertid ikke en
 uoverstigelig barriere for at de kan bli et generelt akseptert
 byttemiddel. Hvis troen går tapt på suverene penger, kan verdien
 kollapse i en prosess kjent som hyperinflasjon. Når en suveren penger
@@ -858,13 +875,13 @@ alt="Et bilde som inneholder metall, valuta, penger, kontanter Automatisk genere
 
 **Bitcoin er en boble**
 
-Bitcoin, som alle markedsbaserte pengevarer, viser en pengepremie. Den
+Bitcoin, som alle markedsbaserte monetær vare, viser en monetære premie. Den
 monetære premien er det som gir opphav til den vanlige kritikken om at
-Bitcoin er en "boble". Imidlertid viser *alle* pengevarer en
-pengepremie. Det er faktisk denne premien (overskuddet over
+Bitcoin er en "boble". Imidlertid viser *alle* monetær vare en
+monetære premie. Det er faktisk denne premien (overskuddet over
 bruk-etterspørselsprisen) som er den definerende egenskapen til alle
 penger. Med andre ord, penger er alltid og overalt en boble. Paradoksalt
-nok er en pengevare både en boble og kan være undervurdert hvis den er i
+nok er en monetær vare både en boble og kan være undervurdert hvis den er i
 de tidlige stadiene av bruken som penger.
 
 **Bitcoin er for flyktig**
@@ -877,7 +894,7 @@ stor økning i prisen. Ettersom adopsjon og likviditet har økt gjennom
 oppnår markedsverdien til gull, vil den vise et lignende
 volatilitetsnivå. Ettersom Bitcoin overgår markedsverdien til gull, vil
 volatiliteten reduseres til et nivå som vil gjøre det egnet som et mye
-brukt byttemiddel. Som tidligere nevnt, skjer inntektsgenerering av
+brukt byttemiddel. Som tidligere nevnt, skjer monetisering av
 Bitcoin i en serie med Gartner-hype-sykluser. Volatiliteten er lavest
 under platåfasen av hypesyklusen, mens den er høyest under topp- og
 krasjfasene av syklusen. Hver hype-syklus har lavere volatilitet enn de
@@ -1057,9 +1074,9 @@ i forbudte aktiviteter. Selv om Bitcoins sensurmotstand på protokollnivå
 gjør at disse bitcoinene kan overføres, hvis det skulle dukke opp
 forskrifter som forbød bruk av slike tilsmussede bitcoins av børser
 eller kjøpmenn, kan de stort sett bli verdiløse. Bitcoin ville da miste
-en av de kritiske egenskapene til et pengegode: fungibilitet.
+en av de kritiske egenskapene til et monetær vare: utbyttbarhet.
 
-For å forbedre Bitcoins fungibilitet, må forbedringer gjøres på
+For å forbedre Bitcoins utbyttbarhet, må forbedringer gjøres på
 protokollnivå for å forbedre personvernet til transaksjoner. Mens det er
 ny utvikling i denne forbindelse, banebrytende innen digitale valutaer
 som Monero og Zcash, er det store teknologiske avveininger som må gjøres
@@ -1071,8 +1088,8 @@ penger på andre måter.
 **Konklusjon**
 
 Bitcoin er en begynnende penger som går over fra samlestadiet for
-inntektsgenerering til å bli en verdilager. Som et ikke-suverent
-pengegode er det mulig at Bitcoin på et tidspunkt i fremtiden vil bli en
+monetisering til å bli en verdilager. Som et ikke-suverent
+monetær vare er det mulig at Bitcoin på et tidspunkt i fremtiden vil bli en
 global penger omtrent som gull under den klassiske gullstandarden på
 1800-tallet. Adopsjonen av Bitcoin som globale penger er nettopp det
 bullish tilfellet for Bitcoin, og ble artikulert av Satoshi Nakamoto så
