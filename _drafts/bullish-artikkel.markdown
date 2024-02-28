@@ -552,56 +552,53 @@ en refleksjon av dens kontantstrøm eller hvor nyttig den er, men er
 snarere et mål på hvor utbredt den har blitt brukt for de ulike rollene
 penger.
 
-Ytterligere kompliserer den baneavhengige naturen til penger er det
+Mer kompliserende for den stiavhengige naturen til penger er det
 faktum at markedsdeltakere ikke bare opptrer som lidenskapelige
 observatører, som prøver å kjøpe eller selge i påvente av fremtidige
 bevegelser av den monetære premien, men også fungerer som aktive
-evangelisatorer. Siden det ikke er noen objektivt korrekt monetære premie,
-er proselytisering av de overlegne egenskapene til en monetær vare mer
+evangelister. Siden det ikke er noen objektivt korrekt monetære premie,
+er misjonering av de overlegne egenskapene til en monetær vare mer
 effektivt enn for vanlige varer, hvis verdi til syvende og sist er
 forankret til kontantstrøm eller bruksetterspørsel. Den religiøse gløden
 til deltakere i Bitcoin-markedet kan observeres i ulike nettfora der
 eiere aktivt fremmer fordelene med Bitcoin og rikdommen som kan oppnås
-ved å investere i den. I observasjon av Bitcoin-markedet [<u>kommenterer
-Leigh
-Drogen</u>](https://www.cnbc.com/2017/10/19/josh-brown-goes-down-the-bitcoin-rabbit-hole-commentary.html)
-:
+ved å investere i den. I observasjon av Bitcoin-markedet [kommenterer
+Leigh Drogen](https://www.cnbc.com/2017/10/19/josh-brown-goes-down-the-bitcoin-rabbit-hole-commentary.html):
 
-Du kjenner igjen dette som en religion - en historie vi alle forteller
+> Du kjenner igjen dette som en religion - en historie vi alle forteller
 hverandre og er enige om. Religion er adopsjonskurven vi burde tenke på.
 Det er nesten perfekt - så snart noen kommer inn, forteller de det til
-alle og går ut og evangeliserer. Så kommer vennene deres inn og *de*
-begynner å evangelisere.
+alle og går ut og evangeliserer. Så kommer vennene deres inn og så begynner *de* å evangelisere.
 
 Selv om sammenligningen med religion kan gi Bitcoin en aura av
 irrasjonell tro, er det helt rasjonelt for den enkelte eier å
-evangelisere for et overordnet monetær vare og for samfunnet som helhet å
+evangelisere for en overordnet monetær vare og for samfunnet som helhet å
 standardisere på det. Penger fungerer som grunnlaget for all handel og
 sparing, så vedtak av en overlegen form for penger har enorme
 multiplikative fordeler for verdiskaping for alle medlemmer av et
 samfunn.
 
-**Formen på monetisering**
+## Formen på monetisering
 
-Selv om det ikke er noen *a priori-* regler for veien et monetær vare vil
-ta ettersom det blir inntektsført, har det dukket opp et merkelig
+Selv om det ikke er noen *a priori* regler for veien et monetær vare vil
+ta ettersom det blir monetisert, har det dukket opp et merkelig
 mønster i løpet av den relativt korte historien til Bitcoins
 monetisering. Bitcoins pris ser ut til å følge et fraktalt mønster
 av økende omfang, der hver iterasjon av fraktalen matcher den klassiske
-formen til en Gartner-hype-syklus.
+formen til en [Gartner-hype-syklus](https://en.wikipedia.org/wiki/Gartner_hype_cycle).
 
-<img src="media/image7.png" style="width:6.3in;height:3.90903in"
-alt="Et bilde som inneholder tekst, skjermbilde, diagram, Font Automatisk generert beskrivelse" />
 
-I sin artikkel om [<u>den spekulative Bitcoin Adoption/Price
-Theory</u>](https://medium.com/@mcasey0827/speculative-bitcoin-adoption-price-theory-2eed48ecf7da)
+![Garner Hype-Syklus](/assets/gartner-hype-cycle.webp)
+ 
+
+I sin artikkel om [den spekulative Bitcoin adopsjon/pristeori](https://medium.com/@mcasey0827/speculative-bitcoin-adoption-price-theory-2eed48ecf7da)
 , hevder Michael Casey at de ekspanderende Gartner-hype-syklusene
 representerer faser av en standard S-kurve for adopsjon som ble fulgt av
 mange transformative teknologier etter hvert som de blir vanlig brukt i
 samfunnet.
 
-<img src="media/image8.jpeg" style="width:6.3in;height:2.71458in"
-alt="Et bilde som inneholder tekst, line, diagram, Font Automatisk generert beskrivelse" />
+![S-kurve](/assets/scurve.webp)
+ 
 
 Hver Gartner-hype-syklus begynner med et utbrudd av entusiasme for den
 nye teknologien, og prisen bys opp av markedsdeltakerne som er
@@ -609,7 +606,7 @@ nye teknologien, og prisen bys opp av markedsdeltakerne som er
 Gartner-hype-syklus har vanligvis en sterk overbevisning om den
 transformative naturen til teknologien de investerer i. Til slutt når
 markedet et crescendo av entusiasme ettersom tilgangen på nye deltakere
-som kan nås i syklusen er oppbrukt og kjøp blir dominert av spekulanter
+som kan nås i syklusen tar slutt og kjøp blir dominert av spekulanter
 som er mer interessert i rask fortjeneste enn den underliggende
 teknologien.
 
@@ -622,9 +619,9 @@ motstå smerten fra krakket og som satte pris på viktigheten av
 teknologien.
 
 Platået vedvarer i en lengre periode og danner, som Casey kaller det, et
-"stabilt, kjedelig lavt". Under platået vil offentlig interesse for
+"stabilt, kjedelig lavt nivå". Under platåetfasen vil offentlig interesse for
 teknologien avta, men den vil fortsette å utvikles og samlingen av
-sterke troende vil sakte vokse. En ny base blir deretter satt for neste
+sterke troende vil sakte men sikkert vokse. En ny base blir deretter satt for neste
 iterasjon av hype-syklusen ettersom eksterne observatører innser at
 teknologien ikke forsvinner og at det å investere i den kanskje ikke er
 så risikabelt som det så ut til under krasjfasen av syklusen. Den neste
@@ -636,7 +633,7 @@ vil riktig forutse hvor høye prisene vil gå i den syklusen. Prisene når
 vanligvis nivåer som vil virke absurde for de fleste investorer i de
 tidligste stadier av syklusen. Når syklusen avsluttes, tilskrives en
 populær årsak typisk krasjet av media. Selv om den oppgitte årsaken (som
-en utvekslingssvikt) kan være en utløsende hendelse, er det ikke den
+en svikt hos en børs) kan være en utløsende hendelse, er det ikke den
 grunnleggende årsaken til at syklusen slutter. Gartners hype-sykluser
 avsluttes på grunn av en utmattelse av markedsdeltakere som kan nås i
 syklusen.
@@ -646,15 +643,15 @@ Gartner-hype-syklus fra slutten av 1970-tallet til begynnelsen av
 2000-tallet. Man kan spekulere i at hype-syklusen er en iboende sosial
 dynamikk i prosessen med monetisering.
 
-<img src="media/image9.jpeg" style="width:6.3in;height:3.61875in"
-alt="Et bilde som inneholder line, tekst, Plottdiagram, Font Automatisk generert beskrivelse" />
+![Gull historisk](/assets/gold-historical.webp)
+ 
 
-**Gartner-kohorter**
+## Gartner-kohorter
 
 Siden starten av den første børshandlede prisen i 2010, har
 Bitcoin-markedet vært vitne til fire store Gartner-hype-sykluser. Med
 etterpåklokskap kan vi nøyaktig identifisere prisklassene til tidligere
-hype- sykluser i Bitcoin-markedet. Vi kan også kvalitativt identifisere
+hypesykluser i Bitcoin-markedet. Vi kan også kvalitativt identifisere
 gruppen av investorer som var assosiert med hver iterasjon av tidligere
 sykluser.
 
@@ -679,7 +676,7 @@ hype-syklusen så inngangen til tidlige detalj- og institusjonelle
 investorer som var villige til å trosse de fryktelig kompliserte og
 risikable likviditetskanalene som bitcoins kunne kjøpes fra. Den primære
 kilden til likviditet i markedet i denne perioden var den Japan-baserte
-MtGox-børsen som ble drevet av den notorisk inkompetente og ondsinnede
+Mt.Gox-børsen som ble drevet av den notorisk inkompetente og ondsinnede
 Mark Karpeles, som senere så fengselsstraff for sin rolle i børsens
 kollaps.
 
@@ -692,18 +689,18 @@ allerede hadde utvunnet bitcoins. I den andre hype-syklusen ble
 rudimentære børser tilgjengelige, men å skaffe og sikre bitcoins fra
 disse børsene forble for komplisert for alle bortsett fra de mest
 teknologisk kyndige investorene. Selv i den tredje hype-syklusen gjensto
-det betydelige hindringer for investorer som overfører penger til MtGox
+det betydelige hindringer for investorer som overfører penger til Mt. Gox
 for å skaffe bitcoins. Bankene var motvillige til å håndtere børsen, og
 tredjepartsleverandører som tilrettela overføringer var ofte
 inkompetente, kriminelle eller begge deler. Videre, mange som klarte å
-overføre penger til MtGox møtte til slutt tap av midler da børsen ble
+overføre penger til Mt. Gox tapte til slutt midler da børsen ble
 hacket og senere stengt.
 
-Det var først etter sammenbruddet av MtGox-børsen og en to-års pause i
+Det var først etter sammenbruddet av Mt. Gox-børsen og en to-års pause i
 markedsprisen på Bitcoin at modne og dype likviditetskilder ble
 utviklet; eksempler inkluderer regulerte børser som GDAX og OTC-meglere
 som Cumberland mining. Da den fjerde hype-syklusen begynte i 2016, var
-det relativt enkelt for detaljinvestorer å kjøpe bitcoins og sikre dem.
+det relativt enkelt for private investorer å kjøpe bitcoins og sikre dem.
 
 **\$1100** – **\$19600? (2014** – **?)** :
 
@@ -712,8 +709,9 @@ hype-syklus. Deltakelse i den nåværende hype-syklusen har vært dominert
 av det Michael Casey beskrev som "det tidlige flertallet" av private og
 institusjonelle investorer.
 
-<img src="media/image10.png" style="width:6.3in;height:4.24722in"
-alt="Et bilde som inneholder tekst, skjermbilde, line, Plottdiagram Automatisk generert beskrivelse" />
+![Penetrasjon av målmarkedet](/assets/penetration-of-target-market.webp)
+
+ 
 
 Ettersom likviditetskildene har blitt dypere og modnet, har store
 institusjonelle investorer nå muligheten til å delta gjennom regulerte
@@ -731,7 +729,7 @@ brøkdel av gullets markedsverdi kommer fra sentralbanketterspørselen, og
 det er usannsynlig at sentralbanker eller nasjonalstater vil delta i
 denne spesielle hype-syklusen.
 
-**Nasjonalstatenes inngang**
+## Nasjonalstatenes inngang
 
 Bitcoins siste Gartner-hype-syklus vil begynne når nasjonalstater
 begynner å samle den som en del av deres utenlandske valutareserver.
@@ -741,30 +739,29 @@ etter hvert som privat sektors interesse øker og kapitaliseringen av
 Bitcoin nærmer seg 1 billion dollar, vil den bli likvid nok til at de
 fleste stater kan komme inn på markedet. Inngangen til den første staten
 som offisielt legger bitcoins til sine reserver vil sannsynligvis utløse
-et stormløp for andre å gjøre det. Statene som er de tidligste med å ta
-i bruk Bitcoin, ville se den største fordelen for balansene deres hvis
+et kappløp for andre å gjøre det. Statene som er de tidligste med å ta
+i bruk Bitcoin, ville se den største gevinsten hvis
 Bitcoin til slutt ble en global reservevaluta. Dessverre vil det
 sannsynligvis være statene med de sterkeste utøvende maktene –
 diktaturer som Nord-Korea – som vil bevege seg raskest med å akkumulere
 bitcoins. Uviljen til å se slike stater forbedre sin økonomiske stilling
 og de iboende svake utøvende grenene til de vestlige demokratiene vil få
-dem til å vibrere og være etterslep når det gjelder å akkumulere
+dem til å komme bakpå når det gjelder å akkumulere
 bitcoins for sine reserver.
 
-Det er en stor ironi at USA for tiden er en av de mest åpne nasjonene i
+En stor ironi er at USA for tiden er en av de mest åpne nasjonene i
 sin regulatoriske posisjon overfor Bitcoin, mens Kina og Russland er de
 mest fiendtlige. USA risikerer den største ulempen med sin geopolitiske
 posisjon hvis Bitcoin skulle erstatte dollaren som verdens
 reservevaluta. På 1960-tallet kritiserte Charle de Gaulle det
-"eksorbitante privilegiet" USA nøt fra den internasjonale pengeordren de
-laget med Bretton Woods-avtalen fra 1944. De russiske og kinesiske
+"urimelige privilegiet" USA nøt fra den internasjonale pengeordren de
+laget med [Bretton Woods-avtalen](https://snl.no/Bretton_Woods-avtalen) fra 1944. De russiske og kinesiske
 myndighetene har ennå ikke våknet til de geostrategiske fordelene ved
 Bitcoin som en reservevaluta og er for tiden opptatt av effektene den
 kan ha på deres indre markeder. I likhet med de Gaulle på 1960-tallet,
 som truet med å gjenopprette den klassiske gullstandarden som svar på
-USAs ublu privilegium, vil kineserne og russerne med tiden komme til å
-se fordelene med en stor reserveposisjon i et ikke-suverent verdilager.
-. Med den største konsentrasjonen av Bitcoin-gruvekraft bosatt i Kina,
+USAs urimelige privilegium, vil kineserne og russerne med tiden komme til å
+se fordelene med en stor reserveposisjon i et ikke-suverent verdilager. Med den største konsentrasjonen av Bitcoin-gruvekraft befinnende i Kina,
 har den kinesiske staten allerede en klar fordel i sitt potensial til å
 legge bitcoins til sine reserver.
 
@@ -775,11 +772,11 @@ overfor Bitcoin. Imidlertid har bankindustrien og den amerikanske
 sentralbanken endelig fått sitt første anelse om den eksistensielle
 trusselen Bitcoin utgjør for amerikansk pengepolitikk dersom den skulle
 bli en global reservevaluta. Wall Street Journal, kjent for å være et
-talerør for Federal Reserve, [<u>publiserte en
-kommentar</u>](https://www.wsj.com/articles/is-it-time-to-regulate-bitcoin-1512409004)
+talerør for Federal Reserve, [publiserte en
+kommentar](https://www.wsj.com/articles/is-it-time-to-regulate-bitcoin-1512409004)
 om trusselen Bitcoin utgjør for amerikansk pengepolitikk:
 
-Det er en annen fare, kanskje enda mer alvorlig fra sentralbankenes og
+> Det er en annen fare, kanskje enda mer alvorlig fra sentralbankenes og
 regulatorenes synspunkt: bitcoin vil kanskje ikke krasje. Hvis den
 spekulative gløden i kryptovalutaen bare er forløperen til at den blir
 mye brukt som et alternativ til dollaren, vil det true sentralbankenes
@@ -791,7 +788,7 @@ statlig kontroll, og banknæringen og sentralbanker som vil gjøre alt som
 står i deres makt for å regulere Bitcoin for å forhindre deres industri.
 og pengeutstedende makter fra å bli forstyrret.
 
-**Overgangen til et byttemiddel**
+## Overgangen til et byttemiddel
 
 En monetær vare kan ikke gå over til å være et generelt akseptert
 byttemiddel (den standard økonomiske definisjonen av "penger") før det
@@ -820,14 +817,14 @@ stoffene ved bruk av fiat-valuta.
 Det er imidlertid store institusjonelle barrierer for at et begynnende
 verdilager kan bli et *generelt* akseptert byttemiddel i et utviklet
 samfunn. Stater bruker skatt som et kraftig middel for å beskytte sine
-suverene penger fra å bli fortrengt av konkurrerende monetær varer. Ikke
+suverene penger fra å bli fortrengt av konkurrerende monetære varer. Ikke
 bare nyter suverene penger fordelen av en konstant kilde til
-etterspørsel, ved at skatter kun kan overføres i dem, men konkurrerende
+etterspørsel, ved at skatter kun kan betales i dem, men konkurrerende
 monetær varer beskattes når de byttes til en verdsatt verdi. Denne
 sistnevnte typen beskatning skaper betydelig friksjon ved bruk av
 verdilager som byttemiddel.
 
-Handikapping av markedsbaserte monetær varer er imidlertid ikke en
+Handikapping av markedsbaserte monetære varer er imidlertid ikke en
 uoverstigelig barriere for at de kan bli et generelt akseptert
 byttemiddel. Hvis troen går tapt på suverene penger, kan verdien
 kollapse i en prosess kjent som hyperinflasjon. Når en suveren penger
@@ -835,13 +832,14 @@ hyperinflaterer, kollapser verdien først mot de mest likvide varene i
 samfunnet, for eksempel gull eller utenlandske penger som amerikanske
 dollar, hvis de er tilgjengelige. Når ingen likvide varer er
 tilgjengelige eller forsyningen er begrenset, kollapser en
-hyperoppblåsende penger mot ekte varer, som eiendom og råvarer. Det
+hyperinflaterte penger mot ekte varer, som eiendom og råvarer. Det
 arketypiske bildet av en hyperinflasjon er en dagligvarebutikk som er
 tømt for alle sine produkter når forbrukere flykter fra den raskt
 minkende verdien av landets penger.
 
-<img src="media/image11.jpeg" style="width:6.3in;height:4.72847in"
-alt="Et bilde som inneholder klær, sko, person, jeans Automatisk generert beskrivelse" />
+![Hyperinflasjon](/assets/hyperinflation.webp)
+
+
 
 Til slutt, når troen er fullstendig tapt under en hyperinflasjon, vil en
 suveren penger ikke lenger bli akseptert av noen, og samfunnet vil enten
@@ -853,44 +851,43 @@ utenlandske penger og fraværet av utenlandske bankinstitusjoner til å
 skaffe likviditet.
 
 Evnen til enkelt å overføre bitcoins på tvers av landegrenser og fravær
-av behov for et banksystem gjør Bitcoin til et ideelt pengegodt å
+av behov for et banksystem gjør Bitcoin til en ideelt monetær vare å
 anskaffe for de som er rammet av hyperinflasjon. I de kommende årene,
 ettersom fiat-penger fortsetter å følge sin historiske trend mot
 eventuell verdiløshet, vil Bitcoin bli et stadig mer populært valg for
 globale sparepenger å flykte til. Når en nasjons penger blir forlatt og
 erstattet av Bitcoin, vil Bitcoin ha gått over fra å være et verdilager
 i det samfunnet til et generelt akseptert byttemiddel. Daniel Krawisz
-laget begrepet "
-[<u>hyperbitcoinization</u>](http://nakamotoinstitute.org/mempool/hyperbitcoinization/#selection-43.159-46.0)
-" for å beskrive denne prosessen.
+laget begrepet "[hyperbitcoinisering](http://nakamotoinstitute.org/mempool/hyperbitcoinization/#selection-43.159-46.0)" for å beskrive denne prosessen.
 
-**Vanlige misoppfatninger**
+## Vanlige misforståelser
 
 Mye av denne artikkelen har fokusert på den monetære naturen til
 Bitcoin. Med dette grunnlaget kan vi nå adressere noen av de mest
 vanlige misoppfatningene om Bitcoin.
 
-<img src="media/image12.gif" style="width:6.3in;height:3.89931in"
-alt="Et bilde som inneholder metall, valuta, penger, kontanter Automatisk generert beskrivelse" />
+![Bitcoin](/assets/bitcoin.webp)
 
-**Bitcoin er en boble**
+ 
 
-Bitcoin, som alle markedsbaserte monetær vare, viser en monetære premie. Den
+### Bitcoin er en boble
+
+Bitcoin, som alle markedsbaserte monetær varer, har en monetær premie. Den
 monetære premien er det som gir opphav til den vanlige kritikken om at
-Bitcoin er en "boble". Imidlertid viser *alle* monetær vare en
+Bitcoin er en "boble". Imidlertid har *alle* monetær varer en
 monetære premie. Det er faktisk denne premien (overskuddet over
 bruk-etterspørselsprisen) som er den definerende egenskapen til alle
 penger. Med andre ord, penger er alltid og overalt en boble. Paradoksalt
 nok er en monetær vare både en boble og kan være undervurdert hvis den er i
 de tidlige stadiene av bruken som penger.
 
-**Bitcoin er for flyktig**
+### Bitcoin er for volatilt
 
 Bitcoins prisvolatilitet er en funksjon av dens begynnelse. I de første
 årene av sin eksistens oppførte Bitcoin seg som en penny-aksje, og
 enhver stor kjøper - som Winklevoss-tvillingene - kunne forårsake en
 stor økning i prisen. Ettersom adopsjon og likviditet har økt gjennom
-årene , har Bitcoins volatilitet redusert tilsvarende. Når Bitcoin
+årene, har Bitcoins volatilitet redusert tilsvarende. Når Bitcoin
 oppnår markedsverdien til gull, vil den vise et lignende
 volatilitetsnivå. Ettersom Bitcoin overgår markedsverdien til gull, vil
 volatiliteten reduseres til et nivå som vil gjøre det egnet som et mye
@@ -900,14 +897,14 @@ under platåfasen av hypesyklusen, mens den er høyest under topp- og
 krasjfasene av syklusen. Hver hype-syklus har lavere volatilitet enn de
 forrige fordi likviditeten i markedet har økt.
 
-**Transaksjonsgebyrene er for høye**
+### Transaksjonsgebyrene er for høye
 
-En nylig kritikk av Bitcoin-nettverket er at økningen i gebyrene for å
+En ny kritikk av Bitcoin-nettverket er at økningen i gebyrene for å
 overføre bitcoins gjør det uegnet som betalingssystem. Veksten i gebyrer
 er imidlertid sunn og forventet. Transaksjonsgebyrer er kostnadene som
 kreves for å betale bitcoin-gruvearbeidere for å sikre nettverket ved å
 validere transaksjoner. Gruvearbeidere kan enten betales med
-transaksjonsgebyrer eller blokkbelønninger, som er et inflasjonstilskudd
+transaksjonsgebyrer eller [blokkbelønninger](https://www.investopedia.com/terms/b/block-reward.asp), som er et inflasjonstilskudd
 som bæres av nåværende bitcoin-eiere.
 
 Gitt Bitcoins faste forsyningsplan – en pengepolitikk som gjør den
@@ -916,9 +913,9 @@ og nettverket må til slutt sikres med transaksjonsgebyrer. Et nettverk
 med "lave" avgifter er et nettverk med liten sikkerhet og utsatt for
 ekstern sensur. De som antyder de lave gebyrene til
 Bitcoin-alternativer, beskriver ubevisst svakheten til disse såkalte
-"alt-myntene".
+"alternativ-myntene".
 
-Den skumle roten til kritikken av Bitcoins "høye" transaksjonsgebyrer er
+Den merkelige roten til kritikken av Bitcoins "høye" transaksjonsgebyrer er
 troen på at Bitcoin først skal være et betalingssystem og senere en
 verdilager. Som vi har sett med pengenes opprinnelse, setter denne troen
 vognen foran hesten. Først når Bitcoin har blitt et dypt etablert
@@ -926,9 +923,8 @@ verdilager vil det bli egnet som byttemiddel. Videre, når
 alternativkostnaden ved å handle bitcoins er på et nivå der det er egnet
 som byttemiddel, vil de fleste handler ikke skje på selve
 Bitcoin-nettverket, men på "andre lag"-nettverk med mye lavere avgifter.
-Andre lags nettverk, som Lightning-nettverket, gir den moderne
-ekvivalenten til gjeldsbrevene som ble brukt til å overføre titler for
-gull på 1800-tallet. Gjeldsbrev ble brukt av banker fordi overføring av
+Andrelags-nettverk, som [Lightning-nettverket](https://no.wikipedia.org/wiki/Lightning_Network), gir den moderne
+ekvivalenten til gjeldsbrevene som ble brukt til å overføre gull på 1800-tallet. Gjeldsbrev ble brukt av banker fordi overføring av
 den underliggende bullion var langt dyrere enn overføring av seddelen
 som representerte eiendomsretten til gullet. I motsetning til
 gjeldsbrev, vil Lightning-nettverket imidlertid tillate overføring av
@@ -938,11 +934,11 @@ er en svært viktig teknisk innovasjon i Bitcoins historie, og verdien
 vil bli tydelig etter hvert som den utvikles og tas i bruk i de kommende
 årene.
 
-**Konkurranse**
+### Konkurranse
 
 Som en åpen kildekode-programvareprotokoll har det alltid vært mulig å
 kopiere Bitcoins programvare og etterligne nettverket. Gjennom årene har
-mange imitatorer blitt opprettet, alt fra ersatz-faksimiler, som
+mange imitatorer blitt opprettet, alt fra snarlikheter, som
 Litecoin, til komplekse varianter som Ethereum som lover å tillate
 vilkårlig komplekse kontraktsmessige ordninger ved bruk av et
 distribuert beregningssystem. En vanlig investeringskritikk av Bitcoin
@@ -950,19 +946,20 @@ er at den ikke kan opprettholde sin verdi når det enkelt kan lages
 konkurrenter som er i stand til å inkorporere de siste innovasjonene og
 programvarefunksjonene.
 
-<img src="media/image13.jpeg" style="width:6.3in;height:4.20347in"
-alt="Et bilde som inneholder metall, mynt, penger, valuta Automatisk generert beskrivelse" />
 
-Feilen i dette argumentet er at scoren til Bitcoin-konkurrenter som har
+![Altcoins](/assets/altcoins.webp)
+
+
+Feilen i dette argumentet er Bitcoin-konkurrenter som har
 blitt opprettet gjennom årene mangler "nettverkseffekten" til den første
-og dominerende teknologien i rommet. En nettverkseffekt - den økte
+og dominerende teknologien i området. En nettverkseffekt - den økte
 verdien av å bruke Bitcoin ganske enkelt fordi det allerede er det
 dominerende nettverket - er en funksjon i seg selv. For enhver teknologi
 som har en nettverkseffekt, er det den desidert viktigste funksjonen.
 
 Nettverkseffekten for Bitcoin omfatter likviditeten til markedet, antall
 personer som eier det, og fellesskapet av utviklere som vedlikeholder og
-forbedrer programvaren og merkekjennskapen. Store investorer, inkludert
+forbedrer programvaren og varemerket. Store investorer, inkludert
 nasjonalstater, vil søke det mest likvide markedet slik at de raskt kan
 komme inn og ut av markedet uten å påvirke prisen. Utviklere vil strømme
 til det dominerende utviklingsfellesskapet som har talentet av høyeste
@@ -970,45 +967,44 @@ kaliber, og dermed forsterke styrken til det fellesskapet. Og
 merkevarebevissthet er selvforsterkende, ettersom fremtidige
 konkurrenter til Bitcoin alltid nevnes i sammenheng med Bitcoin selv.
 
-**En veiskille**
+### En veiskille
 
 En trend som ble populær i 2017 var ikke bare å imitere Bitcoins
 programvare, men å kopiere hele historien til tidligere transaksjoner
 (kjent som blokkjeden). Ved å kopiere Bitcoins blokkjede opp til et
 visst punkt og deretter dele opp i et nytt nettverk, i en prosess kjent
 som "forking", var konkurrenter til Bitcoin i stand til å løse problemet
-med å distribuere tokenet sitt til en stor brukerbase.
+med å distribuere polletten sin til en stor brukerbase.
 
-<img src="media/image14.jpeg" style="width:6.3in;height:4.22292in"
-alt="Et bilde som inneholder utendørs, gress, skog, jungel Automatisk generert beskrivelse" />
+![Veiskille](/assets/fork.webp)
 
-Den viktigste gaffelen av denne typen skjedde 1. august 2017 da et nytt
+Den viktigste forken av denne typen skjedde 1. august 2017 da et nytt
 nettverk kjent som Bitcoin Cash (BCash) ble opprettet. En eier av N
 bitcoins før 1. august 2017, ville da eie både N bitcoins og N
-BCash-polletter. Det lille, men vokale fellesskapet av BCash-tilhengere har
+BCash-polletter. Det lille, men høylytte fellesskapet av BCash-tilhengere har
 utrettelig forsøkt å ekspropriere Bitcoins merkevaregjenkjenning, både
 gjennom navngivningen av deres nye nettverk og en kampanje for å
-overbevise nyfødte i Bitcoin-markedet om at Bcash er den "ekte" Bitcoin.
+overbevise nye brukere i Bitcoin-markedet om at Bcash er den "ekte" Bitcoin.
 Disse forsøkene har stort sett mislyktes, og denne feilen gjenspeiles i
 markedsverdiene til de to nettverkene. For nye investorer er det
 imidlertid fortsatt en tilsynelatende risiko for at en konkurrent kan
 klone Bitcoin og dens blokkjede og lykkes med å overta den i
 markedsverdi, og dermed bli den de facto Bitcoin.
 
-En viktig regel kan hentes fra de store gaflene som har skjedd med både
+En viktig regel kan hentes fra de store frokere som har skjedd med både
 Bitcoin- og Ethereum-nettverkene. Størstedelen av markedsverdien vil
-sette seg på nettverket som beholder det høyeste kaliberet og det mest
+befinne seg i nettverket som beholder det høyeste kaliberet og det mest
 aktive utviklerfellesskapet. For selv om Bitcoin kan sees på som en
-begynnende penger, er det også et datanettverk bygget på programvare som
+penge i sin spede begynnelse, er det også et datanettverk bygget på programvare som
 må vedlikeholdes og forbedres. Å kjøpe polletter på et nettverk som har
 lite eller uerfaren utviklerstøtte vil være beslektet med å kjøpe en
 klone av Microsoft Windows som ikke ble støttet av Microsofts beste
-utviklere. Det er klart fra historien til gaflene som skjedde i 2017 at
+utviklere. Det er klart fra historien til forkene som skjedde i 2017 at
 de beste og mest erfarne informatikerne og kryptografene er forpliktet
 til å utvikle for den originale Bitcoin og ikke noen av den voksende
 legionen av imitatorer som har blitt skapt fra den.
 
-**Reelle risikoer**
+## Reelle risikoer
 
 Selv om den vanlige kritikken av Bitcoin som finnes i medie- og
 økonomifaget er feilplassert og basert på en mangelfull forståelse av
@@ -1016,7 +1012,7 @@ penger, er det reelle og betydelige risikoer ved å investere i Bitcoin.
 Det vil være forsvarlig for en potensiell Bitcoin-investor å forstå og
 veie disse risikoene før de vurderer en investering i Bitcoin.
 
-**Protokollrisiko**
+### Protokollrisiko
 
 Bitcoin-protokollen og de kryptografiske primitivene som den er bygget
 på, kan vise seg å ha en designfeil, eller kan gjøres usikker med
@@ -1026,36 +1022,35 @@ kryptografien som ligger til grunn for Bitcoin, kan troen på Bitcoin bli
 alvorlig kompromittert. Protokollrisikoen var høyest i de første årene
 av Bitcoins utvikling, da det fortsatt var uklart, selv for erfarne
 kryptografer, at Satoshi Nakamoto faktisk hadde funnet en løsning på de
-bysantinske generalenes problem. Bekymringer om alvorlige feil i
+bysantinske generalers problem. Bekymringer om alvorlige feil i
 Bitcoin-protokollen har forsvunnet i løpet av årene, men gitt dens
 teknologiske natur, vil protokollrisiko alltid forbli for Bitcoin, om så
 bare som en ekstremrisiko.
 
-**Utvekslingsavstengninger**
+## Handelsplattformer
 
 Ved å være desentralisert i design, har Bitcoin vist en
-bemerkelsesverdig grad av motstandskraft i møte med en rekke forsøk fra
+bemerkelsesverdig grad av motstandsdyktighet i møte med en rekke forsøk fra
 forskjellige myndigheter på å regulere den eller stenge den. Imidlertid
-er børsene der bitcoins omsettes for fiat-valutaer svært sentraliserte
+er handelsplattformene der bitcoins omsettes for fiat-valutaer svært sentraliserte
 og utsatt for regulering og stenging. Uten disse utvekslingene og
 banksystemets vilje til å gjøre forretninger med dem, ville prosessen
-med å tjene penger på Bitcoin bli alvorlig forkrøplet, hvis ikke stoppet
-fullstendig. Selv om det finnes alternative kilder til likviditet for
+med monetisering av Bitcoin bli alvorlig forkrøplet, om ikke fullstendig stoppet. Selv om det finnes alternative kilder til likviditet for
 Bitcoin, for eksempel over-the-counter meglere og desentraliserte
 markeder for kjøp og salg av Bitcoins (som
-[<u>localbitcoins.com</u>](http://localbitcoins.com) ), skjer den
+[localbitcoins.com](http://localbitcoins.com) ), skjer den
 kritiske prosessen med prisoppdagelse på de mest likvide børsene, som
-alle er sentraliserte .
+alle er sentraliserte.
 
 Å redusere risikoen for børsstans er jurisdiksjonell arbitrage. Binance,
 en fremtredende børs som startet i Kina, flyttet til Japan etter at den
 kinesiske regjeringen stoppet sin virksomhet i Kina. Nasjonale
-myndigheter er også på vakt mot å kvele en begynnende industri som kan
+myndigheter er også på vakt mot å kvele en gryende industri som kan
 vise seg å være like viktig som Internett, og dermed gi et enormt
 konkurransefortrinn til andre nasjoner.
 
 Bare med en koordinert global nedleggelse av Bitcoin-børser ville
-prosessen med å tjene penger bli stoppet fullstendig. Kappløpet er i
+prosessen med monetisering bli stoppet fullstendig. Kappløpet er i
 gang for at Bitcoin skal bli så utbredt at en fullstendig nedleggelse
 blir like politisk umulig som en fullstendig nedleggelse av Internett.
 Muligheten for en slik nedleggelse er imidlertid fortsatt reell, og må
@@ -1063,21 +1058,21 @@ tas med i risikoen ved å investere i Bitcoin. Som det ble diskutert i
 forrige avsnitt om nasjonalstaters inntreden, våkner nasjonale
 regjeringer endelig til trusselen som en ikke-suveren, sensurbestandig,
 digital valuta utgjør for deres pengepolitikk. Det er et åpent spørsmål
-om de vil handle på denne trusselen før Bitcoin blir så forankret at
+om de vil handle mot denne trusselen før Bitcoin blir så forankret at
 politisk handling mot den viser seg å være ineffektiv.
 
-**Svingbarhet**
+### Utbyttbarhet
 
 Den åpne og gjennomsiktige karakteren til Bitcoin-blokkjeden gjør det
 mulig for stater å markere visse bitcoins som "tilsmusset" av deres bruk
-i forbudte aktiviteter. Selv om Bitcoins sensurmotstand på protokollnivå
+i ulovlige aktiviteter. Selv om Bitcoins sensurmotstand på protokollnivå
 gjør at disse bitcoinene kan overføres, hvis det skulle dukke opp
 forskrifter som forbød bruk av slike tilsmussede bitcoins av børser
 eller kjøpmenn, kan de stort sett bli verdiløse. Bitcoin ville da miste
 en av de kritiske egenskapene til et monetær vare: utbyttbarhet.
 
 For å forbedre Bitcoins utbyttbarhet, må forbedringer gjøres på
-protokollnivå for å forbedre personvernet til transaksjoner. Mens det er
+protokollnivå for å forbedre personvernet til transaksjoner. Selv om det er
 ny utvikling i denne forbindelse, banebrytende innen digitale valutaer
 som Monero og Zcash, er det store teknologiske avveininger som må gjøres
 mellom effektiviteten og kompleksiteten til Bitcoin og dets personvern.
@@ -1085,42 +1080,41 @@ Det er fortsatt et åpent spørsmål om personvernforbedrende funksjoner
 kan legges til Bitcoin på en måte som ikke kompromitterer nytten som
 penger på andre måter.
 
-**Konklusjon**
+## Konklusjon
 
-Bitcoin er en begynnende penger som går over fra samlestadiet for
-monetisering til å bli en verdilager. Som et ikke-suverent
+Bitcoin er en penge i sin spede begynnelse som går over fra samlestadiet for
+monetisering til å bli en verdilager. Som en ikke-suveren
 monetær vare er det mulig at Bitcoin på et tidspunkt i fremtiden vil bli en
-global penger omtrent som gull under den klassiske gullstandarden på
-1800-tallet. Adopsjonen av Bitcoin som globale penger er nettopp det
-bullish tilfellet for Bitcoin, og ble artikulert av Satoshi Nakamoto så
+global penge omtrent som gull under den klassiske gullstandarden på
+1800-tallet. Adopsjonen av Bitcoin som globale penger er nettopp hovedargumentet for Bitcoin, og ble artikulert av Satoshi Nakamoto så
 tidlig som i 2010 i en
-[<u>e-postutveksling</u>](https://pastebin.com/Na5FwkQ4) med Mike Hearn:
+[e-postutveksling](https://pastebin.com/Na5FwkQ4) med Mike Hearn:
 
-Hvis du forestiller deg at den brukes til en brøkdel av verdenshandelen,
+> Hvis du forestiller deg at den brukes til en brøkdel av verdenshandelen,
 så vil det bare være 21 millioner mynter for hele verden, så det ville
 vært mye mer verdt per enhet.
 
-Denne saken ble gjort enda mer skarpsinnet av den briljante kryptografen
+Denne saken ble gjort enda tydeligere av den briljante kryptografen
 Hal Finney, mottakeren av de første bitcoinene sendt av Nakamoto, kort
-tid etter kunngjøringen [<u>av den første fungerende
-Bitcoin-programvaren</u>](https://www.mail-archive.com/cryptography@metzdowd.com/msg10152.html)
+tid etter kunngjøringen [av den første fungerende
+Bitcoin-programvaren](https://www.mail-archive.com/cryptography@metzdowd.com/msg10152.html)
 :
 
-\[Jeg\] forestiller meg at Bitcoin er vellykket og blir det dominerende
+> Jeg forestiller meg at Bitcoin er vellykket og blir det dominerende
 betalingssystemet i bruk over hele verden. Da bør den totale verdien av
 valutaen være lik den totale verdien av all rikdommen i verden.
-Nåværende estimater av total verdensomspennende husholdningsformue som
+Nåværende estimater av total verdensomspennende formue som
 jeg har funnet varierer fra \$100 billioner til \$300 billioner. Med 20
 millioner mynter gir det hver mynt en verdi på rundt 10 millioner
 dollar.
 
-Selv om Bitcoin ikke skulle bli en fullverdig global penger og ganske
-enkelt skulle konkurrere med gull som en ikke-suveren verdilager, er
+Selv om Bitcoin ikke skulle bli en fullverdig global penge og ganske
+enkelt skulle konkurrere med gull som et ikke-suveren verdilager, er
 den for tiden enormt undervurdert. Kartlegging av markedsverdien til den
 eksisterende gullforsyningen over bakken (omtrent 8 billioner dollar)
 til en maksimal Bitcoin-forsyning på 21 millioner mynter gir en verdi på
 omtrent 380 000 dollar per bitcoin. Som vi har sett i tidligere avsnitt,
-for egenskapene som gjør et pengegodt egnet som verdilager, er Bitcoin
+for egenskapene som gjør en monetær vare egnet som verdilager, er Bitcoin
 overlegen gull langs hver akse bortsett fra etablert historie. Ettersom
 tiden går og Lindy-effekten tar tak, vil etablert historie ikke lenger
 være et konkurransefortrinn for gull. Dermed er det ikke urimelig å
@@ -1130,31 +1124,30 @@ stor del av gullets kapitalisering kommer fra sentralbanker som holder
 det som et verdilager. For at Bitcoin skal oppnå eller overgå gullets
 kapitalisering, vil noe deltakelse fra nasjonalstater være nødvendig.
 Hvorvidt de vestlige demokratiene vil delta i eierskapet til Bitcoin er
-uklart. Det er mer sannsynlig, og uheldig, at tin-pot-diktaturer og
+uklart. Det er mer sannsynlig, og uheldig, at diktaturer og
 kleptokratier vil være de første nasjonene som kommer inn på
 Bitcoin-markedet.
 
-Hvis ingen nasjonalstater deltar i Bitcoin-markedet, er det fortsatt en
-bullish sak for Bitcoin. Som en ikke-suveren verdilager som kun brukes
-av detaljhandel og institusjonelle investorer, er Bitcoin fortsatt
+Hvis ingen nasjonalstater deltar i Bitcoin-markedet, er det fortsatt et godt argument for Bitcoin. Som en ikke-suveren verdilager som kun brukes
+av private og institusjonelle investorer, er Bitcoin fortsatt
 tidlig i sin adopsjonskurve - det såkalte "tidlige flertallet" kommer nå
 inn på markedet mens den sene majoriteten og etternølerne fortsatt er år
-unna å komme inn i markedet. . Med bredere deltakelse fra private og
-spesielt institusjonelle investorer, er et prisnivå mellom \$100.000 og
-\$200.000 mulig.
+unna å komme inn i markedet. Med bredere deltakelse fra private og
+spesielt institusjonelle investorer, er et prisnivå mellom \$100 000 og
+\$200 000 mulig.
 
-Å eie bitcoins er en av få asymmetriske spill som folk over hele verden
+Å eie bitcoins er en av få asymmetriske veddemål som folk over hele verden
 kan delta i. På samme måte som et kjøpsopsjon, er en investors ulemper
-begrenset til 1x, mens deres potensielle oppside fortsatt er 100x eller
+begrenset til 1×, mens deres potensielle oppside fortsatt er 100× eller
 mer. Bitcoin er den første virkelig globale boblen hvis størrelse og
 omfang kun begrenses av verdens innbyggeres ønske om å beskytte
-sparepengene sine fra lunkene med økonomisk vanstyre fra myndighetene.
+sparepengene sine fra uforutsigbarheten med økonomisk vanstyre fra myndighetene.
 Faktisk steg Bitcoin som en føniks fra asken etter den globale
 finanskatastrofen i 2008 - en katastrofe som ble utløst av politikken
 til sentralbanker som Federal Reserve.
 
-Utover den økonomiske saken for Bitcoin, vil oppgangen som en
-ikke-suveren verdilager ha dype geopolitiske konsekvenser. En global,
+Utover det finansielle argumentet for Bitcoin, vil oppgangen som et
+ikke-suverent verdilager ha dype geopolitiske konsekvenser. En global,
 ikke-inflasjonær reservevaluta vil tvinge nasjonalstater til å endre sin
 primære finansieringsmekanisme fra inflasjon til direkte beskatning, som
 er langt mindre politisk velsmakende. Stater vil krympe i størrelse i
@@ -1163,7 +1156,7 @@ eksklusive finansieringsmiddel. Videre vil global handel bli avgjort på
 en måte som tilfredsstiller Charles de Gaulles ambisjon om at ingen
 nasjon skal ha privilegier over noen annen:
 
-Vi anser det som nødvendig at internasjonal handel etableres, slik det
+> Vi anser det som nødvendig at internasjonal handel etableres, slik det
 var tilfellet før verdens store ulykker, på en udiskutabel monetær
 basis, og en som ikke bærer preg av noe bestemt land.
 
