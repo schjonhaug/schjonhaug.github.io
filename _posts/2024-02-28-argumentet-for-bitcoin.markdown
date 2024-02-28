@@ -408,7 +408,7 @@ flyktig til å være egnet som byttemiddel. Dette setter imidlertid vogna
 foran hesten. Penger har alltid utviklet seg i etapper, med
 verdilagerrollen foran byttemiddelrollen. En av fedrene til
 marginalistiske tilnærmingsmåte til økonomisk analyse, [William Stanley Jevons](https://no.wikipedia.org/wiki/Stanley_Jevons), [forklarte
-at](http://www.econlib.org/library/YPDBooks/Jevons/jvnMME3.html) :
+at](http://www.econlib.org/library/YPDBooks/Jevons/jvnMME3.html):
 
 > Historisk sett… ser det ut til at gull har tjent, for det første, som
 en vare som er verdifull for dekorative formål; for det andre, som
@@ -424,7 +424,7 @@ stadier:
     samleobjekter før de senere gikk over til de mer kjente rollene som
     penger.
 
-2. **Verdilagring** : Når det er etterspurt av nok mennesker for sine
+2. **Verdilagring**: Når det er etterspurt av nok mennesker for sine
     særegenheter, vil penger bli anerkjent som et middel til å beholde
     og lagre verdi over tid. Etter hvert som en vare blir mer anerkjent
     som et passende verdilager, vil kjøpekraften øke etter hvert som
@@ -432,7 +432,7 @@ stadier:
     verdilager vil til slutt nå et platå når den er utbredt og tilstrømningen
     av nye mennesker som ønsker den som en verdilager minker.
 
-3. **Byttemiddel** : Når penger er fullt etablert som et verdilager,
+3. **Byttemiddel**: Når penger er fullt etablert som et verdilager,
     vil kjøpekraften stabilisere seg. Etter å ha stabilisert seg i
     kjøpekraft, vil alternativkostnaden ved å bruke penger til å
     fullføre handler reduseres til et nivå hvor det er egnet for bruk
@@ -509,7 +509,7 @@ forlot det som penger til fordel for gull.
 Selv i fravær av ytre faktorer som statlig intervensjon eller
 konkurranse fra andre monetær varer, vil ikke den monetære premien for nye penger
 følge en forutsigbar bane. Økonom Larry White [observerte
-at](http://oll.libertyfund.org/pages/misestmc) :
+at](http://oll.libertyfund.org/pages/misestmc):
 
 > problemet med boblehistorien er selvfølgelig at den stemmer
 overens med *enhver* prisbane, og gir derfor ingen forklaring på en
@@ -691,7 +691,7 @@ utviklet; eksempler inkluderer regulerte børser som GDAX og OTC-meglere
 som Cumberland mining. Da den fjerde hype-syklusen begynte i 2016, var
 det relativt enkelt for private investorer å kjøpe bitcoins og sikre dem.
 
-**\$1100** – **\$19600? (2014** – **?)** :
+**\$1100** – **\$19600? (2014** – **?)**:
 
 I skrivende stund gjennomgår Bitcoin-markedet sin fjerde store
 hype-syklus. Deltakelse i den nåværende hype-syklusen har vært dominert
