@@ -145,7 +145,7 @@ telefon, nippende til morgenteen i sengen, forskjellige produktene fra
 hele jorden, i en slik mengde som han kunne finne passende, og
 rimeligvis forvente at de snart ble levert på dørstokken hans
 
-## Egenskapene til en god verdilager
+## Egenskapene til et god verdilager
 
 Når verdilagre konkurrerer mot hverandre, er det de spesifikke egenskapene som gjør et godt verdilager som tillater det å utkonkurrere et annet på marginen og øke etterspørselen etter det over tid. Mens
 mange varer har blitt brukt som verdilagre eller "proto-penger", dukket
@@ -428,9 +428,9 @@ stadier:
     særegenheter, vil penger bli anerkjent som et middel til å beholde
     og lagre verdi over tid. Etter hvert som en vare blir mer anerkjent
     som et passende verdilager, vil kjøpekraften øke etter hvert som
-    flere etterspør den for dette formålet. Kjøpekraften til en
+    flere etterspør den for dette formålet. Kjøpekraften til et
     verdilager vil til slutt nå et platå når den er utbredt og tilstrømningen
-    av nye mennesker som ønsker den som en verdilager minker.
+    av nye mennesker som ønsker den som et verdilager minker.
 
 3. **Byttemiddel**: Når penger er fullt etablert som et verdilager,
     vil kjøpekraften stabilisere seg. Etter å ha stabilisert seg i
@@ -891,7 +891,7 @@ transaksjonsgebyrer eller [blokkbelønninger](https://www.investopedia.com/terms
 som bæres av nåværende bitcoin-eiere.
 
 Gitt Bitcoins faste forsyningsplan – en pengepolitikk som gjør den
-ideell som en verdilager – vil blokkbelønninger til slutt avta til null
+ideell som et verdilager – vil blokkbelønninger til slutt avta til null
 og nettverket må til slutt sikres med transaksjonsgebyrer. Et nettverk
 med "lave" avgifter er et nettverk med liten sikkerhet og utsatt for
 ekstern sensur. De som antyder de lave gebyrene til
@@ -1064,7 +1064,7 @@ penger på andre måter.
 ## Konklusjon
 
 Bitcoin er en penge i sin spede begynnelse som går over fra samlestadiet for
-monetisering til å bli en verdilager. Som en ikke-suveren
+monetisering til å bli et verdilager. Som en ikke-suveren
 monetær vare er det mulig at Bitcoin på et tidspunkt i fremtiden vil bli en
 global penge omtrent som gull under den klassiske gullstandarden på
 1800-tallet. Adopsjonen av Bitcoin som globale penger er nettopp hovedargumentet for Bitcoin, og ble artikulert av Satoshi Nakamoto så
@@ -1090,7 +1090,7 @@ millioner mynter gir det hver mynt en verdi på rundt 10 millioner
 dollar.
 
 Selv om Bitcoin ikke skulle bli en fullverdig global penge og ganske
-enkelt skulle konkurrere med gull som et ikke-suveren verdilager, er
+enkelt skulle konkurrere med gull som et ikke-suverent verdilager, er
 den for tiden enormt undervurdert. Kartlegging av markedsverdien til den
 eksisterende gullforsyningen over bakken (omtrent 8 billioner dollar)
 til en maksimal Bitcoin-forsyning på 21 millioner mynter gir en verdi på
@@ -1109,7 +1109,7 @@ uklart. Det er mer sannsynlig, og uheldig, at diktaturer og
 kleptokratier vil være de første nasjonene som kommer inn på
 Bitcoin-markedet.
 
-Hvis ingen nasjonalstater deltar i Bitcoin-markedet, er det fortsatt et godt argument for Bitcoin. Som en ikke-suveren verdilager som kun brukes
+Hvis ingen nasjonalstater deltar i Bitcoin-markedet, er det fortsatt et godt argument for Bitcoin. Som et ikke-suverent verdilager som kun brukes
 av private og institusjonelle investorer, er Bitcoin fortsatt
 tidlig i sin adopsjonskurve - det såkalte "tidlige flertallet" kommer nå
 inn på markedet mens den sene majoriteten og etternølerne fortsatt er år
