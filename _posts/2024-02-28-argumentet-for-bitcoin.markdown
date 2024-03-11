@@ -3,7 +3,7 @@ layout: post
 title: "Argumentet for Bitcoin"
 description: ""
 image: "/assets/the-bullish-case-for-bitcoin.jpg"
-date: 2024-02-28 13:00:00 +0100
+date: 2018-03-02 13:37:00 +0100
 categories: bitcoin
 ---
 
