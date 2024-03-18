@@ -14,7 +14,7 @@ positive tilfellet for investorer virke så åpenbart at det ikke er
 nødvendig å utbrodere. Alternativt kan det virke dumt å investere i en
 digital eiendel som ikke støttes av noen råvare eller regjering, og hvis
 prisstigning har fått noen til å sammenligne det med [tulipanmanien](https://no.wikipedia.org/wiki/Tulipankrakket) eller
-[dot-com-boblen](https://no.wikipedia.org/wiki/Dot_com-boblen). Ingen av delene er sant; argumentet for
+[dot-com-boblen](https://no.wikipedia.org/wiki/Dot_com-boblen). Ingen av delene er sanne; argumentet for
 Bitcoin er overbevisende, men langt fra åpenbart. Det er betydelige
 risikoer ved å investere i Bitcoin, men, som jeg vil hevde, er det
 fortsatt en enorm mulighet.
