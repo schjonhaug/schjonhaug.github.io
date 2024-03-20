@@ -145,7 +145,7 @@ telefon, nippende til morgenteen i sengen, forskjellige produktene fra
 hele jorden, i en slik mengde som han kunne finne passende, og
 rimeligvis forvente at de snart ble levert på dørstokken hans
 
-## Egenskapene til et god verdilager
+## Egenskapene til et godt verdilager
 
 Når verdilagre konkurrerer mot hverandre, er det de spesifikke egenskapene som gjør et godt verdilager som tillater det å utkonkurrere et annet på marginen og øke etterspørselen etter det over tid. Mens
 mange varer har blitt brukt som verdilagre eller "proto-penger", dukket
