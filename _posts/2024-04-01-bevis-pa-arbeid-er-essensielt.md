@@ -6,6 +6,8 @@ date: 2021-05-13 15:55:56 +0200
 categories: bitcoin
 ---
 
+av [Gigi](https://dergigi.com/threads/pow-is-essential)
+
 *En manglende forståelse av [bevis-på-arbeid](https://dergigi.com/pow) er en manglende forståelse av Bitcoin.*
 
 Desentraliserte systemer har per definisjon ikke en eneste kilde til sannhet.
