@@ -54,7 +54,7 @@ Proof of stake = stol på mennesker for å finne ut hva som skjedde.
 
 ---
 
-*Tillegg: Jeg har stor sympati for alle som mener at Bitcoin er sløsing. Det trodde jeg også, og jeg måtte [endre perspektiv](https://dergigi.com/2018/06/10/bitcoin-s-energy-consumption/). Som de fleste andre, visste jeg ingenting om (sunne) penger.
+Tillegg: Jeg har stor sympati for alle som mener at Bitcoin er sløsing. Det trodde jeg også, og jeg måtte [endre perspektiv](https://dergigi.com/2018/06/10/bitcoin-s-energy-consumption/). Som de fleste andre, visste jeg ingenting om (sunne) penger.
 
 Tillegg, del to: Problemet med å bli enige om en felles tid i et motstridende desentralisert system kan ikke løses nøyaktig, ikke engang i teorien. Bevis-på-arbeid er en praktisk, probabilistisk løsning på dette vanskelige problemet. Se [denne tråden](https://twitter.com/dergigi/status/1392409660154646529?s=20).
 
