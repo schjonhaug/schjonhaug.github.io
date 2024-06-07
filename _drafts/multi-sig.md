@@ -13,7 +13,12 @@ Install [Homebrew](https://brew.sh), and then Bitcoin Core with
 brew install bitcoin
 ```
 
-echo This is some text > myfile.txt
+Before starting up the Bitcoin Core daemon, we need a config file telling it to accept RPC commands later on from Sparrow:
+
+```shell
+mkdir ~/Library/Application\ Support/Bitcoin/regtest
+echo 'server=1' > ~/Library/Application\ Support/Bitcoin/regtest/bitcoin.conf
+```
 
 Start the daemon in regtest mode:
 
@@ -37,6 +42,18 @@ We now should have 50 coins available to us:
 
 ```shell
 bitcoin-cli -regtest getbalance
+```
+
+Open Sparrow in regtest:
+
+```shell
+open /Applications/Sparrow.app --args -n regtest
+```
+
+Send coins:
+
+```shell
+bitcoin-cli -regtest sendtoaddress "bcrt1qv0a20kkj63gek9mldffmgvqxjpjz6m72jrquqa" 5
 ```
 
 Delete regtest
