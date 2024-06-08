@@ -7,6 +7,10 @@ date: 2021-11-14 13:37:00 +0200
 categories: bitcoin
 ---
 
+Venturing into the world of Bitcoin multi-sig can be daunting at first, but as with a lot of things in life‚ practice makes perfect. A common recommendation which makes sense is to learn on testnet instead of mainnet, as it’s both cheaper and safer to do so. However, receiving coins for testing on testnet 3 and 4 can sometimes be cumbersome, as you’re basically dependent on faucets sending you test coins to use. Enter regtest.
+
+The Regression Test Network (or regtest for short) is a local bitcoin blockchain running on your own computer, normally used for development. However, it’s great to use for setting up and learning about multi sig since it’s very easy to mine your own coins, which then in turn can be receiving and sent for testing. And, if you mess up for some reason, you can easily start over!
+
 Install [Homebrew](https://brew.sh), and then Bitcoin Core with
 
 ```shell
