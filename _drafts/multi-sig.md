@@ -26,8 +26,7 @@ brew install bitcoin
 Before starting up the Bitcoin Core daemon, we need a config file telling it to accept RPC commands later on from Sparrow:
 
 ```shell
-mkdir ~/Library/Application\ Support/Bitcoin/regtest
-echo 'server=1' > ~/Library/Application\ Support/Bitcoin/regtest/bitcoin.conf
+echo server=1 > ~/Library/Application\ Support/Bitcoin/bitcoin.conf
 ```
 
 Start the daemon in regtest mode:
@@ -65,6 +64,10 @@ open /Applications/Sparrow.app --args -n regtest
 The first thing we need to do is to connect to our Bitcoin Core node running in regtest. Open Sparrow → Preferences… → Server. There, leave the default values but change the Data Folder by appending `regtest`. Click on "Test Connection" to make sure it connects. Upon closing Preferences, the toggle in the lower right hand corner should turn green and you should see "Connected to <http://127.0.0.1:18433> at height 101" in the status bar.
 
 ## Multisig
+
+```shell
+bitcoin-cli -regtest settxfee 0.00001
+```
 
 Send coins:
 
