@@ -2,18 +2,22 @@
 layout: post
 title: ""
 description: ""
-image: "/assets/bitcoin-is-time.jpg"
+image: "/assets/multisig.webp"
 date: 2021-11-14 13:37:00 +0200
 categories: bitcoin
 ---
 
-Venturing into the world of Bitcoin multi-sig can be daunting at first, but as with a lot of things in life‚ practice makes perfect. A common recommendation which makes sense is to learn on testnet instead of mainnet, as it’s both cheaper and safer to do so. However, receiving coins for testing on testnet 3 and 4 can sometimes be cumbersome, as you’re basically dependent on faucets sending you test coins to use. Enter regtest.
+![Bitcoin](/assets/multisig.webp)
 
-The Regression Test Network (or regtest for short) is a local bitcoin blockchain running on your own computer, normally used for development. However, it’s great to use for setting up and learning about multi sig since it’s very easy to mine your own coins, which then in turn can be receiving and sent for testing. And, if you mess up for some reason, you can easily start over!
+Venturing into the world of Bitcoin [multi-sig](https://en.bitcoin.it/wiki/Multi-signature) can be daunting at first, but as with a lot of things in life‚ practice makes perfect. A common recommendation is to learn on testnet instead of mainnet, as it’s both cheaper and safer to do so. However, receiving coins for testing on testnet 3 and 4 can sometimes be cumbersome, as you’re basically dependent on faucets sending you test coins to use. Enter regtest.
 
-## Set up Bitcoin Core
+## Regtest
 
-Install [Homebrew](https://brew.sh), and then Bitcoin Core with
+The Regression Test Network (or regtest for short) is a private bitcoin blockchain running on your own computer, normally used for development. However, it’s great to use for setting up and learning about multi sig since it’s very easy to mine your own coins, which then in turn can be receiving and sent to your multi sig wallet testing. And, if you mess up for some reason, you can easily start over!
+
+## Bitcoin Core
+
+Install [Homebrew](https://brew.sh), and then [Bitcoin Core](https://bitcoincore.org) with
 
 ```shell
 brew install bitcoin
@@ -50,13 +54,17 @@ We now should have 50 coins available to us:
 bitcoin-cli -regtest getbalance
 ```
 
-## Set up Sparrow Wallet
+## Sparrow Wallet
 
 [Sparrow Wallet](https://sparrowwallet.com) is an awesome desktop wallet for macOS, Windows and Linux by Craig Raw. Download and install it, and then open it in regtest mode:
 
 ```shell
 open /Applications/Sparrow.app --args -n regtest
 ```
+
+The first thing we need to do is to connect to our Bitcoin Core node running in regtest. Open Sparrow → Preferences… → Server. There, leave the default values but change the Data Folder by appending `regtest`. Click on "Test Connection" to make sure it connects. Upon closing Preferences, the toggle in the lower right hand corner should turn green and you should see "Connected to <http://127.0.0.1:18433> at height 101" in the status bar.
+
+## Multisig
 
 Send coins:
 
