@@ -11,6 +11,8 @@ Venturing into the world of Bitcoin multi-sig can be daunting at first, but as w
 
 The Regression Test Network (or regtest for short) is a local bitcoin blockchain running on your own computer, normally used for development. However, it’s great to use for setting up and learning about multi sig since it’s very easy to mine your own coins, which then in turn can be receiving and sent for testing. And, if you mess up for some reason, you can easily start over!
 
+## Set up Bitcoin Core
+
 Install [Homebrew](https://brew.sh), and then Bitcoin Core with
 
 ```shell
@@ -48,7 +50,9 @@ We now should have 50 coins available to us:
 bitcoin-cli -regtest getbalance
 ```
 
-Open Sparrow in regtest:
+## Set up Sparrow Wallet
+
+[Sparrow Wallet](https://sparrowwallet.com) is an awesome desktop wallet for macOS, Windows and Linux by Craig Raw. Download and install it, and then open it in regtest mode:
 
 ```shell
 open /Applications/Sparrow.app --args -n regtest
