@@ -232,9 +232,9 @@ risikoen for lagring og transportkostnader betydelig.
 
 Gull, som er
 fysisk i form og har en utrolig tetthet, er det desidert minst bærbare. Det er
-ikke rart at størstedelen av [bullion](https://snl.no/bullion) aldri blir transportert. Når
-bullion overføres mellom en kjøper og en selger, er det vanligvis bare
-tittelen til gullet som overføres, ikke den fysiske bullion i seg selv.
+ikke rart at størstedelen av [bullioner](https://snl.no/bullion) aldri blir transportert. Når
+bullioner overføres mellom en kjøper og en selger, er det vanligvis bare
+eierskapet til gullet som overføres, ikke den fysiske bullionen i seg selv.
 Å overføre fysisk gull over store avstander er kostbart, risikabelt og
 tidkrevende.
 
@@ -257,12 +257,7 @@ valør.
 
 Bitcoin er utbyttbare på nettverksnivå, noe som betyr at hver
 bitcoin, når den overføres, behandles på samme måte av
-Bitcoin-nettverket. Men fordi bitcoin er sporbare på blokkjeden, kan en
-bestemt bitcoin bli tilsmusset av bruken i ulovlig handel, og kjøpmenn
-eller børser kan bli tvunget til å ikke akseptere slike skjemmede
-bitcoin. Uten forbedringer av personvernet og anonymiteten til Bitcoin
-nettverksprotokoll, kan ikke bitcoin betraktes som like utbyttbare som
-gull.
+Bitcoin-nettverket. Men fordi bitcoin kan spores på blokkjeden, kan en bestemt bitcoin bli “forurenset” av bruk i ulovlig handel, og handelsmenn eller børser kan bli tvunget til å nekte å akseptere slike “forurensede” bitcoins. Uten forbedringer i personvern og anonymitet i Bitcoins nettverksprotokoll, kan ikke bitcoin anses som like fungibelt som gull.
 
 ### Verifiserbarhet
 
@@ -897,7 +892,7 @@ som byttemiddel, vil de fleste handler ikke skje på selve
 Bitcoin-nettverket, men på "andre lag"-nettverk med mye lavere avgifter.
 Andrelags-nettverk, som [Lightning-nettverket](https://no.wikipedia.org/wiki/Lightning_Network), gir den moderne
 ekvivalenten til gjeldsbrevene som ble brukt til å overføre gull på 1800-tallet. Gjeldsbrev ble brukt av banker fordi overføring av
-den underliggende bullion var langt dyrere enn overføring av seddelen
+den underliggende bullionen var langt dyrere enn overføring av seddelen
 som representerte eiendomsretten til gullet. I motsetning til
 gjeldsbrev, vil Lightning-nettverket imidlertid tillate overføring av
 bitcoin til lave kostnader samtidig som det krever liten eller ingen
