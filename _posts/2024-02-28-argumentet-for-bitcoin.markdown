@@ -637,7 +637,7 @@ kollaps.
 Det er verdt å observere at økningen i Bitcoins pris under de nevnte
 hype-syklusene i stor grad var korrelert med en økning i likviditet og
 hvor enkelt investorer kunne kjøpe bitcoin. I den første hype-syklusen
-var det ingen utveksling tilgjengelig, og anskaffelse av bitcoin var
+var det ingen handelsplattformer tilgjengelig, og anskaffelse av bitcoin var
 primært gjennom mining eller ved direkte utveksling med noen som
 allerede hadde utvunnet bitcoin. I den andre hype-syklusen ble
 rudimentære børser tilgjengelige, men å skaffe og sikre bitcoin fra
