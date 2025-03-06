@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Andreas Schjønhaug’s dev blog
+title: Andreas Schjønhaug's dev blog
 email: andreas@schjonhaug.com
 description: >- # this means to ignore newlines until "baseurl:"
   Andreas Schjønhaug is a freelancer developer in Oslo, Norway, and in this blog, he writes about different interesting topics related to development.
@@ -35,6 +35,7 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-redirect-from
 permalink: /:title
 # Exclude from processing.
 # The following items will not be processed, by default.
