@@ -7,10 +7,10 @@ source "https://rubygems.org"
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", "4.3.3"
+gem "jekyll", "4.4.1"
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
-gem "minima", "2.5.1"
+gem "minima", "2.5.2"
 
 group :jekyll_plugins do
   gem "jekyll-feed", "0.17.0"
@@ -18,7 +18,7 @@ group :jekyll_plugins do
   gem "jekyll-seo-tag", "2.8.0"
   gem "jekyll-redirect-from", "0.16.0"
 end
-gem "webrick", "1.8.1"
+gem "webrick", "1.9.2"
 gem "csv"
 gem "logger"
 gem "base64"
