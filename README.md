@@ -45,6 +45,10 @@ bundle install
 bundle exec jekyll serve --draft
 ```
 
+### Deployment
+
+Production deploys run through the GitHub Pages Actions workflow in [`.github/workflows/pages.yml`](/Users/schjonhaug/Developer/schjonhaug/schjonhaug.github.io/.github/workflows/pages.yml). Pushing to `master` triggers a Pages build and deploy using the repository's own Ruby and Jekyll versions rather than the legacy built-in GitHub Pages Jekyll environment.
+
 ### Check for updates
 
 ```shell
