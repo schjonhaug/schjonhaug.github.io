@@ -3,6 +3,7 @@ _site
 .jekyll-cache
 .jekyll-metadata
 vendor
+AGENTS.md
 
 #######################################################################################
 # https://github.com/github/gitignore/blob/master/Global/macOS.gitignore (6 Jul 2017) #

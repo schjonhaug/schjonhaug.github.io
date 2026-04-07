@@ -1,6 +1,107 @@
 const { jsPDF } = window.jspdf;
+const OSLO_TIME_ZONE = "Europe/Oslo";
 
 let weeksData = [];
+
+function formatDateKey(date) {
+    const formatter = new Intl.DateTimeFormat("en-CA", {
+        timeZone: OSLO_TIME_ZONE,
+        year: "numeric",
+        month: "2-digit",
+        day: "2-digit"
+    });
+
+    return formatter.format(date);
+}
+
+function createUtcDate(year, month, day) {
+    return new Date(Date.UTC(year, month - 1, day));
+}
+
+function addDays(date, days) {
+    const result = new Date(date);
+    result.setUTCDate(result.getUTCDate() + days);
+    return result;
+}
+
+function getEasterSunday(year) {
+    const a = year % 19;
+    const b = Math.floor(year / 100);
+    const c = year % 100;
+    const d = Math.floor(b / 4);
+    const e = b % 4;
+    const f = Math.floor((b + 8) / 25);
+    const g = Math.floor((b - f + 1) / 3);
+    const h = (19 * a + b - d - g + 15) % 30;
+    const i = Math.floor(c / 4);
+    const k = c % 4;
+    const l = (32 + 2 * e + 2 * i - h - k) % 7;
+    const m = Math.floor((a + 11 * h + 22 * l) / 451);
+    const month = Math.floor((h + l - 7 * m + 114) / 31);
+    const day = ((h + l - 7 * m + 114) % 31) + 1;
+
+    return createUtcDate(year, month, day);
+}
+
+function getNorwegianPublicHolidays(year) {
+    const holidays = new Map([
+        [`${year}-01-01`, "1. nyttårsdag"],
+        [`${year}-05-01`, "Arbeidernes dag"],
+        [`${year}-05-17`, "Grunnlovsdag"],
+        [`${year}-12-25`, "1. juledag"],
+        [`${year}-12-26`, "2. juledag"]
+    ]);
+
+    const easterSunday = getEasterSunday(year);
+    const movableHolidayOffsets = [
+        { offset: -3, name: "Skjærtorsdag" },
+        { offset: -2, name: "Langfredag" },
+        { offset: 0, name: "1. påskedag" },
+        { offset: 1, name: "2. påskedag" },
+        { offset: 39, name: "Kristi himmelfartsdag" },
+        { offset: 49, name: "1. pinsedag" },
+        { offset: 50, name: "2. pinsedag" }
+    ];
+
+    for (const { offset, name } of movableHolidayOffsets) {
+        holidays.set(formatDateKey(addDays(easterSunday, offset)), name);
+    }
+
+    return holidays;
+}
+
+function getOsloDateInfo(date) {
+    const formatter = new Intl.DateTimeFormat("en-CA", {
+        timeZone: OSLO_TIME_ZONE,
+        year: "numeric",
+        month: "2-digit",
+        day: "2-digit",
+        weekday: "short"
+    });
+
+    const parts = formatter.formatToParts(date);
+    const lookup = new Map(parts.map((part) => [part.type, part.value]));
+    const year = Number(lookup.get("year"));
+    const month = lookup.get("month");
+    const day = lookup.get("day");
+    const weekday = lookup.get("weekday") || "";
+
+    return {
+        dateKey: `${year}-${month}-${day}`,
+        weekday,
+        year
+    };
+}
+
+function isWeekendInOslo(date) {
+    const { weekday } = getOsloDateInfo(date);
+    return weekday === "Sat" || weekday === "Sun";
+}
+
+function isNorwegianPublicHoliday(date) {
+    const { dateKey, year } = getOsloDateInfo(date);
+    return getNorwegianPublicHolidays(year).get(dateKey) || "";
+}
 
 function initMonthSelector() {
     const monthSelect = document.getElementById("month");
@@ -9,8 +110,8 @@ function initMonthSelector() {
     const currentYear = currentDate.getFullYear();
 
     const months = [
-        "January", "February", "March", "April", "May", "June",
-        "July", "August", "September", "October", "November", "December"
+        "Januar", "Februar", "Mars", "April", "Mai", "Juni",
+        "Juli", "August", "September", "Oktober", "November", "Desember"
     ];
 
     for (let i = 0; i < 12; i++) {
@@ -84,14 +185,14 @@ function generateWeeks() {
         const startDate = week[0].getDate();
         const endDate = week[week.length - 1].getDate();
         weekHeader.innerHTML = `
-            <span>Week ${weekInfo.weekNumber} (${startDate}-${endDate})</span>
-            <span class="week-total" id="week-${weekIndex}-total">0 hours</span>
+            <span>Uke ${weekInfo.weekNumber} (${startDate}-${endDate})</span>
+            <span class="week-total" id="week-${weekIndex}-total">0 timer</span>
         `;
 
         const daysGrid = document.createElement("div");
         daysGrid.className = "days-grid";
 
-        const dayNames = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+        const dayNames = ["Man", "Tir", "Ons", "Tor", "Fre", "Lør", "Søn"];
         const weekData = { weekNumber: weekInfo.weekNumber, days: [] };
 
         for (let i = 0; i < 7; i++) {
@@ -102,28 +203,33 @@ function generateWeeks() {
             const date = week.find((d) => d.getDay() === targetDayOfWeek);
 
             if (date) {
-                const isWeekend = i >= 5;
-                const defaultValue = isWeekend ? 0 : defaultHours;
+                const isWeekend = isWeekendInOslo(date);
+                const holidayName = isNorwegianPublicHoliday(date);
+                const isHoliday = Boolean(holidayName);
+                const defaultValue = isWeekend || isHoliday ? 0 : defaultHours;
 
                 const dayData = {
                     name: dayNames[i],
                     date: date.getDate(),
                     fullDate: date,
                     hours: defaultValue,
-                    isWeekend
+                    isWeekend,
+                    isHoliday,
+                    holidayName
                 };
                 weekData.days.push(dayData);
 
                 dayDiv.innerHTML = `
-                    <label class="day-label ${isWeekend ? "weekend" : ""}">${dayNames[i]} ${date.getDate()}</label>
+                    <label class="day-label ${isWeekend ? "weekend" : ""} ${isHoliday ? "holiday" : ""}">${dayNames[i]} ${date.getDate()}</label>
                     <input type="number"
                            id="week-${weekIndex}-day-${i}"
-                           class="${isWeekend ? "weekend" : ""}"
+                           class="${isWeekend ? "weekend" : ""} ${isHoliday ? "holiday" : ""}"
                            min="0"
                            max="24"
                            step="0.5"
                            value="${defaultValue}"
                            onchange="updateTotals(${weekIndex}, ${i})">
+                    ${isHoliday ? `<div class="holiday-name">${holidayName}</div>` : ""}
                 `;
             } else {
                 dayDiv.innerHTML = `
@@ -152,7 +258,7 @@ function prefillHours() {
             const input = document.getElementById(`week-${weekIndex}-day-${i}`);
             if (input && !input.disabled) {
                 input.value = defaultHours;
-                const dayData = week.days.find((d) => d.name === ["Mon", "Tue", "Wed", "Thu", "Fri"][i]);
+                const dayData = week.days.find((d) => d.name === ["Man", "Tir", "Ons", "Tor", "Fre"][i]);
                 if (dayData) {
                     dayData.hours = defaultHours;
                 }
@@ -167,7 +273,7 @@ function updateTotals(weekIndex, dayIndex) {
     const input = document.getElementById(`week-${weekIndex}-day-${dayIndex}`);
     const value = parseFloat(input.value) || 0;
 
-    const dayNames = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+    const dayNames = ["Man", "Tir", "Ons", "Tor", "Fre", "Lør", "Søn"];
     const dayData = weeksData[weekIndex].days.find((d) => d.name === dayNames[dayIndex]);
     if (dayData) {
         dayData.hours = value;
@@ -193,7 +299,7 @@ function updateAllTotals() {
 
         const weekTotalElement = document.getElementById(`week-${weekIndex}-total`);
         if (weekTotalElement) {
-            weekTotalElement.textContent = `${weekTotal} hours`;
+            weekTotalElement.textContent = `${weekTotal} timer`;
         }
     });
 
@@ -212,13 +318,13 @@ function generatePDF() {
     const customerName = document.getElementById("customerName").value || "";
 
     doc.setFontSize(20);
-    doc.text("Hour Registration Report", pageWidth / 2, margins.top, { align: "center" });
+    doc.text("Timeregistrering", pageWidth / 2, margins.top, { align: "center" });
 
     let yPos = margins.top + 12;
     if (customerName) {
         doc.setFontSize(14);
         doc.setFont(undefined, "bold");
-        doc.text(`Customer: ${customerName}`, pageWidth / 2, yPos, { align: "center" });
+        doc.text(`Kunde: ${customerName}`, pageWidth / 2, yPos, { align: "center" });
         doc.setFont(undefined, "normal");
         yPos += 8;
     }
@@ -226,7 +332,7 @@ function generatePDF() {
     if (projectName) {
         doc.setFontSize(14);
         doc.setFont(undefined, "bold");
-        doc.text(`Project: ${projectName}`, pageWidth / 2, yPos, { align: "center" });
+        doc.text(`Prosjekt: ${projectName}`, pageWidth / 2, yPos, { align: "center" });
         doc.setFont(undefined, "normal");
         yPos += 8;
     }
@@ -252,7 +358,7 @@ function generatePDF() {
 
         doc.setFont(undefined, "bold");
         doc.setFontSize(12);
-        doc.text(`Week ${week.weekNumber}`, margins.left, yPos);
+        doc.text(`Uke ${week.weekNumber}`, margins.left, yPos);
         yPos += 8;
 
         doc.setFontSize(10);
@@ -264,9 +370,9 @@ function generatePDF() {
         doc.setFillColor(240, 240, 240);
         doc.rect(margins.left, yPos - 5, pageWidth - margins.left - margins.right, 7, "F");
 
-        doc.text("Day", col1X, yPos);
-        doc.text("Date", col2X, yPos);
-        doc.text("Hours", col3X, yPos);
+        doc.text("Dag", col1X, yPos);
+        doc.text("Dato", col2X, yPos);
+        doc.text("Timer", col3X, yPos);
         yPos += 8;
 
         doc.setFont(undefined, "normal");
@@ -319,7 +425,7 @@ function generatePDF() {
     doc.setDrawColor(150, 150, 150);
     doc.rect(margins.left, yPos - 7, pageWidth - margins.left - margins.right, 12, "S");
 
-    doc.text(`Total Hours: ${grandTotal}`, margins.left + 5, yPos);
+    doc.text(`Totale timer: ${grandTotal}`, margins.left + 5, yPos);
 
     doc.setFont(undefined, "normal");
     doc.setFontSize(9);
@@ -328,15 +434,15 @@ function generatePDF() {
     for (let i = 1; i <= pageCount; i++) {
         doc.setPage(i);
         doc.setTextColor(128, 128, 128);
-        doc.text(`Page ${i} of ${pageCount}`, pageWidth / 2, pageHeight - 10, { align: "center" });
+        doc.text(`Side ${i} av ${pageCount}`, pageWidth / 2, pageHeight - 10, { align: "center" });
 
         if (i === pageCount) {
-            doc.text(`Generated on ${new Date().toLocaleDateString()}`, pageWidth / 2, pageHeight - 15, { align: "center" });
+            doc.text(`Generert ${new Date().toLocaleDateString("nb-NO")}`, pageWidth / 2, pageHeight - 15, { align: "center" });
         }
         doc.setTextColor(0, 0, 0);
     }
 
-    const filenameParts = ["hours"];
+    const filenameParts = ["timeregistrering"];
     if (customerName) filenameParts.push(customerName.replace(/[^a-z0-9]/gi, "_"));
     if (projectName) filenameParts.push(projectName.replace(/[^a-z0-9]/gi, "_"));
     filenameParts.push(monthSelect.value);

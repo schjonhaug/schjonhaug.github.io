@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hour Registration</title>
+    <title>Timeregistrering</title>
     <link rel="stylesheet" href="/timeregistrering/styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>📊 Hour Registration</h1>
+        <h1>📊 Timeregistrering</h1>
 
         <div class="controls">
             <div class="control-group">
-                <label for="month">Select Month</label>
+                <label for="month">Velg måned</label>
                 <select id="month">
                     <!-- Options will be added by JavaScript -->
                 </select>
             </div>
             <div class="control-group">
-                <label for="defaultHours">Default Hours (Mon-Fri)</label>
+                <label for="defaultHours">Standardtimer (man-fre)</label>
                 <input type="number"
                        id="defaultHours"
                        class="hours-preset"
@@ -26,26 +26,26 @@
                        max="24"
                        step="0.5"
                        value="8"
-                       placeholder="e.g., 8">
-                <button class="prefill-button" type="button" onclick="prefillHours()">Apply to All Weekdays</button>
+                       placeholder="f.eks. 8">
+                <button class="prefill-button" type="button" onclick="prefillHours()">Bruk på alle hverdager</button>
             </div>
         </div>
 
         <div class="control-group field-spacing-sm">
-            <label for="customerName">Customer</label>
+            <label for="customerName">Kunde</label>
             <input type="text"
                    id="customerName"
                    class="hours-preset"
-                   placeholder="e.g., Acme Corp"
+                   placeholder="f.eks. Acme AS"
                    value="Norgesgruppen">
         </div>
 
         <div class="control-group field-spacing-lg">
-            <label for="projectName">Project Name</label>
+            <label for="projectName">Prosjektnavn</label>
             <input type="text"
                    id="projectName"
                    class="hours-preset"
-                   placeholder="e.g., Website Redesign"
+                   placeholder="f.eks. Nettsideprosjekt"
                    value="Trumf">
         </div>
 
@@ -54,12 +54,12 @@
         </div>
 
         <div class="summary">
-            <h2>Total Hours</h2>
+            <h2>Totale timer</h2>
             <div class="total-hours" id="totalHours">0</div>
         </div>
 
         <button class="button" type="button" onclick="generatePDF()">
-            📄 Generate PDF
+            📄 Generer PDF
         </button>
     </div>
 
