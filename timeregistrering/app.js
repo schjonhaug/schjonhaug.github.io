@@ -297,6 +297,7 @@ function generateWeeks() {
                 const isWeekend = isWeekendInOslo(date);
                 const holidayName = isNorwegianPublicHoliday(date);
                 const isHoliday = Boolean(holidayName);
+                const shouldHighlightHoliday = isHoliday && !isWeekend;
                 const defaultValue = isWeekend || isHoliday ? 0 : defaultHours;
                 const dateKey = formatDateKey(date);
                 const savedHours = getSavedDayHours(monthValue, dateKey);
@@ -311,21 +312,22 @@ function generateWeeks() {
                     defaultHours: defaultValue,
                     isWeekend,
                     isHoliday,
+                    shouldHighlightHoliday,
                     holidayName
                 };
                 weekData.days.push(dayData);
 
                 dayDiv.innerHTML = `
-                    <label class="day-label ${isWeekend ? "weekend" : ""} ${isHoliday ? "holiday" : ""}">${DAY_NAMES[i]} ${date.getDate()}</label>
+                    <label class="day-label ${isWeekend ? "weekend" : ""} ${shouldHighlightHoliday ? "holiday" : ""}">${DAY_NAMES[i]} ${date.getDate()}</label>
                     <input type="number"
                            id="week-${weekIndex}-day-${i}"
-                           class="${isWeekend ? "weekend" : ""} ${isHoliday ? "holiday" : ""} ${areHoursModified(hours, defaultValue) ? "modified" : ""}"
+                           class="${isWeekend ? "weekend" : ""} ${shouldHighlightHoliday ? "holiday" : ""} ${areHoursModified(hours, defaultValue) ? "modified" : ""}"
                            min="0"
                            max="24"
                            step="1"
                            value="${hours}"
                            oninput="updateTotals(${weekIndex}, ${i})">
-                    ${isHoliday ? `<div class="holiday-name">${holidayName}</div>` : ""}
+                    ${isHoliday ? `<div class="holiday-name ${shouldHighlightHoliday ? "" : "weekend"}">${holidayName}</div>` : ""}
                 `;
             } else {
                 dayDiv.innerHTML = `

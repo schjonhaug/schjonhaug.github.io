@@ -173,6 +173,10 @@ input[type="text"].hours-preset:focus {
     color: #c53030;
 }
 
+.holiday-name.weekend {
+    color: #999;
+}
+
 input[type="number"] {
     padding: 6px;
     border: 1px solid #ddd;
