@@ -1,7 +1,79 @@
 const { jsPDF } = window.jspdf;
 const OSLO_TIME_ZONE = "Europe/Oslo";
+const STORAGE_KEY = "timeregistrering:v1";
+const DAY_NAMES = ["Mandag", "Tirsdag", "Onsdag", "Torsdag", "Fredag", "Lørdag", "Søndag"];
+const WEEKDAY_INPUT_NAMES = DAY_NAMES.slice(0, 5);
 
 let weeksData = [];
+let savedState = loadSavedState();
+
+function loadSavedState() {
+    try {
+        const rawState = localStorage.getItem(STORAGE_KEY);
+        return rawState ? JSON.parse(rawState) : { months: {} };
+    } catch {
+        return { months: {} };
+    }
+}
+
+function ensureSavedStateShape() {
+    if (!savedState || typeof savedState !== "object") {
+        savedState = {};
+    }
+
+    if (!savedState.months || typeof savedState.months !== "object") {
+        savedState.months = {};
+    }
+}
+
+function saveState() {
+    ensureSavedStateShape();
+
+    const monthSelect = document.getElementById("month");
+    const monthValue = monthSelect ? monthSelect.value : "";
+
+    savedState.selectedMonth = monthValue;
+    savedState.defaultHours = document.getElementById("defaultHours").value;
+    savedState.customerName = document.getElementById("customerName").value;
+    savedState.projectName = document.getElementById("projectName").value;
+
+    if (monthValue) {
+        const monthState = savedState.months[monthValue] || { days: {} };
+        monthState.days = monthState.days || {};
+
+        weeksData.forEach((week) => {
+            week.days.forEach((day) => {
+                monthState.days[day.dateKey] = day.hours;
+            });
+        });
+
+        savedState.months[monthValue] = monthState;
+    }
+
+    try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(savedState));
+    } catch {
+        // Ignore storage failures; the form should keep working without persistence.
+    }
+}
+
+function getSavedDayHours(monthValue, dateKey) {
+    ensureSavedStateShape();
+    const savedHours = savedState.months[monthValue]?.days?.[dateKey];
+    return typeof savedHours === "number" && Number.isFinite(savedHours) ? savedHours : null;
+}
+
+function areHoursModified(hours, defaultHours) {
+    return Number(hours) !== Number(defaultHours);
+}
+
+function updateModifiedState(input, dayData) {
+    if (!input || !dayData) {
+        return;
+    }
+
+    input.classList.toggle("modified", areHoursModified(dayData.hours, dayData.defaultHours));
+}
 
 function formatDateKey(date) {
     const formatter = new Intl.DateTimeFormat("en-CA", {
@@ -118,13 +190,35 @@ function initMonthSelector() {
         const option = document.createElement("option");
         option.value = `${currentYear}-${String(i + 1).padStart(2, "0")}`;
         option.textContent = `${months[i]} ${currentYear}`;
-        if (i === currentMonth) {
+        if (savedState.selectedMonth === option.value || (!savedState.selectedMonth && i === currentMonth)) {
             option.selected = true;
         }
         monthSelect.appendChild(option);
     }
 
     monthSelect.addEventListener("change", generateWeeks);
+}
+
+function initSavedFields() {
+    const defaultHoursInput = document.getElementById("defaultHours");
+    const customerNameInput = document.getElementById("customerName");
+    const projectNameInput = document.getElementById("projectName");
+
+    if (savedState.defaultHours !== undefined) {
+        defaultHoursInput.value = savedState.defaultHours;
+    }
+
+    if (savedState.customerName !== undefined) {
+        customerNameInput.value = savedState.customerName;
+    }
+
+    if (savedState.projectName !== undefined) {
+        projectNameInput.value = savedState.projectName;
+    }
+
+    defaultHoursInput.addEventListener("change", saveState);
+    customerNameInput.addEventListener("input", saveState);
+    projectNameInput.addEventListener("input", saveState);
 }
 
 function getWeekNumber(date) {
@@ -192,7 +286,6 @@ function generateWeeks() {
         const daysGrid = document.createElement("div");
         daysGrid.className = "days-grid";
 
-        const dayNames = ["Man", "Tir", "Ons", "Tor", "Fre", "Lør", "Søn"];
         const weekData = { weekNumber: weekInfo.weekNumber, days: [] };
 
         for (let i = 0; i < 7; i++) {
@@ -207,12 +300,17 @@ function generateWeeks() {
                 const holidayName = isNorwegianPublicHoliday(date);
                 const isHoliday = Boolean(holidayName);
                 const defaultValue = isWeekend || isHoliday ? 0 : defaultHours;
+                const dateKey = formatDateKey(date);
+                const savedHours = getSavedDayHours(monthValue, dateKey);
+                const hours = savedHours ?? defaultValue;
 
                 const dayData = {
-                    name: dayNames[i],
+                    name: DAY_NAMES[i],
+                    dateKey,
                     date: date.getDate(),
                     fullDate: date,
-                    hours: defaultValue,
+                    hours,
+                    defaultHours: defaultValue,
                     isWeekend,
                     isHoliday,
                     holidayName
@@ -220,15 +318,15 @@ function generateWeeks() {
                 weekData.days.push(dayData);
 
                 dayDiv.innerHTML = `
-                    <label class="day-label ${isWeekend ? "weekend" : ""} ${isHoliday ? "holiday" : ""}">${dayNames[i]} ${date.getDate()}</label>
+                    <label class="day-label ${isWeekend ? "weekend" : ""} ${isHoliday ? "holiday" : ""}">${DAY_NAMES[i]} ${date.getDate()}</label>
                     <input type="number"
                            id="week-${weekIndex}-day-${i}"
-                           class="${isWeekend ? "weekend" : ""} ${isHoliday ? "holiday" : ""}"
+                           class="${isWeekend ? "weekend" : ""} ${isHoliday ? "holiday" : ""} ${areHoursModified(hours, defaultValue) ? "modified" : ""}"
                            min="0"
                            max="24"
-                           step="0.5"
-                           value="${defaultValue}"
-                           onchange="updateTotals(${weekIndex}, ${i})">
+                           step="1"
+                           value="${hours}"
+                           oninput="updateTotals(${weekIndex}, ${i})">
                     ${isHoliday ? `<div class="holiday-name">${holidayName}</div>` : ""}
                 `;
             } else {
@@ -248,6 +346,7 @@ function generateWeeks() {
     });
 
     updateAllTotals();
+    saveState();
 }
 
 function prefillHours() {
@@ -258,28 +357,32 @@ function prefillHours() {
             const input = document.getElementById(`week-${weekIndex}-day-${i}`);
             if (input && !input.disabled) {
                 input.value = defaultHours;
-                const dayData = week.days.find((d) => d.name === ["Man", "Tir", "Ons", "Tor", "Fre"][i]);
+                const dayData = week.days.find((d) => d.name === WEEKDAY_INPUT_NAMES[i]);
                 if (dayData) {
                     dayData.hours = defaultHours;
+                    dayData.defaultHours = defaultHours;
+                    updateModifiedState(input, dayData);
                 }
             }
         }
     });
 
     updateAllTotals();
+    saveState();
 }
 
 function updateTotals(weekIndex, dayIndex) {
     const input = document.getElementById(`week-${weekIndex}-day-${dayIndex}`);
     const value = parseFloat(input.value) || 0;
 
-    const dayNames = ["Man", "Tir", "Ons", "Tor", "Fre", "Lør", "Søn"];
-    const dayData = weeksData[weekIndex].days.find((d) => d.name === dayNames[dayIndex]);
+    const dayData = weeksData[weekIndex].days.find((d) => d.name === DAY_NAMES[dayIndex]);
     if (dayData) {
         dayData.hours = value;
+        updateModifiedState(input, dayData);
     }
 
     updateAllTotals();
+    saveState();
 }
 
 function updateAllTotals() {
@@ -350,7 +453,11 @@ function generatePDF() {
             return;
         }
 
-        const tableHeight = 10 + (weekDaysWithHours.length * 8) + 5;
+        const titleHeight = 8;
+        const headerHeight = 8;
+        const rowHeight = 8;
+        const tableSpacing = 10;
+        const tableHeight = titleHeight + headerHeight + (weekDaysWithHours.length * rowHeight) + tableSpacing;
         if (yPos + tableHeight > pageHeight - margins.bottom) {
             doc.addPage();
             yPos = margins.top;
@@ -364,49 +471,51 @@ function generatePDF() {
         doc.setFontSize(10);
         doc.setFont(undefined, "bold");
         const col1X = margins.left + 5;
-        const col2X = margins.left + 35;
-        const col3X = margins.left + 65;
+        const col2X = margins.left + 65;
+        const col3X = margins.left + 115;
+        const tableTopY = yPos - 5;
+        const headerBottomY = tableTopY + headerHeight;
 
         doc.setFillColor(240, 240, 240);
-        doc.rect(margins.left, yPos - 5, pageWidth - margins.left - margins.right, 7, "F");
+        doc.rect(margins.left, tableTopY, pageWidth - margins.left - margins.right, headerHeight, "F");
 
         doc.text("Dag", col1X, yPos);
         doc.text("Dato", col2X, yPos);
         doc.text("Timer", col3X, yPos);
-        yPos += 8;
+        yPos = headerBottomY + 5;
 
         doc.setFont(undefined, "normal");
         weekDaysWithHours.forEach((day, index) => {
+            const rowTopY = headerBottomY + (index * rowHeight);
             if (index % 2 === 0) {
                 doc.setFillColor(250, 250, 250);
-                doc.rect(margins.left, yPos - 5, pageWidth - margins.left - margins.right, 7, "F");
+                doc.rect(margins.left, rowTopY, pageWidth - margins.left - margins.right, rowHeight, "F");
             }
 
             const dateObj = day.fullDate || new Date(year, month - 1, day.date);
             const formattedDate = `${String(dateObj.getDate()).padStart(2, "0")}.${String(dateObj.getMonth() + 1).padStart(2, "0")}.${dateObj.getFullYear()}`;
+            const textY = rowTopY + 5;
 
-            doc.text(day.name, col1X, yPos);
-            doc.text(formattedDate, col2X, yPos);
-            doc.text(day.hours.toString(), col3X, yPos);
-            yPos += 7;
+            doc.text(day.name, col1X, textY);
+            doc.text(formattedDate, col2X, textY);
+            doc.text(day.hours.toString(), col3X, textY);
         });
 
-        const tableStartY = yPos - (weekDaysWithHours.length * 7) - 8;
-        const tableEndY = yPos - 7;
+        const tableBottomY = headerBottomY + (weekDaysWithHours.length * rowHeight);
 
         doc.setDrawColor(200, 200, 200);
         doc.setLineWidth(0.1);
 
-        doc.line(margins.left, tableStartY - 5, pageWidth - margins.right, tableStartY - 5);
-        doc.line(margins.left, tableStartY + 2, pageWidth - margins.right, tableStartY + 2);
-        doc.line(margins.left, tableEndY, pageWidth - margins.right, tableEndY);
+        doc.line(margins.left, tableTopY, pageWidth - margins.right, tableTopY);
+        doc.line(margins.left, headerBottomY, pageWidth - margins.right, headerBottomY);
+        doc.line(margins.left, tableBottomY, pageWidth - margins.right, tableBottomY);
 
-        doc.line(margins.left, tableStartY - 5, margins.left, tableEndY);
-        doc.line(col2X - 5, tableStartY - 5, col2X - 5, tableEndY);
-        doc.line(col3X - 5, tableStartY - 5, col3X - 5, tableEndY);
-        doc.line(pageWidth - margins.right, tableStartY - 5, pageWidth - margins.right, tableEndY);
+        doc.line(margins.left, tableTopY, margins.left, tableBottomY);
+        doc.line(col2X - 5, tableTopY, col2X - 5, tableBottomY);
+        doc.line(col3X - 5, tableTopY, col3X - 5, tableBottomY);
+        doc.line(pageWidth - margins.right, tableTopY, pageWidth - margins.right, tableBottomY);
 
-        yPos += 10;
+        yPos = tableBottomY + tableSpacing;
     });
 
     const grandTotal = parseFloat(document.getElementById("totalHours").textContent);
@@ -458,5 +567,6 @@ function generatePDF() {
     document.body.removeChild(link);
 }
 
+initSavedFields();
 initMonthSelector();
 generateWeeks();

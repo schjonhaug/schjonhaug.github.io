@@ -190,6 +190,12 @@ input[type="number"].holiday {
     box-shadow: inset 0 0 0 1px rgba(229, 62, 62, 0.15);
 }
 
+input[type="number"].modified {
+    background: #fff3bf;
+    border-color: #f59f00;
+    box-shadow: inset 0 0 0 1px rgba(245, 159, 0, 0.25);
+}
+
 .summary {
     background: #f8f9fa;
     color: #333;
@@ -261,6 +267,7 @@ input[type="number"].holiday {
 
     .day-label {
         font-size: 10px;
+        overflow-wrap: anywhere;
     }
 
     .holiday-name {
