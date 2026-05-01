@@ -3,6 +3,9 @@ const OSLO_TIME_ZONE = "Europe/Oslo";
 const STORAGE_KEY = "timeregistrering:v1";
 const DAY_NAMES = ["Mandag", "Tirsdag", "Onsdag", "Torsdag", "Fredag", "Lørdag", "Søndag"];
 const WEEKDAY_INPUT_NAMES = DAY_NAMES.slice(0, 5);
+const DEFAULT_HOURS = "8";
+const DEFAULT_CUSTOMER_NAME = "Norgesgruppen";
+const DEFAULT_PROJECT_NAME = "Trumf";
 
 let weeksData = [];
 let savedState = loadSavedState();
@@ -26,31 +29,69 @@ function ensureSavedStateShape() {
     }
 }
 
+function getDefaultMonthValue() {
+    const currentDate = new Date();
+    return `${currentDate.getFullYear()}-${String(currentDate.getMonth() + 1).padStart(2, "0")}`;
+}
+
 function saveState() {
     ensureSavedStateShape();
 
     const monthSelect = document.getElementById("month");
     const monthValue = monthSelect ? monthSelect.value : "";
+    const defaultMonthValue = getDefaultMonthValue();
+    const defaultHours = document.getElementById("defaultHours").value;
+    const customerName = document.getElementById("customerName").value;
+    const projectName = document.getElementById("projectName").value;
+    const nextState = { months: { ...savedState.months } };
 
-    savedState.selectedMonth = monthValue;
-    savedState.defaultHours = document.getElementById("defaultHours").value;
-    savedState.customerName = document.getElementById("customerName").value;
-    savedState.projectName = document.getElementById("projectName").value;
+    if (monthValue && monthValue !== defaultMonthValue) {
+        nextState.selectedMonth = monthValue;
+    }
+
+    if (defaultHours !== DEFAULT_HOURS) {
+        nextState.defaultHours = defaultHours;
+    }
+
+    if (customerName !== DEFAULT_CUSTOMER_NAME) {
+        nextState.customerName = customerName;
+    }
+
+    if (projectName !== DEFAULT_PROJECT_NAME) {
+        nextState.projectName = projectName;
+    }
 
     if (monthValue) {
-        const monthState = savedState.months[monthValue] || { days: {} };
-        monthState.days = monthState.days || {};
+        const days = {};
+        delete nextState.months[monthValue];
 
         weeksData.forEach((week) => {
             week.days.forEach((day) => {
-                monthState.days[day.dateKey] = day.hours;
+                if (areHoursModified(day.hours, day.defaultHours)) {
+                    days[day.dateKey] = day.hours;
+                }
             });
         });
 
-        savedState.months[monthValue] = monthState;
+        if (Object.keys(days).length > 0) {
+            nextState.months[monthValue] = { days };
+        }
     }
 
     try {
+        if (
+            !nextState.selectedMonth &&
+            nextState.defaultHours === undefined &&
+            nextState.customerName === undefined &&
+            nextState.projectName === undefined &&
+            Object.keys(nextState.months).length === 0
+        ) {
+            localStorage.removeItem(STORAGE_KEY);
+            savedState = { months: {} };
+            return;
+        }
+
+        savedState = nextState;
         localStorage.setItem(STORAGE_KEY, JSON.stringify(savedState));
     } catch {
         // Ignore storage failures; the form should keep working without persistence.
@@ -210,7 +251,10 @@ function initMonthSelector() {
         monthSelect.appendChild(option);
     }
 
-    monthSelect.addEventListener("change", generateWeeks);
+    monthSelect.addEventListener("change", () => {
+        generateWeeks();
+        saveState();
+    });
 }
 
 function initSavedFields() {
@@ -361,7 +405,6 @@ function generateWeeks() {
     });
 
     updateAllTotals();
-    saveState();
 }
 
 function prefillHours() {
