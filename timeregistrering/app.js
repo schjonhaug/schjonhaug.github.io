@@ -130,6 +130,20 @@ function updateMonthTheme(monthValue) {
     }
 }
 
+function isCurrentMonthModified() {
+    return weeksData.some((week) => week.days.some((day) => areHoursModified(day.hours, day.defaultHours)));
+}
+
+function updateCurrentMonthStatus() {
+    const monthStatus = document.getElementById("monthStatus");
+
+    if (!monthStatus) {
+        return;
+    }
+
+    monthStatus.hidden = !isCurrentMonthModified();
+}
+
 function formatDateKey(date) {
     const formatter = new Intl.DateTimeFormat("en-CA", {
         timeZone: OSLO_TIME_ZONE,
@@ -364,6 +378,7 @@ function generateWeeks() {
 
                 const dayData = {
                     name: DAY_NAMES[i],
+                    dayIndex: i,
                     dateKey,
                     date: date.getDate(),
                     fullDate: date,
@@ -429,6 +444,24 @@ function prefillHours() {
     saveState();
 }
 
+function resetCurrentMonth() {
+    weeksData.forEach((week, weekIndex) => {
+        week.days.forEach((day) => {
+            const input = document.getElementById(`week-${weekIndex}-day-${day.dayIndex}`);
+
+            day.hours = day.defaultHours;
+
+            if (input && !input.disabled) {
+                input.value = day.defaultHours;
+                updateModifiedState(input, day);
+            }
+        });
+    });
+
+    updateAllTotals();
+    saveState();
+}
+
 function updateTotals(weekIndex, dayIndex) {
     const input = document.getElementById(`week-${weekIndex}-day-${dayIndex}`);
     const value = parseFloat(input.value) || 0;
@@ -465,6 +498,7 @@ function updateAllTotals() {
     });
 
     document.getElementById("totalHours").textContent = grandTotal;
+    updateCurrentMonthStatus();
 }
 
 function generatePDF() {

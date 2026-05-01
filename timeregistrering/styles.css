@@ -98,7 +98,42 @@ h1 {
     grid-template-columns: minmax(0, 1fr) auto;
     gap: 24px;
     align-items: end;
+    margin-bottom: 16px;
+}
+
+.month-status {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
     margin-bottom: 26px;
+    padding: 10px 12px;
+    border: 1px solid #f59f00;
+    border-radius: 8px;
+    background: #fff9db;
+    color: #7c4d00;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.month-status[hidden] {
+    display: none;
+}
+
+.reset-button {
+    height: 34px;
+    padding: 0 12px;
+    border: 1px solid #f59f00;
+    border-radius: 6px;
+    background: white;
+    color: #7c4d00;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.reset-button:hover {
+    background: #fff3bf;
 }
 
 .details-row {
