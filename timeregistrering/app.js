@@ -276,10 +276,8 @@ function generateWeeks() {
         const weekHeader = document.createElement("div");
         weekHeader.className = "week-header";
 
-        const startDate = week[0].getDate();
-        const endDate = week[week.length - 1].getDate();
         weekHeader.innerHTML = `
-            <span>Uke ${weekInfo.weekNumber} (${startDate}-${endDate})</span>
+            <span>Uke ${weekInfo.weekNumber}</span>
             <span class="week-total" id="week-${weekIndex}-total">0 timer</span>
         `;
 

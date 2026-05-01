@@ -32,9 +32,10 @@ h1 {
 
 .controls {
     display: grid;
-    grid-template-columns: 1fr 200px;
-    gap: 20px;
-    margin-bottom: 30px;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 24px;
+    align-items: end;
+    margin-bottom: 26px;
 }
 
 .details-row {
@@ -67,7 +68,8 @@ select,
 input[type="number"].hours-preset,
 input[type="text"].hours-preset {
     width: 100%;
-    padding: 12px;
+    height: 48px;
+    padding: 10px 14px;
     border: 2px solid #e0e0e0;
     border-radius: 8px;
     font-size: 16px;
@@ -86,15 +88,22 @@ input[type="text"].hours-preset:focus {
     border-color: #667eea;
 }
 
+.hours-actions {
+    display: grid;
+    grid-template-columns: 84px 240px;
+    gap: 12px;
+    align-items: stretch;
+}
+
 .prefill-button {
     background: #667eea;
     color: white;
     border: none;
-    padding: 8px 16px;
-    border-radius: 6px;
+    height: 48px;
+    padding: 10px 16px;
+    border-radius: 8px;
     font-size: 14px;
     cursor: pointer;
-    margin-top: 8px;
     transition: background 0.3s;
 }
 
@@ -250,6 +259,10 @@ input[type="number"].modified {
 
     .controls {
         grid-template-columns: 1fr;
+    }
+
+    .hours-actions {
+        grid-template-columns: 84px 1fr;
     }
 
     .details-row {
