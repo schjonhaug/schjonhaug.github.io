@@ -6,12 +6,75 @@
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --background-start: #8fb6d9;
+    --background-end: #d8e8f2;
+    background: linear-gradient(135deg, var(--background-start) 0%, var(--background-end) 100%);
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
+    transition: background 0.4s ease;
+}
+
+body.month-01 {
+    --background-start: #6f8faa;
+    --background-end: #d7e6ef;
+}
+
+body.month-02 {
+    --background-start: #7d9db5;
+    --background-end: #e4edf2;
+}
+
+body.month-03 {
+    --background-start: #8ca88b;
+    --background-end: #e5efd9;
+}
+
+body.month-04 {
+    --background-start: #8bbf9f;
+    --background-end: #f0e7b2;
+}
+
+body.month-05 {
+    --background-start: #5fa777;
+    --background-end: #d9eaa8;
+}
+
+body.month-06 {
+    --background-start: #65a9c9;
+    --background-end: #f5d47a;
+}
+
+body.month-07 {
+    --background-start: #3f8fb2;
+    --background-end: #eab86d;
+}
+
+body.month-08 {
+    --background-start: #4f98a3;
+    --background-end: #d8bd75;
+}
+
+body.month-09 {
+    --background-start: #7f9a68;
+    --background-end: #d3a05d;
+}
+
+body.month-10 {
+    --background-start: #8f704a;
+    --background-end: #c67b56;
+}
+
+body.month-11 {
+    --background-start: #697985;
+    --background-end: #b88f71;
+}
+
+body.month-12 {
+    --background-start: #557188;
+    --background-end: #d6ded8;
 }
 
 .container {

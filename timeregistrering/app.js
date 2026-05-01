@@ -75,6 +75,20 @@ function updateModifiedState(input, dayData) {
     input.classList.toggle("modified", areHoursModified(dayData.hours, dayData.defaultHours));
 }
 
+function updateMonthTheme(monthValue) {
+    const month = monthValue.split("-")[1];
+
+    document.body.classList.forEach((className) => {
+        if (className.startsWith("month-")) {
+            document.body.classList.remove(className);
+        }
+    });
+
+    if (month) {
+        document.body.classList.add(`month-${month}`);
+    }
+}
+
 function formatDateKey(date) {
     const formatter = new Intl.DateTimeFormat("en-CA", {
         timeZone: OSLO_TIME_ZONE,
@@ -265,6 +279,7 @@ function generateWeeks() {
     const weekContainer = document.getElementById("weekContainer");
     const defaultHours = parseFloat(document.getElementById("defaultHours").value) || 8;
 
+    updateMonthTheme(monthValue);
     weekContainer.innerHTML = "";
     weeksData = [];
 
