@@ -292,7 +292,10 @@ function initSavedFields() {
         projectNameInput.value = savedState.projectName;
     }
 
-    defaultHoursInput.addEventListener("change", saveState);
+    defaultHoursInput.addEventListener("change", () => {
+        generateWeeks();
+        saveState();
+    });
     customerNameInput.addEventListener("input", saveState);
     projectNameInput.addEventListener("input", saveState);
 }
