@@ -108,6 +108,10 @@ function areHoursModified(hours, defaultHours) {
     return Number(hours) !== Number(defaultHours);
 }
 
+function formatHours(hours) {
+    return Number.isInteger(hours) ? hours.toString() : hours.toFixed(1).replace(".", ",");
+}
+
 function updateModifiedState(input, dayData) {
     if (!input || !dayData) {
         return;
@@ -478,9 +482,14 @@ function updateTotals(weekIndex, dayIndex) {
 
 function updateAllTotals() {
     let grandTotal = 0;
+    let defaultTotal = 0;
 
     weeksData.forEach((week, weekIndex) => {
         let weekTotal = 0;
+
+        week.days.forEach((day) => {
+            defaultTotal += day.defaultHours;
+        });
 
         for (let i = 0; i < 7; i++) {
             const input = document.getElementById(`week-${weekIndex}-day-${i}`);
@@ -497,7 +506,24 @@ function updateAllTotals() {
         }
     });
 
-    document.getElementById("totalHours").textContent = grandTotal;
+    const difference = grandTotal - defaultTotal;
+    const differenceElement = document.getElementById("defaultDifference");
+
+    document.getElementById("totalHours").textContent = formatHours(grandTotal);
+
+    if (differenceElement) {
+        differenceElement.classList.toggle("over", difference > 0);
+        differenceElement.classList.toggle("under", difference < 0);
+
+        if (difference > 0) {
+            differenceElement.textContent = `${formatHours(difference)} timer over standard`;
+        } else if (difference < 0) {
+            differenceElement.textContent = `${formatHours(Math.abs(difference))} timer under standard`;
+        } else {
+            differenceElement.textContent = "På standard";
+        }
+    }
+
     updateCurrentMonthStatus();
 }
 

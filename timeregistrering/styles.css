@@ -331,6 +331,21 @@ input[type="number"].modified {
     color: #667eea;
 }
 
+.default-difference {
+    margin-top: 6px;
+    color: #666;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.default-difference.over {
+    color: #2f855a;
+}
+
+.default-difference.under {
+    color: #c53030;
+}
+
 .button {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
