@@ -244,6 +244,56 @@ function moveByDirection(position, command, size) {
   );
 }
 
+function randomInt(max) {
+  return Math.floor(Math.random() * max);
+}
+
+function randomPosition(size) {
+  return { x: randomInt(size), y: randomInt(size) };
+}
+
+function randomPositionPair(size, minDistance, maxDistance) {
+  let a;
+  let b;
+  let distance;
+
+  do {
+    a = randomPosition(size);
+    b = randomPosition(size);
+    distance = Math.abs(a.x - b.x) + Math.abs(a.y - b.y);
+  } while (distance < minDistance || distance > maxDistance);
+
+  return { a, b };
+}
+
+function pathBetween(start, goal) {
+  const path = [];
+  let x = start.x;
+  let y = start.y;
+
+  while (x !== goal.x) {
+    const step = goal.x > x ? 1 : -1;
+    path.push(step > 0 ? "right" : "left");
+    x += step;
+  }
+
+  while (y !== goal.y) {
+    const step = goal.y > y ? 1 : -1;
+    path.push(step > 0 ? "down" : "up");
+    y += step;
+  }
+
+  return path;
+}
+
+function runProgram(start, commands, size) {
+  let position = { ...start };
+  commands.forEach((command) => {
+    position = moveByDirection(position, command, size);
+  });
+  return position;
+}
+
 function renderGrid({ size, actorPosition, goalPosition, actor = "🤖", goal = "⭐", obstaclePosition, obstacle = "🪨", tapMode }) {
   const cells = [];
 
@@ -393,6 +443,7 @@ const commandSlots = document.querySelector("#commandSlots");
 const commandButtons = document.querySelectorAll("[data-command]");
 const runCommandsButton = document.querySelector("#runCommands");
 const clearCommandsButton = document.querySelector("#clearCommands");
+const moduleOneScene = document.querySelector(".scene");
 const stageTrack = document.querySelector(".stage-track");
 const robotActor = document.querySelector("#robotActor");
 const moduleOneSpeech = document.querySelector("#moduleOneSpeech");
@@ -443,8 +494,7 @@ function renderCommandSlots(activeIndex = -1) {
 
 function resetModuleOneScene() {
   robotWalkSteps = 0;
-  robotActor.style.setProperty("--robot-x", "0px");
-  sparkles.style.setProperty("--robot-x", "0px");
+  moduleOneScene.style.setProperty("--robot-x", "0px");
   robotActor.classList.remove("is-jumping", "is-waving");
   sparkles.classList.remove("is-visible");
   moduleOneSpeech.hidden = true;
@@ -480,14 +530,13 @@ function addCommand(commandKey) {
 
 function getWalkDistance() {
   const availableWidth = stageTrack.clientWidth - robotActor.offsetWidth - 8;
-  return Math.max(34, Math.min(70, Math.floor(availableWidth / maxCommands)));
+  return Math.max(34, Math.floor(availableWidth / maxCommands));
 }
 
 async function performWalk() {
   robotWalkSteps += 1;
   const robotX = `${robotWalkSteps * getWalkDistance()}px`;
-  robotActor.style.setProperty("--robot-x", robotX);
-  sparkles.style.setProperty("--robot-x", robotX);
+  moduleOneScene.style.setProperty("--robot-x", robotX);
   await wait(reducedMotionQuery.matches ? 180 : 650);
 }
 
@@ -538,15 +587,17 @@ async function runModuleOneProgram() {
 
 // Module 2
 const moduleTwoRoot = document.querySelector("#moduleTwoRoot");
-const moduleTwoLevels = [
-  { start: { x: 0, y: 2 }, goal: { x: 2, y: 2 }, size: 5 },
-  { start: { x: 0, y: 0 }, goal: { x: 1, y: 1 }, size: 5 },
-  { start: { x: 1, y: 3 }, goal: { x: 3, y: 1 }, size: 5 },
-];
-const moduleTwoState = { level: 0, commands: [], position: { ...moduleTwoLevels[0].start }, running: false, message: "Lag vei med piler." };
+const moduleTwoIntro = { start: { x: 0, y: 2 }, goal: { x: 2, y: 2 }, size: 5 };
+const moduleTwoState = { track: moduleTwoIntro, commands: [], position: { ...moduleTwoIntro.start }, running: false, message: "Lag vei med piler." };
+
+function randomModuleTwoTrack() {
+  const size = 5;
+  const { a, b } = randomPositionPair(size, 2, 6);
+  return { start: a, goal: b, size };
+}
 
 function renderModuleTwo(activeIndex = -1) {
-  const level = moduleTwoLevels[moduleTwoState.level];
+  const level = moduleTwoState.track;
   moduleTwoRoot.innerHTML = `
     <section class="game-panel">
       <p class="big-feedback">${moduleTwoState.message}</p>
@@ -567,7 +618,7 @@ async function runModuleTwo() {
     return;
   }
 
-  const level = moduleTwoLevels[moduleTwoState.level];
+  const level = moduleTwoState.track;
   moduleTwoState.running = true;
   moduleTwoState.position = { ...level.start };
   moduleTwoState.message = "Roboten går!";
@@ -611,16 +662,16 @@ moduleTwoRoot.onclick = (event) => {
 
   if (event.target.closest("[data-m2-clear]")) {
     moduleTwoState.commands = [];
-    moduleTwoState.position = { ...moduleTwoLevels[moduleTwoState.level].start };
+    moduleTwoState.position = { ...moduleTwoState.track.start };
     moduleTwoState.message = "Lag vei med piler.";
     renderModuleTwo();
     return;
   }
 
   if (event.target.closest("[data-m2-new]")) {
-    moduleTwoState.level = (moduleTwoState.level + 1) % moduleTwoLevels.length;
+    moduleTwoState.track = randomModuleTwoTrack();
     moduleTwoState.commands = [];
-    moduleTwoState.position = { ...moduleTwoLevels[moduleTwoState.level].start };
+    moduleTwoState.position = { ...moduleTwoState.track.start };
     moduleTwoState.message = "Ny stjerne!";
     playHappySound();
     renderModuleTwo();
@@ -629,19 +680,54 @@ moduleTwoRoot.onclick = (event) => {
 
 // Module 3
 const moduleThreeRoot = document.querySelector("#moduleThreeRoot");
-const bugLevels = [
-  { start: { x: 0, y: 1 }, goal: { x: 2, y: 1 }, size: 4, commands: ["right"], hint: "Roboten stopper litt tidlig." },
-  { start: { x: 0, y: 0 }, goal: { x: 1, y: 1 }, size: 4, commands: ["left", "down"], hint: "En pil peker feil vei." },
-  { start: { x: 1, y: 3 }, goal: { x: 2, y: 1 }, size: 4, commands: ["right", "right", "up"], hint: "Det er nesten riktig." },
-];
-const bugState = { level: 0, commands: [...bugLevels[0].commands], position: { ...bugLevels[0].start }, running: false, message: "Trykk en feil pil bort." };
+const moduleThreeIntro = { start: { x: 0, y: 1 }, goal: { x: 2, y: 1 }, size: 4, commands: ["right"] };
+const moduleThreeHint = "Kanskje en pil mangler, peker feil – eller er en for mye.";
+const bugState = { level: moduleThreeIntro, commands: [...moduleThreeIntro.commands], position: { ...moduleThreeIntro.start }, running: false, message: "Trykk en feil pil bort." };
+
+function wrongDirection(command) {
+  const options = Object.keys(directions).filter((key) => key !== command);
+  return options[randomInt(options.length)];
+}
+
+function randomBugLevel() {
+  const size = 4;
+
+  while (true) {
+    const { a: start, b: goal } = randomPositionPair(size, 2, 3);
+    const path = pathBetween(start, goal);
+    const bugType = ["missing", "wrong", "extra"][randomInt(3)];
+    const commands = [...path];
+
+    if (bugType === "missing") {
+      commands.splice(randomInt(commands.length), 1);
+    } else if (bugType === "wrong") {
+      const index = randomInt(commands.length);
+      commands[index] = wrongDirection(commands[index]);
+    } else {
+      if (commands.length >= 4) {
+        continue;
+      }
+      commands.splice(randomInt(commands.length + 1), 0, wrongDirection(""));
+    }
+
+    if (commands.length === 0 || commands.length > 4) {
+      continue;
+    }
+
+    if (samePosition(runProgram(start, commands, size), goal)) {
+      continue;
+    }
+
+    return { start, goal, size, commands };
+  }
+}
 
 function renderModuleThree(activeIndex = -1, bugWiggle = false) {
-  const level = bugLevels[bugState.level];
+  const level = bugState.level;
   moduleThreeRoot.innerHTML = `
     <section class="game-panel ${bugWiggle ? "bug-shake" : ""}">
       <p class="big-feedback"><span aria-hidden="true">🐞</span> ${bugState.message}</p>
-      <p class="small-help">${level.hint}</p>
+      <p class="small-help">${moduleThreeHint}</p>
       ${renderGrid({ size: level.size, actorPosition: bugState.position, goalPosition: level.goal })}
       ${renderCommandRow(bugState.commands, directions, activeIndex, true)}
       ${renderPalette(directions, "m3-add", bugState.running)}
@@ -658,7 +744,7 @@ async function runModuleThree() {
     return;
   }
 
-  const level = bugLevels[bugState.level];
+  const level = bugState.level;
   bugState.running = true;
   bugState.position = { ...level.start };
   bugState.message = "Tester feilen...";
@@ -709,9 +795,9 @@ moduleThreeRoot.onclick = (event) => {
   }
 
   if (event.target.closest("[data-m3-new]")) {
-    bugState.level = (bugState.level + 1) % bugLevels.length;
-    bugState.commands = [...bugLevels[bugState.level].commands];
-    bugState.position = { ...bugLevels[bugState.level].start };
+    bugState.level = randomBugLevel();
+    bugState.commands = [...bugState.level.commands];
+    bugState.position = { ...bugState.level.start };
     bugState.message = "Finn feilen!";
     renderModuleThree();
   }

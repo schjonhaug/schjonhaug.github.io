@@ -297,6 +297,12 @@ h1 {
   line-height: 1.35;
 }
 
+.next-level {
+  display: flex;
+  justify-content: center;
+  margin-top: 18px;
+}
+
 .module-link {
   min-height: 92px;
   width: min(100%, 420px);
@@ -404,7 +410,7 @@ h1 {
   position: absolute;
   z-index: 4;
   top: 12px;
-  left: 104px;
+  left: 59px;
   min-width: 112px;
   padding: 12px 16px;
   color: var(--ink);
@@ -416,13 +422,16 @@ h1 {
   font-weight: 900;
   line-height: 1;
   text-align: center;
+  transform: translateX(calc(-50% + var(--robot-x, 0px)));
+  transition: transform 520ms ease;
 }
 
 .module-one-speech::after {
   content: "";
   position: absolute;
   bottom: -14px;
-  left: 28px;
+  left: 50%;
+  margin-left: -10px;
   width: 20px;
   height: 20px;
   background: #ffffff;
@@ -780,7 +789,6 @@ h1 {
 
 .grid-goal {
   z-index: 1;
-  transform: translate(16%, -16%);
 }
 
 .grid-obstacle {
@@ -1362,7 +1370,7 @@ h1 {
   }
 
   .module-one-speech {
-    left: 132px;
+    left: 71px;
   }
 
   .sparkles {
