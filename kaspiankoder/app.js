@@ -349,12 +349,12 @@ const characters = {
 const speechBubble = document.querySelector("#speechBubble");
 const speechText = document.querySelector("#speechText");
 const cards = document.querySelectorAll("[data-character]");
-const resetButton = document.querySelector("#resetButton");
 const adultToggle = document.querySelector("#adultToggle");
 const adultInfo = document.querySelector("#adultInfo");
 
 function showMessage(message) {
   speechText.textContent = message;
+  speechBubble.hidden = false;
   restartAnimation(speechBubble, "pop");
 }
 
@@ -380,13 +380,6 @@ function handleCharacterPress(event) {
   restartAnimation(card, character.animationClass);
   character.sound();
   markComplete("module-0");
-}
-
-function resetModule() {
-  speechText.textContent = "Velg en figur!";
-  playHappySound();
-  clearCharacterAnimations();
-  cards.forEach((card) => restartAnimation(card, "wiggle"));
 }
 
 function toggleAdultInfo() {
@@ -1567,7 +1560,6 @@ moduleTenRoot.onclick = (event) => {
 cards.forEach((card) => card.addEventListener("click", handleCharacterPress));
 document.addEventListener("pointerdown", unlockAudio, { once: true, passive: true });
 document.addEventListener("touchstart", unlockAudio, { once: true, passive: true });
-resetButton.addEventListener("click", resetModule);
 adultToggle.addEventListener("click", toggleAdultInfo);
 document.addEventListener("click", (event) => {
   const viewButton = event.target.closest("[data-open-view]");
