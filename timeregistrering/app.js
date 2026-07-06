@@ -440,7 +440,6 @@ function prefillHours() {
                 const dayData = week.days.find((d) => d.name === WEEKDAY_INPUT_NAMES[i]);
                 if (dayData) {
                     dayData.hours = defaultHours;
-                    dayData.defaultHours = defaultHours;
                     updateModifiedState(input, dayData);
                 }
             }
