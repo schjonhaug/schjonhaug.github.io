@@ -8,7 +8,7 @@ image:
   height: 1350
   alt: "An assortment of colourful six-sided dice"
 date: 2026-08-05 12:32:39 +0200
-last_modified_at: 2026-08-06 13:43:46 +0200
+last_modified_at: 2026-08-06 14:09:04 +0200
 categories: bitcoin
 ---
 
@@ -146,6 +146,8 @@ The historical firmware makes the key distinction clear. Normal seed generation 
 ```
 
 Because the dice-only flow bypassed that affected path, no internally generated randomness entered the calculation. The same dice-only construction appears in the [first MK4 firmware from 2022](https://github.com/Coldcard/firmware/blob/2022-03-14T1907-v5.0.0/shared/seed.py#L292-L362), [MK4 5.4.5](https://github.com/Coldcard/firmware/blob/2025-11-03T1527-v5.4.5/shared/seed.py#L377-L481), and [Q 1.4.1Q](https://github.com/Coldcard/firmware/blob/2026-07-01T1728-v1.4.1Q/shared/seed.py#L380-L484).
+
+Published before this article, an independent [function-level audit of the dice-only path in MK4/MK5 firmware 5.6.0](https://github.com/portlandhodl/coldcard_fw_dicerolls_trace/blob/main/dice-roll-5-6-0.pdf) likewise recorded an empty entropy accumulator, one update for every entered roll, and no RNG or TRNG call. That audit covers fixed firmware, so it complements rather than replaces the historical source and pre-hotfix device tests here.
 
 That source history covers the vulnerable period, while the physical tests show the result on affected firmware. Together they support the conclusion: **a 24-word seed made through the dedicated dice-only flow with at least 99 fair, private, correctly entered rolls was not weakened by this RNG bug.**
 
