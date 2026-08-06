@@ -1,14 +1,14 @@
 ---
 layout: post
 title: "Why Dice-Only Coldcard Seeds Were Unaffected by the RNG Bug"
-description: "Independent tools, historical source, and tests on affected Coldcard firmware show that 99-roll dice-only seeds never used the faulty RNG."
+description: "Independent tools, historical source, and tests on affected Coldcard firmware show that 99-roll dice-only seeds bypassed the affected firmware randomness path."
 image:
   path: "/assets/dice/dice-rolls-hero.jpeg"
   width: 1800
   height: 1350
   alt: "An assortment of colourful six-sided dice"
 date: 2026-08-05 12:32:39 +0200
-last_modified_at: 2026-08-06 13:04:48 +0200
+last_modified_at: 2026-08-06 13:43:46 +0200
 categories: bitcoin
 ---
 
@@ -65,7 +65,7 @@ On July 30, 2026, an [independent investigation by Block](https://engineering.bl
 
 | Date | What happened |
 | --- | --- |
-| March 17, 2021 | [Version 4.0.0](https://github.com/Coldcard/firmware/tree/2021-03-17T1724-v4.0.0) shipped the faulty RNG path used by normal device-generated seeds. |
+| March 17, 2021 | [Version 4.0.0](https://github.com/Coldcard/firmware/tree/2021-03-17T1724-v4.0.0) shipped the RNG integration bug in the firmware path used by normal seed generation. |
 | 2022–2026 | The affected path shipped on the MK4 and later the Q. The dedicated dice-only path continued to derive its entropy from the entered rolls instead. |
 | July 30, 2026 | Block published its independent analysis while the vulnerability was being actively exploited. |
 | July 31, 2026 | Fixed standard firmware was released for the Q ([`1.5.0Q`](https://github.com/Coldcard/firmware/tree/2026-07-31T0517-v1.5.0Q)) and MK4/MK5 ([`5.6.0`](https://github.com/Coldcard/firmware/tree/2026-07-31T0519-v5.6.0)). |
@@ -76,7 +76,7 @@ Block's report explains the defect and the affected firmware in detail. Here I f
 
 This article addresses one practical question for existing users: **if you created a 24-word Coldcard seed through the dedicated dice-only flow using at least 99 fair, independent, private rolls, did this RNG bug weaken it?**
 
-The answer is no. In the dedicated dice-only flow, the entered rolls—not Coldcard's faulty random-number generator—provided the seed entropy. That was true throughout all of the affected pre-hotfix firmware releases.
+The answer is no. In the dedicated dice-only flow, the seed entropy came from the entered rolls, and the code bypassed the firmware path affected by the RNG integration bug. That was true throughout all of the affected pre-hotfix firmware releases.
 
 To demonstrate this independently, I first calculate the expected words with [Ian Coleman's open-source BIP39 tool](https://iancoleman.io/bip39/). I then enter the same rolls on a [SeedSigner](https://seedsigner.com/) and on two Coldcards running affected firmware, before checking the historical Coldcard source to explain why all four results agree.
 
@@ -139,13 +139,13 @@ The Coldcards were running affected, pre-hotfix firmware. SeedSigner provides an
 
 ## Why dice-only seeds were safe
 
-The historical firmware makes the key distinction clear. Normal seed generation called the faulty device RNG. The dedicated [dice-only flow from the affected 2021 firmware](https://github.com/Coldcard/firmware/blob/2021-03-17T1724-v4.0.0/shared/seed.py#L334-L346) instead started empty and built the seed entropy solely by hashing each entered dice value.
+The historical firmware makes the key distinction clear. Normal seed generation used the firmware path affected by the RNG integration bug. The dedicated [dice-only flow from the affected 2021 firmware](https://github.com/Coldcard/firmware/blob/2021-03-17T1724-v4.0.0/shared/seed.py#L334-L346) instead started empty and derived the seed entropy solely by hashing each entered dice value.
 
 ```text
 99 dice rolls → SHA-256 → 24 BIP39 words
 ```
 
-There was no device-generated randomness to weaken because the faulty RNG was never called. The same dice-only construction appears in the [first MK4 firmware from 2022](https://github.com/Coldcard/firmware/blob/2022-03-14T1907-v5.0.0/shared/seed.py#L292-L362), [MK4 5.4.5](https://github.com/Coldcard/firmware/blob/2025-11-03T1527-v5.4.5/shared/seed.py#L377-L481), and [Q 1.4.1Q](https://github.com/Coldcard/firmware/blob/2026-07-01T1728-v1.4.1Q/shared/seed.py#L380-L484).
+Because the dice-only flow bypassed that affected path, no internally generated randomness entered the calculation. The same dice-only construction appears in the [first MK4 firmware from 2022](https://github.com/Coldcard/firmware/blob/2022-03-14T1907-v5.0.0/shared/seed.py#L292-L362), [MK4 5.4.5](https://github.com/Coldcard/firmware/blob/2025-11-03T1527-v5.4.5/shared/seed.py#L377-L481), and [Q 1.4.1Q](https://github.com/Coldcard/firmware/blob/2026-07-01T1728-v1.4.1Q/shared/seed.py#L380-L484).
 
 That source history covers the vulnerable period, while the physical tests show the result on affected firmware. Together they support the conclusion: **a 24-word seed made through the dedicated dice-only flow with at least 99 fair, private, correctly entered rolls was not weakened by this RNG bug.**
 
@@ -189,7 +189,7 @@ The MK4, also intentionally left on affected firmware, showed the same mnemonic 
   </figure>
 </div>
 
-Coldcard also includes a small project verifier in its [firmware repository](https://github.com/Coldcard/firmware). It is useful for checking that I understood the firmware, but it is not independent evidence because it comes from the same project. I ran:
+Coldcard's firmware repository also includes [`docs/rolls.py`](https://github.com/Coldcard/firmware/blob/2025-11-03T1527-v5.4.5/docs/rolls.py), a short Python script that hashes an entered dice-roll sequence and converts it into 24 BIP39 words. I ran it as a project-supplied cross-check. It is not independent evidence because it comes from the same repository:
 
 ```shell
 printf '%s\n' '133363436436436415622614221225242212144161454643266122155666664444633643543353132626522332412313253' | python3 docs/rolls.py
@@ -239,7 +239,7 @@ It returned the same words. SeedSigner also publishes a [dice-seed verification 
 
 ## What this proves—and what it does not
 
-Ian Coleman and SeedSigner independently produce the same 24 words. Both Coldcards produce those words while running affected, pre-hotfix firmware. The historical source explains why: the dedicated dice-only flow hashes the entered rolls without calling the faulty RNG.
+Ian Coleman and SeedSigner independently produce the same 24 words. Both Coldcards produce those words while running affected, pre-hotfix firmware. The historical source explains why: the dedicated dice-only flow hashes the entered rolls without using the firmware path affected by the RNG integration bug.
 
 This does **not** prove that a particular historical user used the dice-only menu, rolled a fair die 99 times, entered every roll correctly, or kept the sequence private. Nor does it make a device-generated seed safe. Those are facts no public test can recover afterward.
 
