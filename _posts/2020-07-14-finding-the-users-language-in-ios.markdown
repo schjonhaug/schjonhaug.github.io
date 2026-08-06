@@ -1,6 +1,11 @@
 ---
 layout: post
 title: Finding the user's language in iOS
+image:
+  path: "/assets/social/finding-users-language-ios.jpeg"
+  width: 1200
+  height: 630
+  alt: "Finding the user’s language in iOS"
 date: 2020-07-14 10:04:21 +0200
 categories: localisation ios
 ---

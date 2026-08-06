@@ -3,9 +3,9 @@ layout: post
 title: "Why Dice-Only Coldcard Seeds Were Unaffected by the RNG Bug"
 description: "Independent tools, historical source, and tests on affected Coldcard firmware show that 99-roll dice-only seeds bypassed the affected firmware randomness path."
 image:
-  path: "/assets/dice/dice-rolls-hero.jpeg"
-  width: 1800
-  height: 1350
+  path: "/assets/social/coldcard-dice-only.jpeg"
+  width: 1200
+  height: 630
   alt: "An assortment of colourful six-sided dice"
 date: 2026-08-05 12:32:39 +0200
 last_modified_at: 2026-08-06 14:09:04 +0200

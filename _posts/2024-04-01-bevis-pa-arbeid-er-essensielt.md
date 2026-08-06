@@ -2,6 +2,11 @@
 layout: post
 title: "Bevis-på-arbeid er essensielt"
 description: "En manglende forståelse av bevis-på-arbeid er en manglende forståelse av Bitcoin."
+image:
+  path: "/assets/social/proof-of-work-essential.jpeg"
+  width: 1200
+  height: 630
+  alt: "Bevis-på-arbeid er essensielt"
 date: 2021-05-13 15:55:56 +0200
 categories: bitcoin
 lang: nb

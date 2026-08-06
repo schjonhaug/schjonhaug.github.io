@@ -2,7 +2,11 @@
 layout: post
 title: Running Bitcoin Core on a Raspberry Pi
 description: "How to set up a full Bitcoin node on a Raspberry Pi 4, using the command line."
-image: "/assets/bitcoin-core-on-a-raspberry-pi.png"
+image:
+  path: "/assets/social/bitcoin-core-raspberry-pi.jpeg"
+  width: 1200
+  height: 630
+  alt: "A physical Bitcoin token on a Raspberry Pi circuit board"
 date: 2022-08-20 21:48:21 +0200
 categories: bitcoin
 ---

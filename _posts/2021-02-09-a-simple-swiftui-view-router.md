@@ -2,7 +2,11 @@
 layout: post
 title: A simple SwiftUI view router
 date: 2021-02-09 10:04:21 +0200
-image: "/assets/wireframes.png"
+image:
+  path: "/assets/social/swiftui-view-router.jpeg"
+  width: 1200
+  height: 630
+  alt: "A collection of connected mobile-app wireframes"
 categories: swiftui ios
 ---
 

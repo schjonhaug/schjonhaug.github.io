@@ -2,6 +2,11 @@
 layout: post
 title: "Bitcoin-blokkjedens bevis-på-arbeid er en desentralisert klokke"
 description: "Dette er en forklaring på nøkkelfunksjonen bevis-på-arbeid i Bitcoin-blokkjeden. Den fokuserer på den ene funksjonen av bevis-på-arbeid som er viktig og viser at andre funksjoner som ofte snakkes om, for eksempel sikkerhet, er sekundære bivirkninger. De er nyttige, men ikke avgjørende."
+image:
+  path: "/assets/social/bitcoin-proof-of-work-clock.jpeg"
+  width: 1200
+  height: 630
+  alt: "Bitcoin-blokkjedens bevis-på-arbeid er en desentralisert klokke"
 date: 2018-01-23 13:37:00 +0200
 categories: bitcoin
 lang: nb
