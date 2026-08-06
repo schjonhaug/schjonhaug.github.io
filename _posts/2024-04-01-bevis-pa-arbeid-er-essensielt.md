@@ -38,7 +38,7 @@ Fjern denne broen til den fysiske verden, og du forblir i fantasiland: du kan ik
 
 Proof of stake har mange andre problemer, for eksempel rettferdig valg av validator (hvem bestemmer?), naturlig sentraliserende effekter (mer innsats = mer belønning = mer stake), og har ingen naturlig motstand mot tidsstempelmanipulasjonsangrep, for eksempel.
 
-Bevis-på-arbeid løser akkurat disse problemene. Det desentraliserer utvelgelsesprosessen, skaper fysisk bevis på hva som har skjedd, har reelle eksternaliserte kostnader og [desentraliserer tid](https://schjonhaug.dev/bitcoin-er-tid).
+Bevis-på-arbeid løser akkurat disse problemene. Det desentraliserer utvelgelsesprosessen, skaper fysisk bevis på hva som har skjedd, har reelle eksternaliserte kostnader og [desentraliserer tid](https://schjonhaug.dev/bitcoin-er-tid/).
 
 Spørsmålet om bevis-på-arbeid er bortkastet eller ikke kan ikke stilles uten å forstå problemet det løser. Å forstå problemet riktig vil føre deg til konklusjonen at det ikke er noen annen måte å løse det på en tillitsløs måte.
 

@@ -49,7 +49,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-redirect-from
-permalink: /:title
+permalink: /:title/
 include:
   - .well-known
 # Exclude from processing.
