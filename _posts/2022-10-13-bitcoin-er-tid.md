@@ -5,6 +5,8 @@ description: "Tid er penger, som det heter. Det følger dermed at penger også e
 image: "/assets/bitcoin-is-time.jpg"
 date: 2021-11-14 13:37:00 +0200
 categories: bitcoin
+lang: nb
+locale: nb_NO
 
 redirect_to: https://www.enogtjue.no/artikler/bitcoin-er-tid
 ---
