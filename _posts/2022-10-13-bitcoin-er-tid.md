@@ -6,6 +6,7 @@ date: 2021-11-14 13:37:00 +0200
 categories: bitcoin
 lang: nb
 locale: nb_NO
+permalink: /bitcoin-er-tid/
 
 redirect_to: https://www.enogtjue.no/artikler/bitcoin-er-tid
 ---

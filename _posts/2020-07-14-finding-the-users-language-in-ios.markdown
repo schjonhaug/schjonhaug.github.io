@@ -8,6 +8,8 @@ image:
   alt: "Finding the user’s language in iOS"
 date: 2020-07-14 10:04:21 +0200
 categories: localisation ios
+redirect_from:
+  - /finding-the-users-language-in-ios/
 ---
 
 When localising your app, you might need to get the user's preferred language, for example for sending it to the backend. There are several ways to do this, let's have a look at the available APIs Apple provides.

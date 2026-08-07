@@ -9,6 +9,8 @@ image:
   alt: "A honey badger confronting a banker holding a banknote"
 date: 2024-01-17 20:29:00 +0200
 categories: bitcoin
+redirect_from:
+  - /bitcoins-safeguard-against-monopoly-seigniorage/
 ---
 
 ![Honey badger and banker](/assets/honeybadger-and-banker.png)

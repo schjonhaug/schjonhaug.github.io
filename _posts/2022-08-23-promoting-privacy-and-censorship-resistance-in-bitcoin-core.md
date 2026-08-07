@@ -9,6 +9,8 @@ image:
   alt: "A crossed-out Bitcoin symbol on a gold background"
 date: 2022-08-23 20:55:21 +0200
 categories: bitcoin
+redirect_from:
+  - /promoting-privacy-and-censorship-resistance-in-bitcoin-core/
 ---
 
 ⚠️ This post contains outdated information, and I instead recommend following the excellent tutorials over at [Raspibolt](https://raspibolt.org). ⚠️

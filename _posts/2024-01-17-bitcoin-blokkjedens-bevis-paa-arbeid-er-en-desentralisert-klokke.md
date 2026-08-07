@@ -11,6 +11,8 @@ date: 2018-01-23 13:37:00 +0200
 categories: bitcoin
 lang: nb
 locale: nb_NO
+redirect_from:
+  - /bitcoin-blokkjedens-bevis-paa-arbeid-er-en-desentralisert-klokke/
 ---
 
 av [Gregory Trubetskoy](https://grisha.org/blog/2018/01/23/explaining-proof-of-work/)

@@ -8,6 +8,8 @@ image:
   height: 630
   alt: "A collection of connected mobile-app wireframes"
 categories: swiftui ios
+redirect_from:
+  - /a-simple-swiftui-view-router/
 ---
 
 ![Wireframes by Martina Wolna](/assets/wireframes.png)

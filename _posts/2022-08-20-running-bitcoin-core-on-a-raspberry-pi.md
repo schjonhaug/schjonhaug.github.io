@@ -9,6 +9,8 @@ image:
   alt: "A physical Bitcoin token on a Raspberry Pi circuit board"
 date: 2022-08-20 21:48:21 +0200
 categories: bitcoin
+redirect_from:
+  - /running-bitcoin-core-on-a-raspberry-pi/
 ---
 
 ⚠️ This post contains outdated information, and I instead recommend following the excellent tutorials over at [Raspibolt](https://raspibolt.org). ⚠️

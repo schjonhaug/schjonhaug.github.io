@@ -10,6 +10,8 @@ image:
 date: 2026-08-05 12:32:39 +0200
 last_modified_at: 2026-08-06 14:09:04 +0200
 categories: bitcoin
+redirect_from:
+  - /why-dice-only-coldcard-seeds-were-unaffected-by-the-rng-bug/
 ---
 
 <style>

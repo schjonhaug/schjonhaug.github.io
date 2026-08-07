@@ -11,6 +11,8 @@ date: 2021-05-13 15:55:56 +0200
 categories: bitcoin
 lang: nb
 locale: nb_NO
+redirect_from:
+  - /bevis-pa-arbeid-er-essensielt/
 ---
 
 av [Gigi](https://dergigi.com/threads/pow-is-essential)
