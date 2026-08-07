@@ -8,7 +8,7 @@ image:
   height: 630
   alt: "An assortment of colourful six-sided dice"
 date: 2026-08-05 12:32:39 +0200
-last_modified_at: 2026-08-06 14:09:04 +0200
+last_modified_at: 2026-08-07 15:14:18 +0200
 categories: bitcoin
 redirect_from:
   - /why-dice-only-coldcard-seeds-were-unaffected-by-the-rng-bug/
@@ -67,10 +67,11 @@ On July 30, 2026, an [independent investigation by Block](https://engineering.bl
 
 | Date | What happened |
 | --- | --- |
-| March 17, 2021 | [Version 4.0.0](https://github.com/Coldcard/firmware/tree/2021-03-17T1724-v4.0.0) shipped the RNG integration bug in the firmware path used by normal seed generation. |
+| March 17, 2021 | The affected RNG integration appeared in the [version 4.0.0 source tag](https://github.com/Coldcard/firmware/tree/2021-03-17T1724-v4.0.0). |
+| March 29, 2021 | Version 4.0.1 began the affected Mk2/Mk3 firmware range identified in [Coinkite's current advisory](https://blog.coinkite.com/coldcard-mk3-seed-generation-warning/). |
 | 2022–2026 | The affected path shipped on the MK4 and later the Q. The dedicated dice-only path continued to derive its entropy from the entered rolls instead. |
 | July 30, 2026 | Block published its independent analysis while the vulnerability was being actively exploited. |
-| July 31, 2026 | Fixed standard firmware was released for the Q ([`1.5.0Q`](https://github.com/Coldcard/firmware/tree/2026-07-31T0517-v1.5.0Q)) and MK4/MK5 ([`5.6.0`](https://github.com/Coldcard/firmware/tree/2026-07-31T0519-v5.6.0)). |
+| July 31, 2026 | Fixed firmware was released for the Mk2/Mk3 ([`4.2.0`](https://github.com/Coldcard/firmware/tree/2026-07-31T1248-v4.2.0)), Q ([`1.5.0Q`](https://github.com/Coldcard/firmware/tree/2026-07-31T0517-v1.5.0Q)), and MK4/MK5 ([`5.6.0`](https://github.com/Coldcard/firmware/tree/2026-07-31T0519-v5.6.0)). |
 
 Block's report explains the defect and the affected firmware in detail. Here I focus only on whether the dedicated dice-only flow shared that weakness.
 
@@ -147,13 +148,15 @@ The historical firmware makes the key distinction clear. Normal seed generation 
 99 dice rolls → SHA-256 → 24 BIP39 words
 ```
 
+Each fair six-sided roll contributes about 2.585 bits of entropy, so 99 independent rolls provide approximately 255.9 bits.
+
 Because the dice-only flow bypassed that affected path, no internally generated randomness entered the calculation. The same dice-only construction appears in the [first MK4 firmware from 2022](https://github.com/Coldcard/firmware/blob/2022-03-14T1907-v5.0.0/shared/seed.py#L292-L362), [MK4 5.4.5](https://github.com/Coldcard/firmware/blob/2025-11-03T1527-v5.4.5/shared/seed.py#L377-L481), and [Q 1.4.1Q](https://github.com/Coldcard/firmware/blob/2026-07-01T1728-v1.4.1Q/shared/seed.py#L380-L484).
 
 Published before this article, an independent [function-level audit of the dice-only path in MK4/MK5 firmware 5.6.0](https://github.com/portlandhodl/coldcard_fw_dicerolls_trace/blob/main/dice-roll-5-6-0.pdf) likewise recorded an empty entropy accumulator, one update for every entered roll, and no RNG or TRNG call. That audit covers fixed firmware, so it complements rather than replaces the historical source and pre-hotfix device tests here.
 
 That source history covers the vulnerable period, while the physical tests show the result on affected firmware. Together they support the conclusion: **a 24-word seed made through the dedicated dice-only flow with at least 99 fair, private, correctly entered rolls was not weakened by this RNG bug.**
 
-This conclusion does not cover the separate **Add Dice Rolls** workflow, which begins with a device-generated seed. It applies only to the dedicated dice-only generation/import flow.
+This article tests only the dedicated dice-only generation/import flow. The separate **Add Dice Rolls** workflow begins with a device-generated seed and then hashes every entered roll into it. According to [Coinkite's advisory](https://blog.coinkite.com/coldcard-mk3-seed-generation-warning/), at least 50 fair, independent, private rolls supplied enough independent entropy that the resulting seed is not considered at risk from this RNG issue alone. If you added fewer than 50 rolls, do not remember how many you added, or are unsure whether the rolls remained private, follow the advisory's migration guidance.
 
 ## Physical-device evidence
 
