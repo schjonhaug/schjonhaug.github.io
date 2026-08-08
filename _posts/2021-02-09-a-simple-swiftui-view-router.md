@@ -1,6 +1,7 @@
 ---
 layout: post
 title: A simple SwiftUI view router
+description: "Build a small SwiftUI view router that replaces the onboarding stack with the app’s home screen and persists the selected root view across launches."
 date: 2021-02-09 10:04:21 +0200
 image:
   path: "/assets/social/swiftui-view-router.jpeg"

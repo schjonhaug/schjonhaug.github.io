@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Promoting privacy and censorship resistance in Bitcoin Core"
-description: "How to run nodes as a dual hidden services on Tor and I2P"
+description: "An archived command-line guide to configuring Bitcoin Core over both Tor and I2P for private, censorship-resistant peer connections."
 image:
   path: "/assets/social/bitcoin-core-privacy.jpeg"
   width: 1200

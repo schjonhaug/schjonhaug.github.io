@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Finding the user's language in iOS
+description: "How Locale and Bundle APIs differ when determining an iOS user’s preferred language and the languages an app actually supports."
 image:
   path: "/assets/social/finding-users-language-ios.jpeg"
   width: 1200

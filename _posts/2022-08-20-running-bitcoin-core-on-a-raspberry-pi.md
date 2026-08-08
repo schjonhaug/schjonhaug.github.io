@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Running Bitcoin Core on a Raspberry Pi
-description: "How to set up a full Bitcoin node on a Raspberry Pi 4, using the command line."
+description: "An archived command-line guide to installing and verifying Bitcoin Core on a Raspberry Pi 4, storing the blockchain on an external SSD, and running the node with systemd."
 image:
   path: "/assets/social/bitcoin-core-raspberry-pi.jpeg"
   width: 1200

@@ -14,23 +14,6 @@ description: "Developer in Oslo working on Bitcoin, self-hosted software, and pr
     </div>
   </section>
 
-  <section class="home-section" aria-labelledby="featured-project-title">
-    <div class="section-heading-row">
-      <div>
-        <p class="section-eyebrow">Featured project</p>
-        <h2 id="featured-project-title">Canary</h2>
-      </div>
-      <a class="section-link" href="/projects/">All projects</a>
-    </div>
-    <div class="project-card">
-      <p>Self-hosted Bitcoin monitoring with transaction alerts, intelligent balance notifications, and watch-only security.</p>
-      <div class="project-links">
-        <a class="button-link" href="https://canarybitcoin.com">Visit Canary</a>
-        <a class="text-link" href="https://github.com/schjonhaug/canary">View source on GitHub</a>
-      </div>
-    </div>
-  </section>
-
   <section class="home-section" aria-labelledby="latest-articles-title">
     <div class="section-heading-row">
       <h2 id="latest-articles-title">Latest articles</h2>
