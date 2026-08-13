@@ -8,6 +8,24 @@ permalink: /projects/
 <p class="page-intro">Open-source software I build and maintain.</p>
 
 <article class="project-card project-card-full">
+  <p class="section-eyebrow">Bitcoin seed generation</p>
+  <h2>LilyGO T-Display Bitcoin Dice Seed Generator</h2>
+  <p>An offline, dice-only BIP39 seed generator for the LilyGO TTGO T-Display. It records private rolls, generates a mnemonic, verifies the backup, and clears sensitive material.</p>
+  <div class="project-links">
+    <a class="button-link" href="https://github.com/schjonhaug/lilygo-tdisplay-bitcoin-dice-seed-generator">View source on GitHub</a>
+  </div>
+</article>
+
+<article class="project-card project-card-full">
+  <p class="section-eyebrow">Bitcoin NFC</p>
+  <h2>Tapcards</h2>
+  <p>A Go implementation of the Coinkite Tap Cards NFC protocol, focused on Satscard functionality and APDU and CBOR data exchange.</p>
+  <div class="project-links">
+    <a class="button-link" href="https://github.com/schjonhaug/tapcards">View source on GitHub</a>
+  </div>
+</article>
+
+<article class="project-card project-card-full">
   <p class="section-eyebrow">Bitcoin monitoring</p>
   <h2>Canary</h2>
   <p>Self-hosted Bitcoin monitoring with transaction alerts, intelligent balance notifications, and watch-only security.</p>
