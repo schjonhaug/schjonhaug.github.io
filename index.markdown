@@ -37,4 +37,23 @@ description: "Developer in Oslo working on Bitcoin, self-hosted software, and pr
       {% endfor %}
     </ol>
   </section>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": "{{ site.url }}/#person",
+    "name": {{ site.author.name | jsonify }},
+    "url": "{{ site.url }}/",
+    "email": {{ site.email | jsonify }},
+    "jobTitle": "Developer",
+    "description": {{ site.description | strip | jsonify }},
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Oslo",
+      "addressCountry": "NO"
+    },
+    "sameAs": {{ site.social.links | jsonify }}
+  }
+  </script>
 </div>

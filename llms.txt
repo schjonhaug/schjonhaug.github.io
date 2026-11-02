@@ -1,0 +1,31 @@
+# Andreas Schjønhaug
+
+> Developer in Oslo working on Bitcoin, self-hosted software, and practical tools. I build open-source software and write about Bitcoin, privacy, and development.
+
+schjonhaug.dev is the personal site of Andreas Schjønhaug. It has long-form articles about Bitcoin, privacy, self-hosted software, and development, and a list of the open-source projects he builds and maintains. The articles are in English; his Norwegian articles about Bitcoin are published on enogtjue.no.
+
+Contact: andreas@schjonhaug.com. Profiles: https://github.com/schjonhaug and https://x.com/schjonhaug.
+
+## Pages
+
+- [Home](https://schjonhaug.dev/): who Andreas is and the three latest articles.
+- [Articles](https://schjonhaug.dev/articles/): all articles about Bitcoin, privacy, self-hosted software, and development.
+- [Projects](https://schjonhaug.dev/projects/): the open-source software Andreas builds and maintains.
+- [RSS feed](https://schjonhaug.dev/feed.xml): new articles as they are published.
+
+## Articles
+
+- [Why Dice-Only Coldcard Seeds Were Unaffected by the RNG Bug](https://schjonhaug.dev/articles/why-dice-only-coldcard-seeds-were-unaffected-by-the-rng-bug/): Independent tools, historical source, and tests on affected Coldcard firmware show that 99-roll dice-only seeds bypassed the affected firmware randomness path.
+- [Bitcoin's Safeguard Against Monopoly Seigniorage](https://schjonhaug.dev/articles/bitcoins-safeguard-against-monopoly-seigniorage/): How Bitcoin is structured to prevent any single entity from profiting from the issuance of new coins.
+- [Promoting privacy and censorship resistance in Bitcoin Core](https://schjonhaug.dev/articles/promoting-privacy-and-censorship-resistance-in-bitcoin-core/): An archived command-line guide to configuring Bitcoin Core over both Tor and I2P for private, censorship-resistant peer connections.
+- [Running Bitcoin Core on a Raspberry Pi](https://schjonhaug.dev/articles/running-bitcoin-core-on-a-raspberry-pi/): An archived command-line guide to installing and verifying Bitcoin Core on a Raspberry Pi 4, storing the blockchain on an external SSD, and running the node with systemd.
+- [A simple SwiftUI view router](https://schjonhaug.dev/articles/a-simple-swiftui-view-router/): A small SwiftUI view router that replaces the onboarding stack with the app's home screen and persists the selected root view across launches.
+- [Finding the user's language in iOS](https://schjonhaug.dev/articles/finding-the-users-language-in-ios/): How Locale and Bundle APIs differ when determining an iOS user's preferred language and the languages an app actually supports.
+
+## Projects
+
+- [Nostr Passkey Proof of Concept](https://github.com/schjonhaug/nostr-passkey-poc): An iOS proof of concept for deriving deterministic Nostr identity secrets from synced passkey PRF output, with Nostr as a public salt registry for recovery.
+- [Bare Bitcoin Plugin for BTCPay Server](https://github.com/schjonhaug/btcpayserver-plugin-barebitcoin): A BTCPay Server plugin that accepts Lightning payments directly to a Bare Bitcoin account and shows its balance in BTCPay Server.
+- [LilyGO T-Display Bitcoin Dice Seed Generator](https://github.com/schjonhaug/lilygo-tdisplay-bitcoin-dice-seed-generator): An offline, dice-only BIP39 seed generator for the LilyGO TTGO T-Display that records private rolls, generates a mnemonic, verifies the backup, and clears sensitive material.
+- [Tapcards](https://github.com/schjonhaug/tapcards): A Go implementation of the Coinkite Tap Cards NFC protocol, focused on Satscard functionality and APDU and CBOR data exchange.
+- [Canary](https://canarybitcoin.com): Self-hosted Bitcoin monitoring with transaction alerts, intelligent balance notifications, and watch-only security. Source: https://github.com/schjonhaug/canary.
