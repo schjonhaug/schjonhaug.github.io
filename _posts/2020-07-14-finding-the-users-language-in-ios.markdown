@@ -8,10 +8,13 @@ image:
   height: 630
   alt: "Finding the user’s language in iOS"
 date: 2020-07-14 10:04:21 +0200
+last_modified_at: 2026-11-05 12:00:00 +0100
 categories: localisation ios
 redirect_from:
   - /finding-the-users-language-in-ios/
 ---
+
+> **Updated November 2026:** The APIs below still behave the same on current iOS. I have replaced `Locale.current.languageCode`, which is deprecated since iOS 16, with `Locale.current.language.languageCode?.identifier`, corrected the comparison in the last section to use `Bundle.main.preferredLocalizations`, and added a section on per-app languages, which users can pick since iOS 13.
 
 When localising your app, you might need to get the user's preferred language, for example for sending it to the backend. There are several ways to do this, let's have a look at the available APIs Apple provides.
 
@@ -43,4 +46,8 @@ This will return an array of strings containing all the localisations supported 
 
 ## Bundle.main.preferredLocalizations
 
-This is a subset of `Bundle.main.localizations` filtered and sorted according to the user's preferred languages. This means that `Bundle.main.localizations.first` will be equal to `Locale.current.languageCode`.
+This is a subset of `Bundle.main.localizations` filtered and sorted according to the user's preferred languages. This means that `Bundle.main.preferredLocalizations.first` will be equal to `Locale.current.language.languageCode?.identifier`. Before iOS 16, the language code was read with `Locale.current.languageCode`, which is now deprecated.
+
+## Per-app language
+
+Since iOS 13, users can also pick a language for a single app, on that app's page in Settings, separately from the language of the phone. `Bundle.main.preferredLocalizations` reflects that choice, so it is the one to read when you need the language the app is actually shown in.

@@ -5,7 +5,7 @@ description: "Open-source projects by Andreas Schjønhaug."
 permalink: /projects/
 ---
 
-<p class="page-intro">Open-source software I build and maintain.</p>
+<p class="page-intro">Open-source software I build and maintain. Canary, the Bare Bitcoin plugin for BTCPay Server and the dice seed generator are active, the Nostr passkey project is a proof of concept, and Tapcards is archived. The source for all of them is on GitHub.</p>
 
 <article class="project-card project-card-full">
   <p class="section-eyebrow">Nostr identity</p>
@@ -35,20 +35,20 @@ permalink: /projects/
 </article>
 
 <article class="project-card project-card-full">
-  <p class="section-eyebrow">Bitcoin NFC</p>
-  <h2>Tapcards</h2>
-  <p>A Go implementation of the Coinkite Tap Cards NFC protocol, focused on Satscard functionality and APDU and CBOR data exchange.</p>
-  <div class="project-links">
-    <a class="button-link" href="https://github.com/schjonhaug/tapcards">View source on GitHub</a>
-  </div>
-</article>
-
-<article class="project-card project-card-full">
   <p class="section-eyebrow">Bitcoin monitoring</p>
   <h2>Canary</h2>
   <p>Self-hosted Bitcoin monitoring with transaction alerts, intelligent balance notifications, and watch-only security.</p>
   <div class="project-links">
     <a class="button-link" href="https://canarybitcoin.com">Visit Canary</a>
     <a class="text-link" href="https://github.com/schjonhaug/canary">View source on GitHub</a>
+  </div>
+</article>
+
+<article class="project-card project-card-full">
+  <p class="section-eyebrow">Bitcoin NFC · Archived</p>
+  <h2>Tapcards</h2>
+  <p>A Go implementation of the Coinkite Tap Cards NFC protocol, focused on Satscard functionality and APDU and CBOR data exchange. The project is archived: the repository on GitHub is read-only and no longer updated.</p>
+  <div class="project-links">
+    <a class="button-link" href="https://github.com/schjonhaug/tapcards">View source on GitHub</a>
   </div>
 </article>

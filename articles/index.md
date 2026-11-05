@@ -5,7 +5,7 @@ description: "Articles about Bitcoin, privacy, self-hosted software, and develop
 permalink: /articles/
 ---
 
-<p class="page-intro">Long-form articles about Bitcoin, privacy, self-hosted software, and development.</p>
+<p class="page-intro">Long-form articles about Bitcoin, privacy, self-hosted software, and development. They are in English and go back to 2020, from iOS development to Bitcoin; my Norwegian articles about Bitcoin are published on <a href="https://www.enogtjue.no/">enogtjue.no</a>.</p>
 
 <ol class="article-list article-archive">
   {% for post in site.posts %}
