@@ -38,6 +38,16 @@ social:
   links:
     - https://x.com/schjonhaug
     - https://github.com/schjonhaug
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      image:
+        path: "/assets/social/schjonhaug-dev.jpeg"
+        width: 1200
+        height: 630
+        alt: "Andreas Schjønhaug: developer in Oslo working on Bitcoin, self-hosted software, and practical tools"
 locale: en_GB
 lang: en-GB
 # Build settings
