@@ -9,5 +9,5 @@ locale: nb_NO
 permalink: /articles/bitcoin-blokkjedens-bevis-paa-arbeid-er-en-desentralisert-klokke/
 redirect_from:
   - /bitcoin-blokkjedens-bevis-paa-arbeid-er-en-desentralisert-klokke/
-redirect_to: https://www.enogtjue.no/artikler/bitcoin-blokkjedens-bevis-paa-arbeid-er-en-desentralisert-klokke
+redirect_to: https://enogtjue.no/artikler/bitcoin-blokkjedens-bevis-paa-arbeid-er-en-desentralisert-klokke
 ---

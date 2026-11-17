@@ -9,5 +9,5 @@ locale: nb_NO
 permalink: /articles/bevis-pa-arbeid-er-essensielt/
 redirect_from:
   - /bevis-pa-arbeid-er-essensielt/
-redirect_to: https://www.enogtjue.no/artikler/bevis-pa-arbeid-er-essensielt
+redirect_to: https://enogtjue.no/artikler/bevis-pa-arbeid-er-essensielt
 ---

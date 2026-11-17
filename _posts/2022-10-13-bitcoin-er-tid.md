@@ -8,5 +8,5 @@ lang: nb
 locale: nb_NO
 permalink: /bitcoin-er-tid/
 
-redirect_to: https://www.enogtjue.no/artikler/bitcoin-er-tid
+redirect_to: https://enogtjue.no/artikler/bitcoin-er-tid
 ---

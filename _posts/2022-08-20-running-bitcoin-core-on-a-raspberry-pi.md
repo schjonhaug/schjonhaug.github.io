@@ -121,7 +121,7 @@ wget https://bitcoincore.org/bin/bitcoin-core-23.0/SHA256SUMS.asc
 
 1. Bitcoin releases are signed by a number of individuals, each with a unique public key. In order to recognise the validity of signatures, you must use GPG to load these public keys locally. You can find many developer keys listed in the bitcoin/bitcoin repository, which you can then load into your GPG key database.
 
-    For example, given the [builders-key/keys.txt](https://github.com/bitcoin/bitcoin/tree/master/contrib/builder-keys/keys.txt) line `E777299FC265DD04793070EB944D35F9AC3DB76A Michael Ford (fanquake)` you could load that key using this command:
+    For example, given the [builders-key/keys.txt](https://github.com/bitcoin/bitcoin/blob/v23.0/contrib/builder-keys/keys.txt) line `E777299FC265DD04793070EB944D35F9AC3DB76A Michael Ford (fanquake)` you could load that key using this command:
 
     ```bash
     gpg --keyserver hkps://keys.openpgp.org --recv-keys E777299FC265DD04793070EB944D35F9AC3DB76A
@@ -129,7 +129,7 @@ wget https://bitcoincore.org/bin/bitcoin-core-23.0/SHA256SUMS.asc
 
     The output of the command above should say that one key was imported, updated, has new signatures, or remained unchanged.
 
-1. It is recommended that you choose a few individuals from this list who you find trustworthy and import their keys as above, or import all the keys per the instructions in the [contrib/builder-key README](https://github.com/bitcoin/bitcoin/tree/master/contrib/builder-keys). You will later use their keys to check the signature attesting to the validity of the checksums you use to check the binaries.
+1. It is recommended that you choose a few individuals from this list who you find trustworthy and import their keys as above, or import all the keys per the instructions in the [contrib/builder-key README](https://github.com/bitcoin/bitcoin/tree/v23.0/contrib/builder-keys). You will later use their keys to check the signature attesting to the validity of the checksums you use to check the binaries.
 
     Verify that the checksums file is PGP signed by the release signing key:
 
@@ -243,12 +243,12 @@ source ~/.bashrc
 
 ## Bash completion
 
-It quickly gets tedious to write the various bitcoin-cli commands. To help with autocompletion, a bash completion scripts are available for both [bitcoind](https://github.com/bitcoin/bitcoin/blob/master/contrib/bitcoind.bash-completion) and [bitcoin-cli](https://github.com/bitcoin/bitcoin/blob/master/contrib/bitcoin-cli.bash-completion). Let’s download them:
+It quickly gets tedious to write the various bitcoin-cli commands. To help with autocompletion, a bash completion scripts are available for both [bitcoind](https://github.com/bitcoin/bitcoin/blob/v23.0/contrib/bitcoind.bash-completion) and [bitcoin-cli](https://github.com/bitcoin/bitcoin/blob/v23.0/contrib/bitcoin-cli.bash-completion). Let’s download them:
 
 ```bash
-wget https://raw.githubusercontent.com/bitcoin/bitcoin/master/contrib/bitcoind.bash-completion
+wget https://raw.githubusercontent.com/bitcoin/bitcoin/v23.0/contrib/bitcoind.bash-completion
 
-wget https://raw.githubusercontent.com/bitcoin/bitcoin/master/contrib/bitcoin-cli.bash-completion
+wget https://raw.githubusercontent.com/bitcoin/bitcoin/v23.0/contrib/bitcoin-cli.bash-completion
 ```
 
 To figure out where to put them, we can run:

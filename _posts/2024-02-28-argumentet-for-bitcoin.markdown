@@ -7,5 +7,5 @@ categories: bitcoin
 lang: nb
 locale: nb_NO
 permalink: /argumentet-for-bitcoin/
-redirect_to: https://www.enogtjue.no/artikler/argumentet-for-bitcoin
+redirect_to: https://enogtjue.no/artikler/argumentet-for-bitcoin
 ---
