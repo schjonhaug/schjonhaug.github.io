@@ -3,6 +3,11 @@ layout: page
 title: Projects
 description: "Open-source projects by Andreas Schjønhaug."
 permalink: /projects/
+image:
+  path: "/assets/social/projects.jpeg"
+  width: 1200
+  height: 630
+  alt: "Open-source projects by Andreas Schjønhaug"
 ---
 
 <p class="page-intro">Open-source software I build and maintain. Canary, the Bare Bitcoin plugin for BTCPay Server and the dice seed generator are active, the Nostr passkey project is a proof of concept, and Tapcards is archived. The source for all of them is on GitHub.</p>
