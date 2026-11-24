@@ -165,7 +165,7 @@ This article tests only the dedicated dice-only generation/import flow. The sepa
 The Q displayed all 24 expected words on one screen while still running the affected 1.4.1Q firmware:
 
 <figure class="dice-device-photo">
-  <a href="/assets/dice/coldcard-q-1.4.1q-seed-words-redacted.png"><img src="/assets/dice/coldcard-q-1.4.1q-seed-words-redacted.png" alt="Coldcard Q running affected firmware 1.4.1Q showing all 24 public test seed words with its status-bar fingerprint redacted" loading="lazy"></a>
+  <a href="/assets/dice/coldcard-q-1.4.1q-seed-words-redacted.jpeg"><img src="/assets/dice/coldcard-q-1.4.1q-seed-words-redacted.jpeg" alt="Coldcard Q running affected firmware 1.4.1Q showing all 24 public test seed words with its status-bar fingerprint redacted" loading="lazy"></a>
   <figcaption>Coldcard Q running pre-hotfix firmware 1.4.1Q. The status-bar fingerprint has been redacted because it belonged to the wallet active before the public test seed was committed.</figcaption>
 </figure>
 

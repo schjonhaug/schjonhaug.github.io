@@ -13,7 +13,7 @@ redirect_from:
   - /bitcoins-safeguard-against-monopoly-seigniorage/
 ---
 
-![Honey badger and banker](/assets/honeybadger-and-banker.png)
+![Honey badger and banker](/assets/honeybadger-and-banker.jpeg)
 
 One of the key features of Bitcoin is its ability to prevent monopoly [seigniorage](https://en.wikipedia.org/wiki/Seigniorage), a situation where a single entity profits from introducing new currency. Traditional monetary systems, governed centrally, frequently encounter difficulties such as monetary inflation and economic instability stemming from unregulated money printing. Bitcoin, in its deliberate architecture, thwarts any attempt by a singular entity to monopolize the initiation of new coins, thereby contributing to the establishment of a more stable and transparent monetary framework.
 
